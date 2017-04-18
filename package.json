@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/shanehenning/second-step#readme",
   "dependencies": {
-    "less": "^2.7.2"
+    "less": "^2.7.2",
+    "sass": "^0.5.0"
   }
 }
