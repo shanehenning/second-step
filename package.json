@@ -1,0 +1,23 @@
+{
+  "name": "SS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanehenning/second-step.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanehenning/second-step/issues"
+  },
+  "homepage": "https://github.com/shanehenning/second-step#readme",
+  "dependencies": {
+    "less": "^2.7.2"
+  }
+}
