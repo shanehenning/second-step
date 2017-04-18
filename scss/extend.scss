@@ -1,0 +1,1002 @@
+$ms-extend-color-aqua: #00b7ac;
+$ms-extend-color-border: #e1e1e1;
+$ms-extend-color-links: #42a5f5;
+$ms-extend-color-medium-gray: #808080;
+$ms-extend-color-tabs: #eee;
+$ms-font-base: 16px;
+
+.ms-extend {
+  /* fonts */
+  /* font face */
+  h1, h2, h3, h4, h5, h6, th .ms-landing a, .ms-landing a p, .ms-advisory-overview a p, .ms-table-subhead, .ms-toggle-active, .nav-tabs li.active a, strong{
+    font-family: 'proxima_nova_rgbold', 'Proxima Nova';
+    text-transform: none;
+  }
+  a, li, p, button, .panel-heading > h5, .ms-landing h4, .ms-table-equal-columns h6, .ms-extend-student-book-list .ms-modal-header h4{
+    font-family: 'proxima_nova_rgregular', 'Proxima Nova';
+  }
+  /* end of font face */
+
+  /* font size */
+  h1 {
+      font-size: 4.5em;
+      font-size: $ms-font-base * 3.5;
+  }
+  h2 {
+      font-size: 2.9em;
+      font-size: $ms-font-base * 2.5;
+  }
+  h3 {
+      font-size: 2.5em;
+      font-size: $ms-font-base * 2;
+  }
+  h4{
+    font-size: 1.75em;
+    font-size: $ms-font-base * 1.5;
+  }
+  h5 {
+      font-size: 1.4em;
+      font-size: $ms-font-base * 1.4;
+  }
+  h6 {
+    font-size: 1.2em;
+    font-size: $ms-font-base * 1.2;
+  }
+  .ms-landing .ms-landing-hero p{
+    font-size: $ms-font-base * 1.375;
+  }
+  .ms-extend-introduction{
+    p, ul li{
+      font-size: $ms-font-base * 1.25;
+    }
+  }
+  li, p, th, td, .ms-table-subhead {
+    font-size: 1.1em;
+    font-size: $ms-font-base * 1;
+  }
+  ul {
+    font-size: 0.95em;
+    font-size: $ms-font-base * 0.95;
+  }
+  i, .ms-table-equal-columns h6 {
+    font-size: 0.65em;
+    font-size: $ms-font-base * 0.9375;
+  }
+  /* end of font size */
+
+  /* font color */
+  .ms-rubric-color, .panel-title, .panel h6, .ms-toggle-active, th, .ms-table-subhead, .panel-group .panel-heading a, .nav-tabs li.active a, .nav-tabs li.active:focus, .nav-tabs li:active, .nav-tabs li:not(.active) a:hover {
+    color: $ms-extend-color-aqua;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $ms-extend-color-aqua;
+  }
+  a, a p, .ms-icon-copy i, .ms-icon-copy h6, .ms-toggle-language li{
+    color: $ms-extend-color-links;
+  }
+  p, li, td, i {
+    color: #000;
+  }
+  .ms-extend-hero, .ms-landing {
+    h1 {
+      color: #fff;
+    }
+  }
+  .ms-extend-hero, .ms-table-equal-columns th {
+    background-color: $ms-extend-color-aqua;
+  }
+  .panel h5 > a, .ms-extend-rubric .ms-table-subhead, th, .ms-advisory-overview-color, .panel-heading > h5 {
+      color: $ms-extend-color-aqua;
+  }
+  p, li, td{
+    color: #000;
+  }
+  /* end of font color */
+
+  /* other typography */
+  p, ul, li{
+    line-height: 30px;
+  }
+  /* end of other typography */
+  /* end of fonts */
+
+  /* general */
+  .ms-extend-hero {
+    background-size: cover;
+    background-position: top left;
+    display: table;
+    height: 150px;
+    margin-bottom: 20px;
+    h1 {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  /* end of hero */
+
+  /* intro content */
+  .ms-extend-introduction {
+    padding: 0 15px;
+    margin-bottom: 40px;
+    p, ul {
+      margin-bottom: 0;
+    }
+  }
+  /* end of intro content */
+
+  /* accordion */
+  .panel-group {
+    border-radius: none;
+    border-bottom: none;
+    .panel {
+      border-top: 2px solid $ms-extend-color-border;
+      border-bottom: none;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      box-shadow: none;
+      .panel-heading {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        a{
+          padding: 15px 0;
+        }
+      }
+      .panel-body {
+        border: none;
+        border-bottom: none;
+      }
+    }
+    .panel:last-of-type {
+      border-bottom: 2px solid $ms-extend-color-border;
+      border-radius: 0;
+    }
+  }
+  .ms-accordion-chevron {
+    margin-right: 5px;
+  }
+  /* end of accordion */
+
+  /* icon buttons */
+  .ms-icon-grid, .ms-icon-list, {
+    opacity: 0.25;
+    transition: opacity 500ms;
+  }
+  .ms-icon-grid:hover, .ms-icon-list:hover, .ms-icon-print:hover, .ms-icon-close:hover {
+    opacity: 1;
+    cursor: pointer
+  }
+  .ms-icon-print, .ms-icon-close {
+    opacity: 0.65;
+    transition: opacity 500ms;
+  }
+  .ms-icon-opaque {
+    opacity: 1;
+  }
+  /* end icon buttons */
+
+  /* ms-rubric */
+  .ms-extend-rubric {
+    table {
+      table-layout: fixed;
+      margin-bottom: 20px;
+      td, th, tr {
+        padding: 20px 15px;
+        border: 1px solid $ms-extend-color-border;
+      }
+      td, th {
+        width: 25%;
+      }
+      th, .ms-table-subhead {
+        display: table-cell;
+        width: auto;
+      }
+      td {
+        vertical-align: top;
+        input[type=checkbox] {
+          transform: scale(1.25, 1.25);
+        }
+        ul {
+          padding-left: 20px;
+        }
+      }
+    }
+    .ms-extend-rubric-links {
+      margin: 0 5px 20px 0;
+      li {
+        margin: 0 5px;
+        padding: 0;
+        border: none;
+        img {
+          margin-left: 12px;
+          width: 20px;
+          height: 20px;
+          top: 2px;
+          cursor: pointer;
+        }
+      }
+      li:nth-child(2){
+        margin-right:0;
+      }
+      li:nth-child(3) {
+        margin-left: 40px;
+      }
+    }
+    li:hover {
+      border: none;
+    }
+    [id^=list] {
+      width: 100%;
+      td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+      }
+      .ms-table-subhead {
+        display: table-cell;
+        width: 35%;
+        max-width: 300px;
+        border: 1px solid $ms-extend-color-border;
+      }
+    }
+    [id^=list] {
+      width: 100%;
+      display: none;
+    }
+  }
+  /* end of ms-rubric */
+
+  /* ms-landing */
+  .ms-landing{
+      .ms-landing-hero {
+        background-color: $ms-extend-color-aqua;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        padding: 30px 0;
+        p{
+          color: #fff;
+        }
+      }
+      h1{
+        margin: 20px 0;
+      }
+      h2{
+        margin: 10px 0;
+      }
+      .btn {
+        padding: 7px 35px;
+      }
+      .btn-primary {
+        background-color: $ms-extend-color-links;
+        border: none;
+      }
+      a{
+        p{
+          color: $ms-extend-color-links;
+          line-height: 22px;
+        i:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .ms-landing-nav {
+      padding: 10px 30px 30px 30px;
+      border-bottom: 2px solid $ms-extend-color-border;
+      .ms-landing-nav-container {
+        width: 100%;
+        max-width: 210px;
+        margin: 0 auto;
+        padding: 10px 0px;
+        h4 {
+          min-width: 210px;
+        }
+        p {
+          min-width: 210px;
+        }
+      }
+    }
+    .ms-landing-content {
+      padding: 0px;
+      ul {
+        padding: 0px 15px;
+        list-style: none;
+        li {
+          padding: 10px;
+          border: none;
+          p {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 0px;
+          }
+        }
+        li:hover {
+          border: none;
+        }
+      }
+      img {
+        width: 100%;
+        max-width: 175px;
+        margin: 0 auto;
+      }
+    }
+
+    .ms-landing-row {
+      padding: 30px 0px;
+      border-bottom: 2px solid $ms-extend-color-border;
+    }
+    .ms-landing-row:last-child {
+      border-bottom: none;
+    }
+    .ms-landing-links-container {
+      ul{
+        width: auto;
+        li:first-of-type{
+          padding-top: 0;
+        }
+      }
+      img{
+        margin-top: 8px;
+      }
+    }
+  }
+  /* end of ms-landing */
+
+  /* ms-advisory-overview */
+  .ms-advisory-overview{
+    .subsection-title {
+      margin-bottom: 0px;
+      color: $ms-extend-color-aqua;
+    }
+    a{
+      cursor: pointer;
+      p{
+        color: $ms-extend-color-links;
+      }
+      p:hover{
+        text-decoration: underline;
+      }
+    }
+    .ms-icon-print {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 32px;
+      right: 23px;
+      z-index: 1;
+    }
+  }
+  /* end of ms-advisory-overview */
+
+  /* modal */
+  .modal-open {
+    overflow: hidden;
+  }
+  .ms-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 4% 0%;
+    padding-right: 15px;
+    display: none;
+    overflow-y: auto;
+    z-index: 1;
+    .ms-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .ms-modal-window {
+      background-color: #fff;
+      padding: 0px;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      .ms-modal-header {
+        background-color: $ms-extend-color-aqua;
+        color: #fff;
+        padding: 20px;
+        padding-right: 24px;
+        border-bottom: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        h4 {
+          font-size: 1.8em;
+          font-size: calc(16px * 1.625);
+          padding: 10px 0px;
+          margin-bottom: 0px;
+          color: #fff;
+          display: inline-block;
+        }
+        .ms-icon-close {
+          border: none;
+          background-color: transparent;
+          i {
+            font-size: 1.3em;
+            font-size: calc(16px * 1.125);
+          }
+        }
+      }
+      .ms-modal-body {
+        padding: 30px 15px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        ol {
+          padding-left: 15px;
+          li, li:hover {
+            padding: 3px 0px;
+            border: none;
+          }
+        }
+        ul {
+          list-style: disc;
+          padding: 13px 0px 15px 15px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  /* end modal */
+
+  /* weekly communication */
+  .ms-extend-weekly-communication{
+    .ms-accordion-chevron-first{
+      margin-top: 4px;
+    }
+    .ms-accordion-chevron:not(.ms-accordion-chevron-first){
+      margin-top: 5px;
+    }
+    .ms-content-spanish{
+      display: none;
+    }
+    .ms-toggle-active{
+      transition: color 250ms;
+    }
+    .ms-toggle-language{
+      margin-top: 20px;
+      cursor: pointer;
+      li:hover{
+        text-decoration: underline;
+      }
+    }
+    .panel:nth-of-type(1){
+      border-top: none;
+    }
+  }
+  /* end weekly communication */
+
+  /* advisory schedule */
+  .ms-table-equal-columns {
+    margin-bottom: 20px;
+      td, th {
+          width: 1%;
+          position: relative;
+          border: 1px solid $ms-extend-color-border;
+      }
+      th{
+        color: white;
+        padding: 5px 15px;
+      }
+      td{
+        padding: 20px 15px 0px 15px;
+      }
+      p{
+        margin-bottom: 20px;
+      }
+      p:last-of-type{
+        padding-bottom: 60px;
+      }
+      h6{
+        margin-top: 30px;
+        bottom: 0px;
+        position: absolute;
+        color: $ms-extend-color-medium-gray;
+      }
+  }
+  /* end advisory schedule */
+
+  /* advisory activities */
+  .ms-advisory-activities{
+    .ms-icon-print{
+      position: relative;
+      top: 20px;
+      right: 22px;
+    }
+    .modal-btn{
+      cursor: pointer;
+    }
+  }
+  /* end advisory activities */
+
+  /* family letter */
+  .ms-family-letter{
+    .panel .ms-button-tray{
+      position: relative;
+      left: 15px;
+      td{
+        padding-bottom: 15px;
+      }
+      .ms-icon-copy {
+        i{
+          cursor: pointer;
+          font-size: 20px;
+          margin: 0px 2px 4px 20px;
+          color: #000;
+          opacity: 0.5;
+          transition: opacity 500ms;
+        }
+        i:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .ms-icon-print {
+      width: 20px;
+      height: 20px;
+      margin: 0px 2px 4px 20px;
+    }
+    .ms-letter-content{
+      padding:25px;
+      padding-right: 175px;
+    }
+    .print-me {
+      margin-top:30px;
+      padding:25px;
+      .ms-letter-content{
+        padding:0;
+        padding-right: 25px;
+      }
+      .ms-letter-indent{
+        margin-left: 25px;
+      }
+      p, ul, li{
+        font-size: 12pt !important;
+        line-height: 18pt;
+      }
+    }
+  }
+  /* end family letter */
+
+  /* student book list */
+  .ms-extend-student-book-list{
+    a{
+      cursor: pointer;
+    }
+    .ms-book-container{
+      padding-bottom: 50px;
+      p{
+        margin-bottom: 5px;
+      }
+      img{
+        max-height: 250px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      strong:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .ms-modal{
+      width: 100%;
+      .ms-modal-header{
+        padding-left:30px;
+        h4{
+          margin: 0;
+        }
+        .ms-icon-close{
+          opacity: 1;
+          i{
+            color: #fff;
+          }
+        }
+      }
+      .ms-modal-body{
+        padding-top: 30px;
+        padding-right: 40px;
+        padding-left: 30px;
+      }
+      .ms-book-cover{
+          float: left;
+          margin: 0 30px 20px 0;
+          height: auto;
+          max-height: 325px;
+          max-width: 105%;
+      }
+    }
+    .ms-section-header{
+      margin-bottom: 30px;
+      clear:both;
+    }
+  }
+  /* end student book list */
+
+  /* dashboard */
+  .ms-dashboard{
+    h1, h2, p, a, span{
+      color: #fff;
+    }
+    h1{
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .ms-header-p{
+      font-size: 26px;
+      margin-bottom: 41px;
+    }
+    .ms-button{
+      border: none;
+      background: white;
+      border-radius: 4px;
+      padding: 16px 18px;
+      margin-right: 30px;
+      text-transform: uppercase;
+      font-family: "proxima_nova_rgbold";
+      cursor: pointer;
+    }
+    a{
+      text-transform: uppercase;
+      font-family: "proxima_nova_rgbold";
+    }
+  }
+
+  .ms-teach-background, .ms-extend-background, .ms-professional-learning-background{
+    min-height: 325px;
+    background-position: right;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .ms-teach-background{
+    background-color: #42a5f5;
+    background-image: url('http://v5cmservice.secondstep.org/MS3TP_IMAGES/Extend/Teach_BG.png');
+    background-position-y: -40px;
+    .ms-header-p{
+      width: 50%;
+      margin-bottom: 45px;
+    }
+    .ms-button, i{
+      color: #42a5f5;
+    }
+    i{
+      font-size: 10px;
+      position: relative;
+      top: 0;
+      margin-left: 3px;
+    }
+    .ms-header-baseline{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #1260d4;
+      padding: 10px;
+      span, a{
+        font-family: "proxima_nova_rgbold";
+      }
+      a{
+        color: #fdd835;
+        margin-left: 10px;
+      }
+    }
+  }
+  .ms-extend-background{
+    background-color: #00b7ac;
+    background-image: url('http://v5cmservice.secondstep.org/MS3TP_IMAGES/Extend/Extend_BG.png');
+    margin: 30px 15px 0 -15px;
+    .ms-header-p{
+      width: 70%;
+    }
+    .ms-button{
+      color: #00b7ac;
+    }
+  }
+  .ms-professional-learning-background{
+    background-color: #9267ea;
+    background-image: url('http://v5cmservice.secondstep.org/MS3TP_IMAGES/Extend/ProLearn_BG.png');
+    margin: 30px -15px 0 15px;
+    .ms-header-p{
+      width: 68%;
+    }
+    .ms-button{
+      color: #9267ea;
+    }
+  }
+  /* end dashboard */
+  /* end general */
+
+
+  /* Bootstrap */
+  .tab-content {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    background-color: none;
+    .panel-group{
+      margin-top: 5px;
+      .panel-body{
+        padding-top: 0;
+          .ms-container-lessons{
+          padding: 0 5px;;
+          article{
+            margin: 0;
+            padding: 15px 0;
+            border-top: 1px solid $ms-extend-color-border;
+            .ms-icon-copy{
+              padding: 0;
+              text-align: right;
+              margin-top: 30px;
+              cursor: pointer;
+              color: $ms-extend-color-links;
+            }
+            .ms-icon-copy:hover{
+              text-decoration: underline;
+              text-decoration-color: $ms-extend-color-links;
+            }
+            #copy-confirmation:hover{
+              cursor: default;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-tabs{
+    border-bottom: 2px solid $ms-extend-color-border;
+    li{
+      border: 0;
+      a{
+        border: 1px solid $ms-extend-color-border;
+      }
+    }
+    li.active{
+      a{
+        background-color: $ms-extend-color-aqua;
+        color: white;
+      }
+    }
+    li:not(.active){
+      a{
+        background-color: $ms-extend-color-border;
+      }
+      a:hover{
+        text-decoration: underline;
+        border-color: $ms-extend-color-border;
+      }
+    }
+  }
+  /* end Bootstrap */
+
+  /* dnn fixes */
+  h5{
+    margin: 0;
+  }
+  .PrimaryNav li, .PrimaryNav li:hover {
+    border-top: none;
+  }
+  .panel-group .panel+.panel {
+    margin-top: 0;
+    border-top-width: 2px;
+  }
+  .panel, .panel-body, .panel-group, .panel-heading, .panel-heading+.panel-collapse > .panel-body {
+    border: 0;
+    box-shadow: none;
+  }
+  .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: none;
+  }
+  ul {
+    li {
+      a {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .nav-tabs {
+    li {
+      a {
+        color: #000;
+      }
+    }
+    li.active {
+      border-top: none;
+      a, :focus {
+        border-top: 1px solid $ms-extend-color-tabs;
+        border-bottom-color: transparent;
+      }
+    }
+    li.active:hover, li.active:focus, li:hover, li:focus {
+      border-top: none;
+      a, a:hover {
+        border-top: 1px solid $ms-extend-color-tabs;
+      }
+    }
+  }
+  h2 {
+    margin: 20px 0 10px;
+  }
+  h3, h5 {
+    text-transform: none;
+  }
+  .ms-landing {
+    li {
+      border: none !important;
+    }
+  }
+  .panel-group .panel+.panel {
+    margin-top: 0px;
+  }
+  ul, ol {
+    li, li:hover {
+      border: none;
+    }
+  }
+  /* end of dnn fixes */
+
+  /* media queries */
+  @media screen and (max-width: 991px) {
+    .ms-landing-row {
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px){
+    .ms-extend-background, .ms-professional-learning-background{
+      height: 340px;
+    }
+  }
+
+  @media screen and (max-width: 877px){
+    .ms-extend-background, .ms-professional-learning-background{
+      height: 385px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav.navbar-nav {
+      display: none;
+    }
+    .nav.navbar-nav.open {
+      display: table-cell;
+    }
+    .ms-toggle-language {
+      margin-top: 0;
+    }
+    .ms-icon-copy {
+      margin: 20px 0 5px;
+    }
+
+    .ms-landing {
+      .ms-extend-hero {
+        padding: 30px 20px;
+      }
+      .ms-landing-row {
+        img {
+          padding-top: 15px;
+        }
+      }
+      .ms-landing-links-container{
+        ul{
+          width: 245px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .ms-extend-student-book-list{
+      .ms-book-container{
+        img{
+          height: auto;
+          max-height: 325px;
+          max-width: 80%;
+        }
+      }
+    }
+    .dropdown {
+      float: none;
+      display: flex;
+      align-items: center;
+    }
+    .panel-body {
+      .panel-body-subsection:last-child {
+        padding-left: 0px;
+      }
+    }
+    .ms-dashboard{
+      .ms-teach-background, .ms-extend-background{
+
+      .ms-secondary-button{
+        display: block;
+        margin-top: 40px;
+      }
+    }
+      .ms-extend-background, .ms-professional-learning-background{
+        margin: 30px 0 0 0;
+      }
+      .ms-extend-background, .ms-professional-learning-background{
+        height: 100%;
+      }
+      .ms-teach-background{
+        a{
+          margin-bottom: 20px;
+        }
+      }
+      .ms-second-section{
+        padding: 0;
+      }
+    }
+
+  }
+  /* end of media queries */
+
+  /* print */
+  @media print {
+    a[href]:after {
+      content: none !important;
+    }
+    header {
+      display: none !important;
+    }
+    .footer-copyright, footer {
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+    }
+    h1 {
+      font-size: 24pt;
+      border-bottom: 1px solid #000;
+    }
+    p, ul, li, th, td{
+      font-size: 10pt !important;
+      line-height: 14pt;
+    }
+    table {
+      input[type=checkbox] {
+        margin-right: 40px;
+      }
+    }
+    /* modal print */
+    .ms-modal-print {
+      * {
+        font-family: 'proxima_nova_rgregular', 'Proxima Nova';
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'proxima_nova_rgbold', 'Proxima Nova';
+      }
+      h4 {
+        padding-left: 0px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+      }
+      ol {
+        padding-left: 15px;
+      }
+      ul {
+        padding-left: 15px;
+        margin-top: 10px;
+        list-style: disc;
+      }
+      .ms-modal-header {
+        margin-left: 0px;
+      }
+      .ms-modal-body {
+        margin-left: 0px;
+      }
+    }
+  }
+  /* end of print */
+}
+/* end of .ms-extend */
