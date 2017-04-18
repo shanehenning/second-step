@@ -1,0 +1,350 @@
+/*gobal secondstep.org v6.css*/
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'), url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "ProximaNovaItalic";
+  src: url('../fonts/ProximaNova-RegIt-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaThin";
+  src: url('../fonts/ProximaNova-Thin.otf') format('opentype'), url('../fonts/ProximaNova-Thin-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaThinItalic";
+  src: url('../fonts/ProximaNova-ThinIt-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url('../fonts/ProximaNova-Light.otf') format('opentype'), url('../fonts/ProximaNova-Light-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaLightItalic";
+  src: url('../fonts/ProximaNova-LightIt-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaSemi";
+  src: url('../fonts/ProximaNova-Sbold.otf') format('opentype'), url('../fonts/ProximaNova-Sbold-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaSemiItalic";
+  src: url('../fonts/ProximaNova-SboldIt-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url('../fonts/ProximaNova-Bold-webfont.woff') format('woff'), url('../fonts/ProximaNova-Bold-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "ProximaNovaBoldItalic";
+  src: url('../fonts/ProximaNova-BoldIt-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNovaExtraBold";
+  src: url('../fonts/ProximaNova-Extrabld.otf') format('opentype');
+}
+@font-face {
+  font-family: "ArialBlack";
+  src: url('../fonts/arial_black-webfont.ttf') format('truetype');
+}
+.ssp-main-container {
+  font-size: 16px;
+  /* Quote */
+  /* End Quote */
+  /* Images */
+  /* End Images */
+}
+.ssp-main-container h1,
+.ssp-main-container h2,
+.ssp-main-container h3,
+.ssp-main-container h4,
+.ssp-main-container h5,
+.ssp-main-container h6 {
+  /*TODO: changed font-family to bold from thin*/
+  font-family: 'ProximaNovaBold', sans-serif;
+  color: #000;
+  /*TODO: change color to #444?*/
+  margin: 10px 0 5px 0;
+  font-weight: bold;
+}
+.ssp-main-container h1.regular,
+.ssp-main-container h2.regular,
+.ssp-main-container h3.regular,
+.ssp-main-container h4.regular,
+.ssp-main-container h5.regular,
+.ssp-main-container h6.regular {
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-size: 1.500em;
+  /*TODO: change everything to #000?*/
+  color: #333;
+}
+.ssp-main-container h1.light,
+.ssp-main-container h2.light,
+.ssp-main-container h3.light,
+.ssp-main-container h4.light,
+.ssp-main-container h5.light,
+.ssp-main-container h6.light {
+  font-family: 'ProximaNovaThin', sans-serif;
+  margin: 10px 0 10px 0;
+}
+.ssp-main-container h1.semi,
+.ssp-main-container h2.semi,
+.ssp-main-container h3.semi,
+.ssp-main-container h4.semi,
+.ssp-main-container h5.semi,
+.ssp-main-container h6.semi {
+  font-family: 'ProximaNovaSemi', sans-serif;
+}
+.ssp-main-container h1 {
+  font-size: 2.250em;
+}
+.ssp-main-container h2 {
+  font-size: 1.750em;
+}
+.ssp-main-container h3 {
+  font-size: 1.5em;
+}
+.ssp-main-container h4 {
+  font-size: 1.313em;
+}
+.ssp-main-container h5 {
+  font-size: 1.5em;
+}
+.ssp-main-container h6 {
+  font-size: 1.5em;
+}
+.ssp-main-container strong {
+  font-family: 'ProximaNovaSemi', 'proxima_nova_ltsemibold';
+}
+.ssp-main-container p,
+.ssp-main-container ul,
+.ssp-main-container ol {
+  font-family: 'ProximaNovaLight', 'proxima_nova_ltlight';
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.ssp-main-container p li,
+.ssp-main-container ul li,
+.ssp-main-container ol li {
+  margin-bottom: 5px;
+}
+.ssp-main-container p.intro,
+.ssp-main-container ul.intro,
+.ssp-main-container ol.intro {
+  font-size: 1.185em;
+}
+.ssp-main-container p.small {
+  font-family: 'ProximaNovaRegular';
+  font-size: 0.875em;
+  line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #222;
+}
+.ssp-main-container p.intro {
+  font-size: 1.185em;
+  line-height: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #444;
+}
+.ssp-main-container p.byline,
+.ssp-main-container p.caption {
+  font-family: 'ProximaNovaSemi';
+  color: #444;
+  font-size: 0.875em;
+}
+.ssp-main-container ul {
+  list-style-type: square;
+}
+.ssp-main-container ul ul {
+  list-style-type: circle;
+}
+.ssp-main-container ul.none {
+  list-style: none;
+  padding: 0;
+}
+.ssp-main-container a {
+  cursor: pointer;
+  color: #0478b5;
+  text-decoration-color: #0478b5;
+  text-decoration: none;
+}
+.ssp-main-container a:hover {
+  color: #0478b5;
+  text-decoration: underline;
+}
+.ssp-main-container a:visited {
+  color: #8961b2;
+  text-decoration-color: #8961b2;
+}
+.ssp-main-container a:active {
+  color: #0478b5;
+}
+.ssp-main-container a.copy {
+  color: #0049c3;
+}
+.ssp-main-container a.copy:visited {
+  color: #7819d5;
+}
+.ssp-main-container a,
+.ssp-main-container button {
+  cursor: pointer;
+}
+.ssp-main-container .button {
+  cursor: pointer;
+  background-color: #41779c;
+  padding: 13px 60px 13px 60px;
+  margin-bottom: 20px;
+}
+.ssp-main-container .button:hover {
+  background-color: #4ba0c8;
+}
+.ssp-main-container .button p {
+  font-family: "ProximaNovaSemi";
+  font-size: 1em;
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+}
+.ssp-main-container .ssp-btn {
+  display: inline-block;
+  margin: 15px 0 0 0;
+  width: auto;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1em;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 0px solid transparent;
+  white-space: nowrap;
+  padding: 13px 60px 13px 60px;
+  border-radius: 0;
+  color: #fff !important;
+  font-family: 'ProximaNovaSemi', sans-serif;
+  background: #4b82a8;
+}
+.ssp-main-container .ssp-btn:hover {
+  background-color: #4ba0c8;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+.ssp-main-container .ssp-btn:visited {
+  text-decoration: none;
+}
+.ssp-main-container .ssp-btn.alert-bt {
+  background-color: #d44e05;
+  border: 2px solid #ab4501;
+  padding: 11px 60px 11px 60px;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.ssp-main-container .ssp-btn.alert-bt:hover {
+  background-color: #b34304;
+  border: 2px solid #b34304;
+  color: #fff !important;
+}
+.ssp-main-container .ssp-btn.alert-bt p {
+  font-family: "ProximaNovaBold";
+  font-size: 1em;
+}
+.ssp-main-container .ssp-btn.ghost-btn {
+  border: 2px solid #41779c;
+  color: #41779c !important;
+  background: #fff;
+  padding: 11px 60px 11px 60px;
+}
+.ssp-main-container .ssp-btn.ghost-btn:hover {
+  background-color: #41779c;
+  color: #fff !important;
+}
+.ssp-main-container .ssp-btn.ghost-btn p {
+  font-family: "ProximaNovaSemi";
+  font-size: 1em;
+  color: #41779c;
+  margin: 0px;
+  text-align: center;
+}
+.ssp-main-container .ssp-btn.ghost-btn:hover p {
+  color: #fff;
+}
+.ssp-main-container .ssp-btn.btn-width-100 {
+  width: 100%;
+}
+.ssp-main-container .less-padding {
+  padding: 13px 25px 13px 25px;
+}
+.ssp-main-container .full-width {
+  width: 100%;
+  padding: 13px 25px 13px 25px;
+}
+.ssp-main-container .rule {
+  border-bottom: 1px solid #aeaeae;
+  padding: 10px 0px 5px 0px;
+}
+.ssp-main-container .field-title {
+  font-family: 'ProximaNovaBold';
+  font-size: 0.875em;
+  color: #333;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.ssp-main-container .quote {
+  padding: 20px;
+}
+.ssp-main-container .quote img {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.ssp-main-container .quote blockquote {
+  font-family: "ProximaNovaLight";
+  font-size: 1.185em;
+  line-height: 1.4em;
+  color: #444;
+  font-style: italic;
+  margin: 0 0 20px 0;
+}
+.ssp-main-container .quote cite {
+  font-family: "ProximaNovaSemi";
+  color: #888;
+  float: right;
+  font-size: 0.75em;
+  font-style: normal;
+}
+.ssp-main-container .head-img {
+  margin-bottom: 15px;
+}
+.ssp-main-container .body-img {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.ssp-main-container .body-img-left {
+  margin: 15px 25px 15px 0px;
+  float: left;
+}
+.ssp-main-container .body-img-right {
+  margin: 15px 0px 15px 25px;
+  float: right;
+}
+@media screen and (max-width: 991px) {
+  .ssp-main-container .ssp-container-half-row .image {
+    display: none;
+  }
+  .ssp-main-container .space {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ssp-main-container .space {
+    display: none;
+  }
+}
