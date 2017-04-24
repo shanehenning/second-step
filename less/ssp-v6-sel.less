@@ -1,0 +1,340 @@
+.ssp-sel {
+    margin-top: 30px;
+
+    hr{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      border: 1px solid rgba(137,137,137, 0.5);
+    }
+
+    h4.page-title {
+        font-family: 'proxima_nova_rgregular', 'Proxima Nova';
+        display: inline-block;
+    }
+
+    .social-links {
+        float: right;
+        display: inline;
+        list-style-type: none;
+        padding: 0;
+        margin-top: 3px;
+
+        li {
+            display: inline;
+            font-size: 18px;
+            padding: 10px;
+        }
+    }
+
+    .row-hero-image {
+        background-image: url('http://www.cfchildren.org/Portals/1/child%20safety%2041.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: ~ "calc(100% + 30px)";
+        aside,
+        section {
+            height: 400px;
+        }
+        section{
+          text-align: center;
+          position: relative;
+          a{
+            position: absolute;
+            bottom: 30px;
+            color: #fff;
+          }
+        }
+        table {
+          padding: 0;
+          height: 100%;
+            td{
+                background-color: rgba(0,0,0,.4);
+                height: 100%;
+                width: 100%;
+                display: table-cell;
+                vertical-align: middle;
+                h1,
+                ul {
+                    color: #fff;
+                    text-align: left;
+                    width: 70%;
+                    margin: 30px;
+                    font-family: "proxima_nova_rgbold", "Proxima Nova";
+                    font-weight: 600;
+                }
+                h1{
+                  font-size: 44px;
+                }
+                ul {
+                    border-top: 2px solid #f84139;
+                    padding-top: 30px;
+                    padding-left: 20px;
+                    font-size: 22px;
+                }
+            }
+            div{
+              margin: 0 auto;
+              max-width: 395px;
+            }
+        }
+    }
+
+    .row-copy-gray{
+      background-color: #e1dfe4;
+      padding: 35px 50px 20px;
+      font-size: 19px;
+    }
+
+    .row-product-feature-left{
+      padding: 40px 60px;
+      section{
+        padding-left: 40px;
+      }
+      table{
+        height: 100%;
+        td{
+          text-align: center;
+          img{
+            max-width: 375px;
+          }
+        }
+      }
+      &:extend(.upper-line-title all);
+      // div{
+      //   border-top: 1px solid black;
+      //   padding-top: 5px;
+      //   padding-bottom: 10px;
+      //   display: inline-block;
+      //   span{
+      //     font-family: "proxima_nova_rgbold", "Proxima Nova";
+      //     font-weight: 600;
+      //   }
+      // }
+      ul{
+        padding-left: 20px;
+        list-style-type: square;
+        margin-bottom: 20px;
+      }
+    }
+
+    .row-green-features{
+      background-image: url('../imgs/green-background.png');
+      background-color: #54bc85;
+      background-size: cover;
+      background-position: center;
+      padding: 40px;
+      section{
+        img{
+          position: relative;
+          bottom: 5px;
+          margin: 10px 10px 10px 0;
+        }
+        h3{
+          display: inline;
+          color: #222;
+        }
+        a{
+          color: #222;
+          text-decoration: underline;
+        }
+        a:hover{
+          color: #fff;
+        }
+      }
+    }
+
+    .row-standard{
+      padding: 50px;
+    }
+
+    .row-testimonial-left, .row-testimonial-right{
+      margin-top: 25px;
+      margin-bottom: 15px;
+      img{
+        width: 150px;
+        height: 150px;
+        margin: 0 20px 20px 0;
+      }
+      blockquote{
+        font-family: "ProximaNovaLight";
+        color: #444;
+        margin-bottom: 10px;
+        border: 0;
+      }
+      cite{
+        ul{
+          list-style-type: none;
+          padding: 0;
+          li{
+            font-family: "ProximaNovaSemi";
+            color: #444;
+            font-size: 0.75em;
+            font-style: normal;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .row-testimonial-left{
+      img{
+        float: left;
+      }
+    }
+
+    .row-testimonial-right{
+      img{
+        float: right;
+        margin: 0 0 20px 20px;
+      }
+      ul{
+        float: right;
+        text-align: right;
+        margin-right: 15px;
+      }
+    }
+
+    .link-list{
+      ul{
+        padding: 0;
+        list-style-type: none;
+        margin-top: 30px;
+      }
+    }
+
+    .row-half-image {
+      aside{
+        margin-top: 10px;
+        padding: 40px;
+        &:extend(.upper-line-title all);
+      }
+      section{
+        padding: 0;
+      }
+      figure{
+        position: relative;
+        float: left;
+        padding: 0;
+      }
+      figure::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+      }
+      img {
+        height: 100%;
+        display: block;
+        filter: grayscale(100%);
+        z-index: 1;
+        object-fit: cover;
+      }
+    }
+      .overlay-red {
+        figure::before{
+          background-color: #f84139;
+          opacity: 0.6;
+        }
+      }
+      .overlay-yellow {
+        figure::before{
+          background-color:  #fcb715;
+          opacity: 0.6;
+        }
+      }
+      .overlay-purple {
+        figure::before{
+          background-color:  #653279;
+          opacity: 0.6;
+        }
+      }
+
+    .row-three-column{
+      padding: 50px;
+      section{
+        margin-top: 10px;
+      }
+      img{
+        margin: 15px 0;
+        object-fit: cover;
+        height: 125px;
+      }
+      p{
+        margin-bottom: 30px;
+      }
+      a{
+        &:extend(.button all);
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      a, a:hover, a:visited{
+        color: #fff;
+        text-decoration-color: #fff;
+      }
+    }
+
+    .background{
+      &-gray{
+        background-color: #e1dfe4;
+      }
+      &-light-gray{
+        background-color: #f1f1f1;
+      }
+    }
+}
+
+@media screen and (max-width: 1199px){
+  .ssp-sel{
+    .row-product-feature-left{
+      height: 335px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  .ssp-sel{
+    .row-product-feature-left{
+      height: 355px;
+      table{
+        td{
+          img{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  .ssp-sel {
+    .row-hero-image{
+      table{
+        td{
+          div{
+            h1, ul{
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+    .row-product-feature-left{
+      height: auto;
+    }
+    .row-half-image{
+      figure{
+        float: none;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
