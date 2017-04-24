@@ -1,0 +1,13 @@
+﻿[
+  {
+    "outputFile": "v6/v6.css",
+    "inputFile": "v6/v6.less",
+    "minify": {
+      "enabled": false
+    },
+    "includeInProject": true,
+    "sourceMap": false,
+    "options": {}
+  }
+
+]
