@@ -8,9 +8,9 @@ gulp.task('less', function() {
   console.log('watching less file');
   return watch (['less/**/*.less'], function() {
     console.log('gulp');
-    gulp.src('./v6/v6.less')
+    gulp.src('./less/working/working-master.less')
       .pipe(less())
-      .pipe(gulp.dest('./v6'));
+      .pipe(gulp.dest('./less/working'));
   });
 });
 
