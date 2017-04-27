@@ -23,8 +23,8 @@
     }
 
     h4.page-title {
-        font-family: 'proxima_nova_rgregular', 'Proxima Nova';
-        display: inline-block;
+      font-family: 'proxima_nova_rgregular', 'Proxima Nova';
+      display: inline-block;
     }
 
     .social-links {
@@ -35,10 +35,10 @@
         margin-top: 3px;
         li {
           cursor: pointer;
-            display: inline;
-            font-size: 26px;
-            padding: 5px;
-            transition: opacity 200ms;
+          display: inline;
+          font-size: 26px;
+          padding: 5px;
+          transition: opacity 200ms;
         }
         li:hover{
           opacity: 0.75;
@@ -54,61 +54,65 @@
         }
     }
 
+
+/* Custom Rows */
+    .row-standard{
+      padding: 50px;
+    }
+
     .row-hero-image {
-        background-image: url('http://www.cfchildren.org/Portals/1/child%20safety%2041.jpg');
-        background-size: cover;
-        background-position: center;
+      background-image: url('http://www.cfchildren.org/Portals/1/child%20safety%2041.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      width: ~ "calc(100% + 30px)";
+      aside, section {
         height: 400px;
-        width: ~ "calc(100% + 30px)";
-        aside,
-        section {
-            height: 400px;
+      }
+      section{
+        text-align: center;
+        position: relative;
+        a{
+          position: absolute;
+          bottom: 30px;
+          color: #fff;
         }
-        section{
-          text-align: center;
-          position: relative;
-          a{
-            position: absolute;
-            bottom: 30px;
+      }
+      table {
+        padding: 0;
+        height: 100%;
+        td{
+          background-color: rgba(0,0,0,.4);
+          height: 100%;
+          width: 100%;
+          display: table-cell;
+          vertical-align: middle;
+          h1, ul {
+            color: #fff;
+            text-align: left;
+            width: 70%;
+            margin: 30px;
+            font-family: "proxima_nova_rgbold", "Proxima Nova";
+            font-weight: 600;
+          }
+          li{
             color: #fff;
           }
+          h1{
+            font-size: 44px;
+          }
+          ul {
+            border-top: 2px solid #f84139;
+            padding-top: 30px;
+            padding-left: 20px;
+            font-size: 22px;
+          }
         }
-        table {
-          padding: 0;
-          height: 100%;
-            td{
-                background-color: rgba(0,0,0,.4);
-                height: 100%;
-                width: 100%;
-                display: table-cell;
-                vertical-align: middle;
-                h1,
-                ul {
-                    color: #fff;
-                    text-align: left;
-                    width: 70%;
-                    margin: 30px;
-                    font-family: "proxima_nova_rgbold", "Proxima Nova";
-                    font-weight: 600;
-                }
-                li{
-                  color: #fff;
-                }
-                h1{
-                  font-size: 44px;
-                }
-                ul {
-                    border-top: 2px solid #f84139;
-                    padding-top: 30px;
-                    padding-left: 20px;
-                    font-size: 22px;
-                }
-            }
-            div{
-              margin: 0 auto;
-              max-width: 395px;
-            }
+        div{
+          margin: 0 auto;
+          max-width: 395px;
         }
+      }
     }
 
     .row-copy-intro{
@@ -182,10 +186,6 @@
       }
     }
 
-    .row-standard{
-      padding: 50px;
-    }
-
     .row-testimonial-left, .row-testimonial-right{
       margin-top: 25px;
       margin-bottom: 15px;
@@ -214,13 +214,11 @@
         }
       }
     }
-
     .row-testimonial-left{
       img{
         float: left;
       }
     }
-
     .row-testimonial-right{
       img{
         float: right;
@@ -230,14 +228,6 @@
         float: right;
         text-align: right;
         margin-right: 15px;
-      }
-    }
-
-    .link-list{
-      ul{
-        padding: 0;
-        list-style-type: none;
-        margin-top: 30px;
       }
     }
 
@@ -277,24 +267,6 @@
       }
       a{
         font-family: "proxima_nova_rgbold";
-      }
-    }
-    .overlay-red {
-      figure::before{
-        background-color: #f84139;
-        opacity: 0.6;
-      }
-    }
-    .overlay-yellow {
-      figure::before{
-        background-color:  #fcb715;
-        opacity: 0.6;
-      }
-    }
-    .overlay-purple {
-      figure::before{
-        background-color:  #653279;
-        opacity: 0.6;
       }
     }
 
@@ -399,17 +371,17 @@
       }
       aside{
         background-color: #f1f1f1;
-          padding: 0;
+        padding: 0;
+        width: 100%;
+        img{
+          max-width: 100%;
+          object-fit: cover;
+          height: 200px;
           width: 100%;
-          img{
-            max-width: 100%;
-            object-fit: cover;
-            height: 200px;
-            width: 100%;
-          }
-          p{
-            padding: 20px;
-          }
+        }
+        p{
+          padding: 20px;
+        }
       }
     }
 
@@ -508,17 +480,46 @@
         font-size: 28px;
       }
     }
+/* End Custom Rows */
 
-    .background{
-      &-gray{
-        background-color: #e1dfe4;
-      }
-      &-light-gray{
-        background-color: #f1f1f1;
-      }
-    }
+/* Misc */
+.overlay-red {
+  figure::before{
+    background-color: #f84139;
+    opacity: 0.6;
+  }
+}
+.overlay-yellow {
+  figure::before{
+    background-color:  #fcb715;
+    opacity: 0.6;
+  }
+}
+.overlay-purple {
+  figure::before{
+    background-color:  #653279;
+    opacity: 0.6;
+  }
 }
 
+.link-list{
+  ul{
+    padding: 0;
+    list-style-type: none;
+    margin-top: 30px;
+  }
+}
+
+.background{
+  &-gray{
+    background-color: #e1dfe4;
+  }
+  &-light-gray{
+    background-color: #f1f1f1;
+  }
+}
+/* End Misc */
+} /* End .ssp-sel */
 
 
 @media screen and (max-width: 991px){
