@@ -121,7 +121,7 @@
       </div>
     </div>
 
-    <div class="row row-standard row-table-equal-height-md link-list">
+    <!-- <div class="row row-standard row-table-equal-height-md link-list">
       <section class="col-md-6 col-md-push-6 text-center">
         <figure>
           <img class="img-responsive" src="http://www.cfchildren.org//portals/1/SS_Multi/ss_img/repack-el-5-bundle.png" alt="Product Placeholder">
@@ -142,7 +142,7 @@
           <a href="#"><i class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i> Learn more about SEL</a>
         </figure>
       </section>
-    </div>
+    </div> -->
 
 
 
@@ -263,7 +263,36 @@
 
     </div>
 
-    <div class="row row-three-column-videos link-list">
+    <div class="row row-webinar-videos">
+      <h3 class="header-underline">More to Explore</h3>
+      <div class="row">
+        <section class="col-md-6">
+          <aside class="background-gray">
+            <h4>Success Stories</h4>
+            <div class="object-fit">
+              <img class="img-responsive" src="https://i.ytimg.com/vi/R9ykvuDVZts/maxresdefault.jpg" alt="Success Stories">
+            </div>
+            <span class="video-title">Name of Success Story</span>
+            <p>Words to describe how successful these success stories are and such.<br/>
+            </p>
+            <a href="#">View all Success Stories.</a>
+          </aside>
+        </section>
+        <section class="col-md-6">
+          <aside class="background-gray">
+            <h4>Webinars</h4>
+            <div class="object-fit">
+              <img class="img-responsive" src="https://dpi.wi.gov/sites/default/files/imce/dpi-connected/jpg/160201-shurrer.jpg" alt="Webinars">
+            </div>
+            <span class="video-title">Name of Success Story</span>
+            <p>We offer live and recorded Webinars so that you can hear from our experts about our programs and ask us questions.</p>
+            <a href="#"><i class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i> View available webinars.</a>
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <!-- <div class="row row-three-column-videos link-list">
       <h3 class="header-underline">More to Explore</h3>
       <section class="col-md-8">
         <h4>Success Stories</h4>
@@ -292,7 +321,7 @@
           </p>
         </aside>
       </section>
-    </div>
+    </div> -->
 
     <div class="row row-related-links link-list background-gray">
       <section class="col-md-6">
@@ -361,14 +390,14 @@
       $coloredFramesAll.each(function() {
         coloredFramesArray.push($(this).height());
       });
-      let coloredFramesLong = Math.max.apply(null, coloredFramesArray) + 15;
-      let $videoAsidesAll = $('.row-three-column-videos aside');
+      let coloredFramesLong = Math.max.apply(null, coloredFramesArray) + 25;
+      let $videoAsidesAll = $('.row-webinar-videos aside');
       let videoAsidesArray = [];
       $videoAsidesAll.css({'height': 'auto'});
       $videoAsidesAll.each(function() {
         videoAsidesArray.push($(this).height());
       });
-      let videoAsidesLong = Math.max.apply(null, videoAsidesArray);
+      let videoAsidesLong = Math.max.apply(null, videoAsidesArray) + 50;
 
 
       if ($(window).width() > 992) {
