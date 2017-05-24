@@ -325,6 +325,10 @@
   padding: 0;
   margin-top: 3px;
 }
+.ssp-main-container .social-links h5 {
+  float: right;
+  margin-bottom: 0;
+}
 .ssp-main-container .social-links li {
   cursor: pointer;
   display: inline;
@@ -355,6 +359,9 @@
 }
 .ssp-main-container .padding-narrow {
   padding: 0 50px;
+}
+.ssp-main-container .row-page-title {
+  margin: 0;
 }
 .ssp-main-container .row-hero-image {
   position: relative;
@@ -993,7 +1000,11 @@
   margin-left: -75px;
   left: 50%;
 }
+.ssp-main-container .row-funding-circles figure a:hover {
+  color: #fff;
+}
 .ssp-main-container .row-funding-circles h4 {
+  padding: 10px;
   width: 150px;
   height: 150px;
   background-color: #41779c;
@@ -1002,7 +1013,7 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 22px;
 }
 .ssp-main-container .row-funding-circles section {
