@@ -871,6 +871,9 @@
   margin-bottom: 0;
   display: block;
 }
+.ssp-main-container .row-table-two-columns-equal-height .subsection {
+  margin-top: 50px;
+}
 .ssp-main-container .row-table-equal-height [class^=col],
 .ssp-main-container .row-table-equal-height-md [class^=col],
 .ssp-main-container .row-table-equal-height-button [class^=col],
@@ -886,6 +889,7 @@
 .ssp-main-container .row-table-equal-height-bottom h2,
 .ssp-main-container .row-table-equal-height-top-middles h2 {
   color: #41779c;
+  line-height: 28px;
 }
 .ssp-main-container .row-table-equal-height h6,
 .ssp-main-container .row-table-equal-height-md h6,

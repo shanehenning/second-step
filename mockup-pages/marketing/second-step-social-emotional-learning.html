@@ -185,7 +185,7 @@
           <h3>Schoolwide Implementation Tools</h3>
           <p>We support a strong and sustainable schoolwide implementation with these program extensions.</p>
 
-          <section class="row row-table-equal-height-md">
+          <section class="row ">
             <article class="col-md-4">
               <div class="border-yellow">
                 <h4>Streaming Lesson Media</h4>
@@ -332,6 +332,38 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
+  $(document).ready(function(){
+    function equalHeightColumns() {
+      let $coloredFramesAll = $('.row-colored-frames article');
+      let coloredFramesArray = [];
+      $coloredFramesAll.css({'height': 'auto'});
+      $coloredFramesAll.each(function() {
+        coloredFramesArray.push($(this).height());
+      });
+      let coloredFramesLong = Math.max.apply(null, coloredFramesArray) + 25;
+      let $videoAsidesAll = $('.row-webinar-videos aside');
+      let videoAsidesArray = [];
+      $videoAsidesAll.css({'height': 'auto'});
+      $videoAsidesAll.each(function() {
+        videoAsidesArray.push($(this).height());
+      });
+      let videoAsidesLong = Math.max.apply(null, videoAsidesArray) + 50;
+
+
+      if ($(window).width() > 992) {
+        $coloredFramesAll.css({'height': coloredFramesLong});
+        $videoAsidesAll.css({'height': videoAsidesLong});
+      } else {
+        $coloredFramesAll.css({'height': 'auto'});
+        $videoAsidesAll.css({'height': 'auto'});
+      }
+    }
+    equalHeightColumns();
+    $(window).resize(equalHeightColumns);
+    });
+  </script>
+
+  <!-- <script type="text/javascript">
     function equalHeightColumns() {
       let $videoAsidesAll = $('.row-webinar-videos aside');
       let videoAsidesArray = [];
@@ -350,7 +382,7 @@
     }
     $(document).ready(equalHeightColumns);
     $(window).resize(equalHeightColumns);
-  </script>
+  </script> -->
 
   <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
