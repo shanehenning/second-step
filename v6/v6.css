@@ -95,6 +95,10 @@
   margin-bottom: 15px;
   color: #222;
 }
+.ssp-main-container span.small {
+  color: #222;
+  font-size: 0.875em;
+}
 .ssp-main-container ul {
   list-style-type: square;
 }
@@ -855,24 +859,46 @@
 .ssp-main-container .row-table-two-columns-equal-height section {
   padding: 30px;
 }
+.ssp-main-container .row-table-two-columns-equal-height p.regular {
+  margin-bottom: 10px;
+}
 .ssp-main-container .row-table-two-columns-equal-height ul {
   padding-left: 20px;
+}
+.ssp-main-container .row-table-two-columns-equal-height ul.list-spaced {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.ssp-main-container .row-table-two-columns-equal-height ul.list-spaced li {
+  margin-bottom: 15px;
 }
 .ssp-main-container .row-table-two-columns-equal-height section:first-of-type {
   background-color: #f1f1f1;
 }
-.ssp-main-container .row-table-two-columns-equal-height section:last-of-type {
-  background-color: #d8d7da;
+.ssp-main-container .row-table-two-columns-equal-height section:first-of-type h3 {
+  margin-top: 25px;
 }
-.ssp-main-container .row-table-two-columns-equal-height section:last-of-type span:first-of-type {
-  margin-top: 30px;
+.ssp-main-container .row-table-two-columns-equal-height section:first-of-type h4 {
+  margin-top: 20px;
+}
+.ssp-main-container .row-table-two-columns-equal-height .single-indent {
+  padding-left: 40px;
+}
+.ssp-main-container .row-table-two-columns-equal-height section:last-of-type {
+  background-color: #e6e5e9;
+}
+.ssp-main-container .row-table-two-columns-equal-height section:last-of-type h4 {
+  margin-bottom: 20px;
+}
+.ssp-main-container .row-table-two-columns-equal-height section:last-of-type .section-title {
   padding-bottom: 5px;
   border-bottom: 1px solid #aeaeae;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   display: block;
+  font-size: 1em;
 }
 .ssp-main-container .row-table-two-columns-equal-height .subsection {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .ssp-main-container .row-table-equal-height [class^=col],
 .ssp-main-container .row-table-equal-height-md [class^=col],
