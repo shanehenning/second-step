@@ -21,7 +21,7 @@
 .ssp-main-container h6 {
   font-family: 'proxima_nova_rgbold', sans-serif;
   color: #444;
-  margin: 10px 0;
+  margin: 10px 0 5px;
 }
 .ssp-main-container h1.regular,
 .ssp-main-container h2.regular,
@@ -33,6 +33,9 @@
   font-size: 1.500em;
 }
 .ssp-main-container h1 {
+  font-size: 1.75em;
+}
+.ssp-main-container h2.hero {
   font-size: 1.75em;
 }
 .ssp-main-container h2 {
@@ -315,12 +318,12 @@
   font-size: 110px;
   margin: 0;
 }
-.ssp-main-container h3.page-title,
-.ssp-main-container h4.page-title {
+.ssp-main-container h1.page-title {
   font-family: 'proxima_nova_rgbold', sans-serif;
   display: inline-block;
   color: #888;
   margin-bottom: 20px;
+  font-size: 1.125em;
 }
 .ssp-main-container .social-links {
   float: right;
@@ -367,6 +370,15 @@
 .ssp-main-container .row-page-title {
   margin: 0;
 }
+.ssp-main-container .row-page-title h1 {
+  font-family: 'proxima_nova_rgbold', sans-serif;
+  display: inline-block;
+  color: #888;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  letter-spacing: 0.075px;
+  font-size: 1.125em;
+}
 .ssp-main-container .row-hero-image {
   position: relative;
   overflow: hidden;
@@ -407,7 +419,7 @@
   display: table-cell;
   vertical-align: middle;
 }
-.ssp-main-container .row-hero-image table td h1,
+.ssp-main-container .row-hero-image table td h2,
 .ssp-main-container .row-hero-image table td p,
 .ssp-main-container .row-hero-image table td ul {
   color: #fff;
@@ -417,7 +429,7 @@
   font-family: 'proxima_nova_rgbold', sans-serif;
   font-weight: 600;
 }
-.ssp-main-container .row-hero-image table td h1 {
+.ssp-main-container .row-hero-image table td h2 {
   font-size: 44px;
 }
 .ssp-main-container .row-hero-image table td p,

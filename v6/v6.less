@@ -28,7 +28,7 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: @proxima-nova-rgbold;
     color: @header-color;
-    margin: 10px 0;
+    margin: 10px 0 5px;
 
     &.regular {
       font-family: @proxima-nova-rgregular;
@@ -37,6 +37,10 @@
   }
 
   h1 {
+    font-size: 1.75em;
+  }
+
+  h2.hero {
     font-size: 1.75em;
   }
 
@@ -337,11 +341,12 @@
     margin: 0;
   }
 
-  h3.page-title, h4.page-title {
+  h1.page-title {
     font-family: @proxima-nova-rgbold;
     display: inline-block;
     color: #888;
     margin-bottom: 20px;
+    font-size: 1.125em;
   }
 
   .social-links {
@@ -394,6 +399,15 @@
 
   .row-page-title{
     margin: 0;
+    h1{
+      font-family: @proxima-nova-rgbold;
+      display: inline-block;
+      color: #888;
+      margin-top: 1px;
+      margin-bottom: 10px;
+      letter-spacing: 0.075px;
+      font-size: 1.125em;
+    }
   }
 
   .row-hero-image {
@@ -432,7 +446,7 @@
         width: 100%;
         display: table-cell;
         vertical-align: middle;
-        h1, p, ul {
+        h2, p, ul {
           color: #fff;
           text-align: left;
           width: 70%;
@@ -440,7 +454,7 @@
           font-family: @proxima-nova-rgbold;
           font-weight: 600;
         }
-        h1 {
+        h2 {
           font-size: 44px;
         }
         p, ul {
