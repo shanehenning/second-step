@@ -349,6 +349,15 @@
       });
       let videoAsidesLong = Math.max.apply(null, videoAsidesArray) + 50;
 
+      var $replaceable = $('.repalceable');
+      var replaceableAll = [];
+      $replaceable.css({'height': 'auto'});
+      $replaceable.each(function(){
+        replaceableAll.push($(this).height());
+      });
+      var replaceableMax = Math.max.apply(null, replaceableAll);
+
+      $replaceable.css({'height': replaceableMax});
 
       if ($(window).width() > 992) {
         $coloredFramesAll.css({'height': coloredFramesLong});
