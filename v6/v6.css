@@ -189,6 +189,13 @@
   font-family: 'proxima_nova_rgbold', sans-serif;
   font-size: 1em;
 }
+.ssp-main-container .ssp-btn.white-btn {
+  background: #fff;
+  color: #00c1bb !important;
+}
+.ssp-main-container .ssp-btn.white-btn:hover {
+  color: #00a8a2 !important;
+}
 .ssp-main-container .ssp-btn.ghost-btn {
   border: 2px solid #41779c;
   color: #41779c !important;
@@ -553,6 +560,19 @@
 .ssp-main-container .row-features-green ul {
   padding-left: 16px;
 }
+.ssp-main-container .row-features-teal {
+  background-color: #00c1bb;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  background-image: url('../imgs/');
+  position: relative;
+}
+.ssp-main-container .row-features-teal img {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
 .ssp-main-container .row-features-green {
   background-color: #33a86a;
   background-image: url('../imgs/green-background.png');
@@ -589,20 +609,20 @@
 .ssp-main-container .row-testimonial-left blockquote,
 .ssp-main-container .row-testimonial-right blockquote {
   font-family: 'proxima_nova_ltlight', sans-serif;
-  font-size: 1.3125em;
+  font-size: 1.375em;
   margin-bottom: 10px;
-  line-height: 1.75em;
+  line-height: 1.454545em;
   border: 0;
   font-style: normal;
-  color: #888;
+  color: #555;
 }
 .ssp-main-container .row-testimonial-left cite,
 .ssp-main-container .row-testimonial-right cite {
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #444;
-  font-size: 0.875em;
+  font-size: .875em;
   font-style: normal;
-  line-height: 1.2em;
+  line-height: 1.2857em;
 }
 .ssp-main-container .row-testimonial-left img,
 .ssp-main-container .row-testimonial-left cite {
@@ -1019,9 +1039,6 @@
   margin: 15px 0;
   width: 100%;
 }
-.ssp-main-container .row-funding-circles {
-  margin-bottom: 30px;
-}
 .ssp-main-container .row-funding-circles article {
   position: relative;
   margin-bottom: 30px;
@@ -1125,6 +1142,9 @@
 .ssp-main-container .relative {
   position: relative;
 }
+.ssp-main-container .pdf-img-download {
+  margin-bottom: 10px;
+}
 .ssp-main-container .object-fit {
   position: relative;
   overflow: hidden;
@@ -1150,14 +1170,19 @@
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-.ssp-main-container .upper-line-title {
+.ssp-main-container .upper-line-title,
+.ssp-main-container .upper-line-title-extra {
   border-top: 1px solid #aeaeae;
   padding-top: 5px;
   padding-bottom: 10px;
   display: inline-block;
   background-color: transparent;
-  font-family: "proxima_nova_rgbold", "Proxima Nova";
+  font-family: "proxima_nova_rgbold", "Proxima Nova", sans-serif;
   color: #444;
+}
+.ssp-main-container .upper-line-title-extra {
+  padding-top: 20px;
+  margin-top: 20px;
 }
 .ssp-main-container .glyphicon-menu-right {
   font-size: 0.635em;

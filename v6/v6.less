@@ -15,7 +15,7 @@
 @bt-alert-bg-color: #d44e05;
 @bt-alert-border-color: #ab4501;
 @bt-alert-hover-color: #b34304;
-
+  
 .ssp-main-container {
   font-size: 16px;
   color: @body-color;
@@ -206,7 +206,14 @@
         font-size: 1em;
       }
     }
+    &.white-btn{
+      background: #fff;
+      color:#00c1bb !important;
 
+      &:hover{
+        color: darken(#00c1bb, 5%) !important;
+      }
+    }
     &.ghost-btn {
       border: 2px solid @bt-blue;
       color: @bt-blue !important;
@@ -581,6 +588,20 @@
       padding-left: 16px;
     }
   }
+  .row-features-teal{
+    background-color: #00c1bb;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    background-image: url('../imgs/');
+    position: relative;
+
+    img{
+      position:absolute;
+      right: 40px;
+      bottom: 40px;
+    }
+  }
   .row-features-green {
     background-color: @bpu-green;
     background-image: url('../imgs/green-background.png');
@@ -610,19 +631,19 @@
     }
     blockquote {
       font-family: @proxima-nova-ltlight;
-      font-size: 1.3125em;
+      font-size: 1.375em;
       margin-bottom: 10px;
-      line-height: 1.75em;
+      line-height: 1.454545em;
       border: 0;
       font-style: normal;
-      color: #888;
+      color: #555;
     }
     cite {
       font-family: @proxima-nova-rgregular;
       color: @header-color;
-      font-size: 0.875em;
+      font-size: .875em;
       font-style: normal;
-      line-height: 1.2em;
+      line-height: 1.2857em;
     }
   }
   .row-testimonial-left {
@@ -1079,7 +1100,7 @@
   }
 
   .row-funding-circles {
-    margin-bottom: 30px;
+    
     article {
       position: relative;
       margin-bottom: 30px;
@@ -1192,7 +1213,9 @@
   .relative{
     position: relative;
   }
-
+  .pdf-img-download{ 
+    margin-bottom: 10px;
+  }
   .object-fit{
     position: relative;
     overflow: hidden;
@@ -1224,15 +1247,19 @@
       margin-bottom: 20px;
   }
 
-  .upper-line-title {
+  .upper-line-title, .upper-line-title-extra{
     border-top: 1px solid #aeaeae;
     padding-top: 5px;
     padding-bottom: 10px;
     display: inline-block;
     background-color: transparent;
-    font-family: "proxima_nova_rgbold", "Proxima Nova";
+    font-family: "proxima_nova_rgbold", "Proxima Nova", sans-serif;
     color: @header-color;
   }
+  .upper-line-title-extra{
+      padding-top: 20px;
+      margin-top: 20px
+    }
 
   .glyphicon-menu-right{
     font-size: 0.635em;
