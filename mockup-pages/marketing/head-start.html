@@ -43,30 +43,20 @@
 
     <div class="row row-colored-frames-icon">
       <p class="col-md-12">Bring social-emotional learning to your Head Start classroom with the research-based Second Step program.</p>
-        <article class="col-md-4">
-          <div class="border-yellow">
-            <label>
-              <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Empathy Icon">
-            </label>
-            <p>Preschoolers develop lasting executive-function and self-regulation skills by learning how to focus attention and manage emotions.</p>
-          </div>
+      <section class="row-table-equal-height-md">
+        <article class="col-md-4 border-yellow">
+          <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Empathy Icon">
+          <p>Preschoolers develop lasting executive-function and self-regulation skills by learning how to focus attention and manage emotions.</p>
         </article>
-        <article class="col-md-4">
-          <div class="border-blue">
-            <label>
-              <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Empathy Icon">
-            </label>
-            <p>In multi-age classrooms, the program allows four-year olds to take the lead and help younger learners excel.</p>
-          </div>
+        <article class="col-md-4 border-blue">
+          <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Empathy Icon">
+          <p>In multi-age classrooms, the program allows four-year olds to take the lead and help younger learners excel.</p>
         </article>
-        <article class="col-md-4">
-          <div class="border-red">
-            <label>
-              <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Empathy Icon">
-            </label>
-            <p>Fun Weekly Themes, Brain Builders, puppets, and songs allow children to enter kindergarten ready to learn.</p>
-          </div>
+        <article class="col-md-4 border-red">
+          <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Empathy Icon">
+          <p>Fun Weekly Themes, Brain Builders, puppets, and songs allow children to enter kindergarten ready to learn.</p>
         </article>
+      </section>
     </div>
 
     <div class="row row-standard background-light-gray">
@@ -152,15 +142,15 @@
           <aside class="background-gray">
             <h3>Research-based</h3>
             <p>We take a great pride in the fact that our programs are based on current research in the field. Translating research into our programs is a key component in the development of our curriculum.</p>
-              <a href="#"><i class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i> View all Research Information</a>
+            <a href="#"><i class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i> View all Research Information</a>
             </p>
           </aside>
         </section>
         <section class="col-md-6">
           <aside class="background-gray">
-          <h3>Aligns with Academic Performance</h3>
+            <h3>Aligns with Academic Performance</h3>
             <p>Words to describe how our programs align with several agencies and such.</p>
-              <a href="#"><i class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i> View all Alignment Information</a>
+            <a href="#"><i class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i> View all Alignment Information</a>
             </p>
           </aside>
         </section>
@@ -236,7 +226,7 @@
     </div>
 
     <div class="row row-breadcrumb">
-        <h6><a href=“#”>Placeholder Breadcrumb</a> &gt; <a href=“#”>Parent</a> &gt; <a href=“#”>Page Title</a> </h6>
+      <h6><a href=“#”>Placeholder Breadcrumb</a> &gt; <a href=“#”>Parent</a> &gt; <a href=“#”>Page Title</a> </h6>
     </div>
 
 
@@ -249,14 +239,18 @@
     function equalHeightColumns() {
       let $coloredFramesAll = $('.row-colored-frames-icon article');
       let coloredFramesArray = [];
-      $coloredFramesAll.css({'height': 'auto'});
+      $coloredFramesAll.css({
+        'height': 'auto'
+      });
       $coloredFramesAll.each(function() {
         coloredFramesArray.push($(this).height());
       });
       let coloredFramesLong = Math.max.apply(null, coloredFramesArray) + 25;
       let $videoAsidesAll = $('.row-webinar-videos aside');
       let videoAsidesArray = [];
-      $videoAsidesAll.css({'height': 'auto'});
+      $videoAsidesAll.css({
+        'height': 'auto'
+      });
       $videoAsidesAll.each(function() {
         videoAsidesArray.push($(this).height());
       });
@@ -264,11 +258,19 @@
 
 
       if ($(window).width() > 992) {
-        $coloredFramesAll.css({'height': coloredFramesLong});
-        $videoAsidesAll.css({'height': videoAsidesLong});
+        $coloredFramesAll.css({
+          'height': coloredFramesLong
+        });
+        $videoAsidesAll.css({
+          'height': videoAsidesLong
+        });
       } else {
-        $coloredFramesAll.css({'height': 'auto'});
-        $videoAsidesAll.css({'height': 'auto'});
+        $coloredFramesAll.css({
+          'height': 'auto'
+        });
+        $videoAsidesAll.css({
+          'height': 'auto'
+        });
       }
     }
     $(document).ready(equalHeightColumns);

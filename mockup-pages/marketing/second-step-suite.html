@@ -202,63 +202,53 @@
     </div>
 
     <div class="row row-colored-frames">
-
-        <article class="col-md-4 ">
-          <div class="border-yellow">
-            <h4>Streaming Lesson Media</h4>
-            <p><strong>Empathy </strong>can help you avoid staff attrition by staying in touch with what your employees are feeling; similarly, it can help you meet the needs of your customers.
+      <section class="row-table-equal-height-md">
+        <article class="col-md-4 border-yellow">
+          <h4>Streaming Lesson Media</h4>
+          <p><strong>Empathy </strong>can help you avoid staff attrition by staying in touch with what your employees are feeling; similarly, it can help you meet the needs of your customers.
             <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
           </p>
-          </div>
         </article>
 
-        <article class="col-md-4">
-          <div class="border-blue">
-            <h4><em>Second Step</em> K&ndash;5 Principal Toolkit</h4>
-            <p><strong>Emotion management </strong>can help you deal with any conflict you may be having in your personal life so you can behave more calmly and professionally in your workplace.
-              <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
-            </p>
-
-          </div>
+        <article class="col-md-4 border-blue">
+          <h4><em>Second Step</em> K&ndash;5 Principal Toolkit</h4>
+          <p><strong>Emotion management </strong>can help you deal with any conflict you may be having in your personal life so you can behave more calmly and professionally in your workplace.
+            <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
+          </p>
         </article>
 
-        <article class="col-md-4">
-          <div class="border-green">
-            <h4>Spanish Materials</h4>
-            <p><strong>Impuse control </strong>is a key workplace skill, especially in our digital world. It’s all too easy to fire off an angry email immediately. Calming down and thinking carefully before pressing “send” can help avoid a crisis.
-              <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
-            </p>
-          </div>
+        <article class="col-md-4 border-green">
+          <h4>Spanish Materials</h4>
+          <p><strong>Impuse control </strong>is a key workplace skill, especially in our digital world. It’s all too easy to fire off an angry email immediately. Calming down and thinking carefully before pressing “send” can help avoid a crisis.
+            <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
+          </p>
+        </article>
+      </section>
+
+      <section class="row-table-equal-height-md">
+        <article class="col-md-4 border-gray">
+          <h4>Student Assessment</h4>
+          <p><strong>Problem solving </strong>is an essential skill not only in the workplace but in life. The ability to face roadblocks calmly by thinking through the problem, brainstorming solutions, and trying them out is something any employer will
+            value.
+            <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
+          </p>
         </article>
 
-        <article class="col-md-4">
-          <div class="border-gray">
-            <h4>Student Assessment</h4>
-            <p><strong>Problem solving </strong>is an essential skill not only in the workplace but in life. The ability to face roadblocks calmly by thinking through the problem, brainstorming solutions, and trying them out is something any employer will
-              value.
-              <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
-            </p>
-            </div>
+        <article class="col-md-4 border-red">
+          <h4><em>Second Step</em> Leader Institute</h4>
+          <p><strong>Emotion recognition </strong>can help you understand when is not a good time to give your boss some bad news or pitch the latest product to a client.
+            <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
+          </p>
         </article>
 
-        <article class="col-md-4">
-          <div class="border-red">
-            <h4><em>Second Step</em> Leader Institute</h4>
-            <p><strong>Emotion recognition </strong>can help you understand when is not a good time to give your boss some bad news or pitch the latest product to a client.
-              <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
-            </p>
-          </div>
+        <article class="col-md-4 border-purple">
+          <h4>Mind Yeti</h4>
+          <p><strong>Communication </strong>isn’t just about using good grammer and spelling; it’s also about listening respectfully and focusing attention, and it’s essential to teamwork, client relations, and your relationships with your boss, employees,
+            and coworkers.
+            <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
+          </p>
         </article>
-
-        <article class="col-md-4">
-          <div class="border-purple">
-            <h4>Mind Yeti</h4>
-            <p><strong>Communication </strong>isn’t just about using good grammer and spelling; it’s also about listening respectfully and focusing attention, and it’s essential to teamwork, client relations, and your relationships with your boss, employees,
-              and coworkers.
-              <a class="no-wrap" href="#">Learn&nbsp;More&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a>
-            </p>
-            </div>
-        </article>
+      </section>
 
     </div>
 
@@ -373,7 +363,7 @@
     </div>
 
     <div class="row row-breadcrumb">
-        <h6><a href=“#”>Placeholder Breadcrumb</a> &gt; <a href=“#”>Parent</a> &gt; <a href=“#”>Page Title</a> </h6>
+      <h6><a href=“#”>Placeholder Breadcrumb</a> &gt; <a href=“#”>Parent</a> &gt; <a href=“#”>Page Title</a> </h6>
     </div>
 
   </div>
@@ -385,14 +375,18 @@
     function equalHeightColumns() {
       let $coloredFramesAll = $('.row-colored-frames article');
       let coloredFramesArray = [];
-      $coloredFramesAll.css({'height': 'auto'});
+      $coloredFramesAll.css({
+        'height': 'auto'
+      });
       $coloredFramesAll.each(function() {
         coloredFramesArray.push($(this).height());
       });
       let coloredFramesLong = Math.max.apply(null, coloredFramesArray) + 25;
       let $videoAsidesAll = $('.row-webinar-videos aside');
       let videoAsidesArray = [];
-      $videoAsidesAll.css({'height': 'auto'});
+      $videoAsidesAll.css({
+        'height': 'auto'
+      });
       $videoAsidesAll.each(function() {
         videoAsidesArray.push($(this).height());
       });
@@ -400,11 +394,19 @@
 
 
       if ($(window).width() > 992) {
-        $coloredFramesAll.css({'height': coloredFramesLong});
-        $videoAsidesAll.css({'height': videoAsidesLong});
+        $coloredFramesAll.css({
+          'height': coloredFramesLong
+        });
+        $videoAsidesAll.css({
+          'height': videoAsidesLong
+        });
       } else {
-        $coloredFramesAll.css({'height': 'auto'});
-        $videoAsidesAll.css({'height': 'auto'});
+        $coloredFramesAll.css({
+          'height': 'auto'
+        });
+        $videoAsidesAll.css({
+          'height': 'auto'
+        });
       }
     }
     $(document).ready(equalHeightColumns);
