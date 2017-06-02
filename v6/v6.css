@@ -371,6 +371,15 @@
   padding: 40px;
   padding-left: 0;
 }
+.ssp-main-container .row-webinar-gallery h3 {
+  margin-left: 15px;
+}
+.ssp-main-container .row-webinar-gallery section {
+  padding-bottom: 30px;
+}
+.ssp-main-container .row-webinar-gallery section img {
+  display: inline-block;
+}
 .ssp-main-container .padding-standard {
   padding: 40px;
 }
