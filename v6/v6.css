@@ -377,6 +377,9 @@
 .ssp-main-container .row-webinar-gallery section {
   padding-bottom: 30px;
 }
+.ssp-main-container .row-webinar-gallery section.webinar-empty {
+  padding-bottom: 0;
+}
 .ssp-main-container .row-webinar-gallery section img {
   display: inline-block;
 }
