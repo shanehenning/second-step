@@ -620,6 +620,9 @@
   display: block;
   border-color: #fff;
 }
+.ssp-main-container .headline-callout h4 {
+  display: inline;
+}
 .ssp-main-container .row-testimonial-left,
 .ssp-main-container .row-testimonial-right {
   margin-top: 25px;
