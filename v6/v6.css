@@ -396,6 +396,18 @@
   right: 15px;
   bottom: 0;
 }
+.ssp-main-container .ssp-video-thumb:hover {
+  cursor: pointer;
+  -moz-transition: box-shadow 0.4s ease-out;
+  -o-transition: box-shadow 0.4s ease-out;
+  -webkit-transition: box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease-out;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.ssp-main-container .modal-body .limelight-player {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
 .ssp-main-container .padding-standard {
   padding: 40px;
 }
@@ -407,21 +419,34 @@
   padding: 40px;
   padding-top: 0;
 }
+.ssp-main-container .padding-standard-no-background {
+  padding: 40px 15px;
+}
 .ssp-main-container .padding-tall {
   padding: 40px 0;
 }
-.ssp-main-container .padding-narrow {
-  padding: 0 40px;
+.ssp-main-container .padding-tall-no-background {
+  padding: 40px 15px;
+}
+.ssp-main-container .padding-tall-top {
+  padding-top: 40px;
+}
+.ssp-main-container .padding-tall-bottom {
+  padding-bottom: 40px;
+}
+.ssp-main-container .padding-no-background {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.ssp-main-container .padding-no-background-top {
+  padding: 15px 15px 0;
+}
+.ssp-main-container .padding-no-background-bottom {
+  padding: 0 15px 15px;
 }
 .ssp-main-container .replaceable {
   display: table-cell;
   vertical-align: middle;
-}
-.ssp-main-container .row-narrow {
-  margin: 0 40px;
-}
-.ssp-main-container .padding-narrow {
-  padding: 0 40px;
 }
 .ssp-main-container .row-page-title {
   margin: 0;
@@ -718,6 +743,9 @@
 .ssp-main-container .row-half-image a {
   font-family: 'proxima_nova_rgbold', sans-serif;
 }
+.ssp-main-container .row-half-image .ssp-btn {
+  margin-top: 0;
+}
 .ssp-main-container .row-colored-frames,
 .ssp-main-container .row-colored-frames-icon {
   margin-left: -15px;
@@ -811,9 +839,12 @@
   font-family: 'proxima_nova_rgregular', sans-serif;
   font-size: 16px;
 }
+.ssp-main-container .row-webinar-videos {
+  max-width: 100%;
+}
 .ssp-main-container .row-webinar-videos aside {
   padding: 20px 40px;
-  margin-bottom: 40px;
+  margin: 10px 0 30px;
 }
 .ssp-main-container .row-webinar-videos .object-fit {
   height: 200px;
@@ -1567,13 +1598,14 @@
     float: none;
     display: table-cell;
     vertical-align: top;
-    padding: 25px;
   }
   .ssp-main-container .row-colored-frames .row-table-equal-height-md,
   .ssp-main-container .row-colored-frames-icon .row-table-equal-height-md {
     border-spacing: 30px;
-    margin: -15px -30px;
-    width: calc(100% + 60px);
+    margin: -30px -15px;
+  }
+  .ssp-main-container .row-colored-frames-icon .row-table-equal-height-md {
+    margin: -15px;
   }
   .ssp-main-container .row-table-equal-height-md-one-third {
     width: calc(33% + 45px);
@@ -1604,7 +1636,7 @@
   .ssp-main-container .row-related-links [class^=col-md] {
     float: none;
     width: 450px;
-    max-width: calc(100% - 80px);
+    max-width: 100%;
     margin: 25px auto;
   }
   .ssp-main-container .row-table-equal-height-md [class^=col-md] img,
@@ -1616,15 +1648,10 @@
   .ssp-main-container .row-table-equal-height-bottom h2 {
     text-align: center;
   }
-  .ssp-main-container .row-related-links [class^=col] {
-    margin-bottom: 40px;
-  }
   .ssp-main-container .row-colored-frames,
   .ssp-main-container .row-colored-frames-icon {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 30px;
-    padding-right: 30px;
   }
   .ssp-main-container .row-colored-frames [class^=col-md],
   .ssp-main-container .row-colored-frames-icon [class^=col-md] {
@@ -1635,7 +1662,6 @@
   .ssp-main-container .row-colored-frames aside,
   .ssp-main-container .row-colored-frames-icon aside {
     width: 100%;
-    max-width: calc(100% - 30px);
     margin: 0 auto;
   }
   .ssp-main-container .row-colored-frames-icon [class^=col-md] {
@@ -1645,7 +1671,7 @@
   .ssp-main-container .row-webinar-videos section[class^=col-md] {
     width: 450px;
     max-width: 100%;
-    margin: 0 auto 50px;
+    margin: 0 auto;
   }
   .ssp-main-container .row-webinar-videos section .object-fit,
   .ssp-main-container .row-webinar-videos section[class^=col-md] .object-fit {
@@ -1720,8 +1746,7 @@
     min-height: auto;
   }
   .ssp-main-container .row-half-image aside {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 15px 0;
   }
   .ssp-main-container .row-half-image figure[class^=col] {
     display: block;
@@ -1743,7 +1768,7 @@
   .ssp-main-container .row-table-equal-height-bottom [class^=col] {
     float: none;
     width: 450px;
-    max-width: calc(100% - 80px);
+    max-width: 100%;
     margin: 0 auto;
   }
   .ssp-main-container .row-table-equal-height-button [class^=col] {
@@ -1756,9 +1781,6 @@
   }
   .ssp-main-container .row-table-equal-height-button .object-fit img {
     width: 410px;
-  }
-  .ssp-main-container .row-narrow {
-    margin: 0 15px;
   }
   .ssp-main-container .row-features-teal img {
     position: relative;
@@ -1778,46 +1800,15 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .ssp-main-container .row-standard,
-  .ssp-main-container .row-features-green,
-  .ssp-main-container .row-half-image,
-  .ssp-main-container .row-features-blue,
-  .ssp-main-container .row-narrow,
-  .ssp-main-container .row-table-equal-height,
-  .ssp-main-container .row-table-equal-height-button,
-  .ssp-main-container .row-table-equal-height-md,
-  .ssp-main-container .row-table-equal-height-md-one-third,
-  .ssp-main-container .row-table-equal-height-top,
-  .ssp-main-container .row-table-equal-height-top-middles,
-  .ssp-main-container .row-table-equal-height-bottom,
-  .ssp-main-container .row-table-two-columns-equal-height,
-  .ssp-main-container .row-webinar-videos,
-  .ssp-main-container .row-colored-frames,
-  .ssp-main-container .row-colored-frames-icon,
-  .ssp-main-container .row-related-links,
-  .ssp-main-container .row-footer {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .ssp-main-container .row-standard [class^=col],
-  .ssp-main-container .row-features-green [class^=col],
+  .ssp-main-container .padding-standard,
   .ssp-main-container .row-half-image [class^=col],
-  .ssp-main-container .row-features-blue [class^=col],
-  .ssp-main-container .row-narrow [class^=col],
-  .ssp-main-container .row-table-equal-height [class^=col],
-  .ssp-main-container .row-table-equal-height-button [class^=col],
-  .ssp-main-container .row-table-equal-height-md [class^=col],
-  .ssp-main-container .row-table-equal-height-md-one-third [class^=col],
-  .ssp-main-container .row-table-equal-height-top [class^=col],
-  .ssp-main-container .row-table-equal-height-top-middles [class^=col],
-  .ssp-main-container .row-table-equal-height-bottom [class^=col],
-  .ssp-main-container .row-table-two-columns-equal-height [class^=col],
-  .ssp-main-container .row-webinar-videos [class^=col],
-  .ssp-main-container .row-colored-frames [class^=col],
-  .ssp-main-container .row-colored-frames-icon [class^=col],
-  .ssp-main-container .row-related-links [class^=col],
-  .ssp-main-container .row-footer [class^=col] {
-    max-width: calc(100% - 20px);
+  .ssp-main-container .row-copy-intro {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .ssp-main-container .row-webinar-related aside {
+    padding-left: 0;
+    padding-right: 0;
   }
   .ssp-main-container .row-funding-circles [class^=col] {
     width: 100%;
