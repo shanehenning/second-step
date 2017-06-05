@@ -384,17 +384,11 @@
   display: inline-block;
 }
 .ssp-main-container .row-video-player {
-  margin-top: 30px;
   position: relative;
   padding-bottom: 80px;
 }
 .ssp-main-container .row-video-player .video-container {
-  margin-bottom: 30px;
-}
-.ssp-main-container .row-video-player .ssp-btn {
-  position: absolute;
-  right: 15px;
-  bottom: 0;
+  margin-bottom: 20px;
 }
 .ssp-main-container .ssp-video-thumb:hover {
   cursor: pointer;
@@ -650,6 +644,9 @@
 .ssp-main-container .row-features-blue .header-underline {
   display: block;
   border-color: #fff;
+}
+.ssp-main-container .headline-callout h4 {
+  display: inline;
 }
 .ssp-main-container .row-testimonial-left,
 .ssp-main-container .row-testimonial-right {
