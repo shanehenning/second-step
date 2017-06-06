@@ -374,6 +374,9 @@
 .ssp-main-container .row-webinar-gallery h3 {
   margin-left: 15px;
 }
+.ssp-main-container .row-webinar-gallery h4 {
+  line-height: 1.1em;
+}
 .ssp-main-container .row-webinar-gallery section {
   padding-bottom: 30px;
 }
