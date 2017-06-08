@@ -330,9 +330,10 @@
   }
 
   hr.black{
-    margin: 0;
     border-top-width: 8px;
     border-color: #000;
+    margin: 0 -15px;
+    width: ~ 'calc(100% + 30px)';
   }
 
   .text-uppercase{
@@ -475,6 +476,14 @@
       padding: 40px 0;
       &-no-background{
         padding: 40px 15px;
+        &-top{
+          padding-top: 40px;
+          padding-bottom: 0;
+        }
+        &-bottom{
+          padding-top: 0;
+          padding-bottom: 40px;
+        }
       }
       &-top{
         padding-top: 40px;
@@ -634,6 +643,7 @@
   .row-copy-intro {
     padding: 40px 40px 30px;
     font-size: 19px;
+    color: @body-color;
   }
 
   .row-copy-callout {
@@ -813,7 +823,6 @@
     }
     h5 {
       margin-bottom: 15px;
-      text-align: center;
     }
     article, aside {
       height: 100%;
@@ -1250,6 +1259,7 @@
   }
 
   .row-success-banner{
+    width: ~ 'calc(100% + 30px)';
     h3{
       font-size: 70px;
       line-height: 65px;
@@ -1344,23 +1354,72 @@
     }
   }
   .carousel-inner{
-    min-height: 275px;
     .item{
       width: 100%;
     }
+    h3, h4, h5, h6{
+      font-family: @proxima-nova-rgregular;
+    }
+    h2{
+      font-size: 120px;
+      line-height: 1;
+      margin: 0;
+    }
+    h2.small{
+      font-size: 80px;
+      line-height: 80px;
+      margin: 0;
+    }
+    h3.large{
+      font-size: 48px;
+      line-height: 48px;
+    }
+    h3{
+      font-size: 34px;
+      line-height: 34px;
+    }
+    h4{
+      font-size: 34px;
+      line-height: 34px;
+    }
+    h5{
+      font-size: 26.5px;
+      line-height: 26.5px;
+    }
+    h6{
+      font-size: 24px;
+      line-height: 24px;
+    }
+    strong{
+      font-family: @proxima-nova-xbold;
+    }
+  }
+
+  .carousel-caption-wrapper {
+    display: table;
+    height: 275px;
+    margin: 0 auto;
   }
 
   .carousel-caption{
     text-shadow: 0 1px 1px rgba(0,0,0,.2);
-    height: 100%;
+    position: relative;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 85px;
+    display: table-cell;
+    vertical-align: middle;
     h4 {
-      font-size: 44px;
-      line-height: 44px;
+      // font-size: 44px;
+      // line-height: 44px;
     }
     a{
       color: @header-color;
       text-decoration: underline;
+      display: block;
+      margin-top: 30px;
     }
   }
   .carousel-control{
@@ -1921,6 +1980,9 @@
         width: 100%;
         margin: 0 auto;
       }
+      article:last-of-type{
+        margin-bottom: 0;
+      }
     }
     .row-colored-frames-icon{
       [class^=col-md]{
@@ -1937,6 +1999,44 @@
           height: 175px;
         }
       }
+    }
+
+    .carousel{
+      height: 350px;
+      h2{
+        font-size: ~ 'calc(120px * .8)';
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+      }
+      h2.small{
+        font-size: ~ 'calc(80px * .8)';
+        line-height: ~ 'calc(80px * .8)';
+        margin: 0;
+      }
+      h3.large{
+        font-size: ~ 'calc(48px * .8)';
+        line-height: ~ 'calc(48px * .8)';
+      }
+      h3{
+        font-size: ~ 'calc(34px * .8)';
+        line-height: ~ 'calc(34px * .8)';
+      }
+      h4{
+        font-size: ~ 'calc(34px * .8)';
+        line-height: ~ 'calc(34px * .8)';
+      }
+      h5{
+        font-size: ~ 'calc(26.5px * .8)';
+        line-height: ~ 'calc(26.5px * .8)';
+      }
+      h6{
+        font-size: ~ 'calc(24px * .8)';
+        line-height: ~ 'calc(24px * .8)';
+      }
+    }
+    .carousel-caption-wrapper{
+      min-height: 320px;
     }
 
     .background-gray-md {
@@ -2039,6 +2139,13 @@
       }
     }
 
+    .row-success-banner{
+      h3{
+          font-size: 50px;
+          line-height: 50px;
+      }
+    }
+
     .row-table-equal-height, .row-table-equal-height-button, .row-table-equal-height-top, .row-table-equal-height-bottom {
       [class^=col] {
         float: none;
@@ -2090,14 +2197,7 @@
   }
 
   @media screen and (max-width: 500px){
-    .row-standard, .row-features-green, .row-half-image, .row-features-blue, .row-narrow, .row-table-equal-height, .row-table-equal-height-button, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-top, .row-table-equal-height-top-middles, .row-table-equal-height-bottom, .row-table-two-columns-equal-height, .row-webinar-videos, .row-related-links, .row-footer{
-      // padding-left: 10px;
-      // padding-right: 10px;
-      [class^=col]{
-        // max-width: ~ 'calc(100% - 20px)';
-      }
-    }
-    .padding-standard, .row-half-image [class^=col], .row-copy-intro{
+    .padding-standard, .padding-standard-top, .padding-standard-bottom, .row-half-image [class^=col], .row-copy-intro, .row-webinar-related{
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -2122,7 +2222,67 @@
       clear: both;
       float: left;
     }
+    .row-success-banner{
+      h3{
+          font-size: 40px;
+          line-height: 40px;
+      }
+    }
+    .carousel{
+      height: 400px;
+      h2{
+        font-size: ~ 'calc(120px * .64)';
+        line-height: 1;
+        margin: 0;
+      }
+      h2.small{
+        font-size: ~ 'calc(80px * .64)';
+        line-height: ~ 'calc(80px * .64)';
+        margin: 0;
+      }
+      h3.large{
+        font-size: ~ 'calc(48px * .64)';
+        line-height: ~ 'calc(48px * .64)';
+      }
+      h3{
+        font-size: ~ 'calc(34px * .64)';
+        line-height: ~ 'calc(34px * .64)';
+      }
+      h4{
+        font-size: ~ 'calc(34px * .64)';
+        line-height: ~ 'calc(34px * .64)';
+      }
+      h5{
+        font-size: ~ 'calc(26.5px * .64)';
+        line-height: ~ 'calc(26.5px * .64)';
+      }
+      h6{
+        font-size: ~ 'calc(24px * .64)';
+        line-height: ~ 'calc(24px * .64)';
+      }
+    }
+    .carousel-caption-wrapper{
+      min-height: 370px;
+    }
+    .carousel-caption{
+      padding: 10px 70px;
+    }
+    .carousel-indicators{
+      width: 65%;
+    }
+    .carousel-control.left{
+      [class^=glyphicon]{
+        left: 10px;
+      }
+    }
+    .carousel-control.right{
+      [class^=glyphicon]{
+        right: 10px;
+      }
+    }
   }
 
   //ADD ALL NEW CSS RULES ABOVE THIS COMMENT TO BE NESTED WITHIN THE .SSP-MAIN-CONTAINER PARENT DIV
+
+
 }
