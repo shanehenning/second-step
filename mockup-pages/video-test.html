@@ -1,3 +1,105 @@
-<div id="limelight_player_290023"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- FONTS/ICONS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- STYLESHEETS -->
+    <link href="../v6/v6.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <a href="#" class="videoClick" data-video="CMNry4PE93Y">Click here for Video 1</a><br />
+        <a href="#" class="videoClick" data-video="FKWwdQu6_ok">Click here for Video 2</a><br />
+      </div>
+      <div id="player1">
+      </div>
+      <div id="player2">
+      </div>
+
+    </main>
+
+    <script src="https://www.youtube.com/player_api"></script>
+    <script>
+
+      var player1;
+      var player2;
+
+      function onYouTubeIframeAPIReady(){
+        player1 = new YT.Player('player1', {
+          height: '390',
+          width: '640',
+          videoId: 'CMNry4PE93Y',
+          events: {
+            'onReady': onPlayerReady
+            // 'onStateChange': onPlayerStateChange
+          }
+        });
+        player2 = new YT.Player('player2', {
+          height: '390',
+          width: '640',
+          videoId: 'FKWwdQu6_ok',
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+
+      function onPlayerReady(event){
+        // event.target.playVideo();
+      }
+
+      /**
+      var done = false;
+      function onPlayerStateChange(event){
+        if(event.data == YT.PlayerState.PLAYING && !done){
+
+        }
+      } */
+
+      function stopVideo() {
+        player.stopVideo();
+      }
+
+      $('.videoClick').click(function(){
+        var video = $(this).data('video');
+        console.log(video);
+        console.log(player1.playing);
+        player1.playVideo();
+      });
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<div id="limelight_player_61013"></div>
 <script src="//video.limelight.com/player/limelightjs-player.js"></script>
-<script>LimelightPlayerUtil.embed({"playerId":"limelight_player_290023","height":450,"channelId":"fb922b38f2cc4b958b03b4ba7dead2a3","deepLink":true,"width":800,"playerForm":"1bd66fd11e1e4a8198d2e04c58c02ffa"});</script>
+<script>LimelightPlayerUtil.embed({"height":450,"deepLink":true,"playerId":"limelight_player_61013","playerForm":"1bd66fd11e1e4a8198d2e04c58c02ffa","width":800,"channelId":"1794032c1ace4a85afa41cd9c9ceef03"});</script>
+
+<div id="limelight_player_895792"></div>
+<script src="//video.limelight.com/player/limelightjs-player.js"></script>
+<script>LimelightPlayerUtil.embed({"height":450,"deepLink":true,"playerId":"limelight_player_895792","playerForm":"1bd66fd11e1e4a8198d2e04c58c02ffa","width":800,"channelId":"470dccb4346e451db0926cde32412525"});</script>
+
+-->
