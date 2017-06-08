@@ -375,6 +375,9 @@
 .ssp-main-container .row-webinar-gallery h3 {
   margin-left: 15px;
 }
+.ssp-main-container .row-webinar-gallery h4 {
+  line-height: 1.1em;
+}
 .ssp-main-container .row-webinar-gallery section {
   padding-bottom: 30px;
 }
@@ -718,6 +721,14 @@
   background-size: cover;
   height: 250px;
   display: table-cell;
+}
+.ssp-main-container .row-half-image figure .checkerboardCover {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
 }
 .ssp-main-container .row-half-image figure h6 {
   font-size: 16px;
