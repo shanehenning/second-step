@@ -1,9 +1,9 @@
-$ms-extend-color-aqua: #00b7ac;
-$ms-extend-color-border: #e1e1e1;
-$ms-extend-color-links: #42a5f5;
-$ms-extend-color-medium-gray: #808080;
-$ms-extend-color-tabs: #eee;
-$ms-font-base: 16px;
+@ms-extend-color-aqua: #00b7ac;
+@ms-extend-color-border: #e1e1e1;
+@ms-extend-color-links: #42a5f5;
+@ms-extend-color-medium-gray: #808080;
+@ms-extend-color-tabs: #eee;
+@ms-font-base: 16px;
 
 .ms-extend {
   /* fonts */
@@ -20,59 +20,59 @@ $ms-font-base: 16px;
   /* font size */
   h1 {
       font-size: 4.5em;
-      font-size: $ms-font-base * 3.5;
+      font-size: @ms-font-base * 3.5;
   }
   h2 {
       font-size: 2.9em;
-      font-size: $ms-font-base * 2.5;
+      font-size: @ms-font-base * 2.5;
   }
   h3 {
       font-size: 2.5em;
-      font-size: $ms-font-base * 2;
+      font-size: @ms-font-base * 2;
   }
   h4{
     font-size: 1.75em;
-    font-size: $ms-font-base * 1.5;
+    font-size: @ms-font-base * 1.5;
   }
   h5 {
       font-size: 1.4em;
-      font-size: $ms-font-base * 1.4;
+      font-size: @ms-font-base * 1.4;
   }
   h6 {
     font-size: 1.2em;
-    font-size: $ms-font-base * 1.2;
+    font-size: @ms-font-base * 1.2;
   }
   .ms-landing .ms-landing-hero p{
-    font-size: $ms-font-base * 1.375;
+    font-size: @ms-font-base * 1.375;
   }
   .ms-extend-introduction{
     p, ul li{
-      font-size: $ms-font-base * 1.25;
+      font-size: @ms-font-base * 1.25;
     }
   }
   li, p, th, td, .ms-table-subhead {
     font-size: 1.1em;
-    font-size: $ms-font-base * 1;
+    font-size: @ms-font-base * 1;
   }
   ul {
     font-size: 0.95em;
-    font-size: $ms-font-base * 0.95;
+    font-size: @ms-font-base * 0.95;
   }
   i, .ms-table-equal-columns h6 {
     font-size: 0.65em;
-    font-size: $ms-font-base * 0.9375;
+    font-size: @ms-font-base * 0.9375;
   }
   /* end of font size */
 
   /* font color */
   .ms-rubric-color, .panel-title, .panel h6, .ms-toggle-active, th, .ms-table-subhead, .panel-group .panel-heading a, .nav-tabs li.active a, .nav-tabs li.active:focus, .nav-tabs li:active, .nav-tabs li:not(.active) a:hover {
-    color: $ms-extend-color-aqua;
+    color: @ms-extend-color-aqua;
   }
   h1, h2, h3, h4, h5, h6 {
-    color: $ms-extend-color-aqua;
+    color: @ms-extend-color-aqua;
   }
   a, a p, .ms-icon-copy i, .ms-icon-copy h6, .ms-toggle-language li{
-    color: $ms-extend-color-links;
+    color: @ms-extend-color-links;
   }
   p, li, td, i {
     color: #000;
@@ -83,10 +83,10 @@ $ms-font-base: 16px;
     }
   }
   .ms-extend-hero, .ms-table-equal-columns th {
-    background-color: $ms-extend-color-aqua;
+    background-color: @ms-extend-color-aqua;
   }
   .panel h5 > a, .ms-extend-rubric .ms-table-subhead, th, .ms-advisory-overview-color, .panel-heading > h5 {
-      color: $ms-extend-color-aqua;
+      color: @ms-extend-color-aqua;
   }
   p, li, td{
     color: #000;
@@ -129,7 +129,7 @@ $ms-font-base: 16px;
     border-radius: none;
     border-bottom: none;
     .panel {
-      border-top: 2px solid $ms-extend-color-border;
+      border-top: 2px solid @ms-extend-color-border;
       border-bottom: none;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -147,7 +147,7 @@ $ms-font-base: 16px;
       }
     }
     .panel:last-of-type {
-      border-bottom: 2px solid $ms-extend-color-border;
+      border-bottom: 2px solid @ms-extend-color-border;
       border-radius: 0;
     }
   }
@@ -181,7 +181,7 @@ $ms-font-base: 16px;
       margin-bottom: 20px;
       td, th, tr {
         padding: 20px 15px;
-        border: 1px solid $ms-extend-color-border;
+        border: 1px solid @ms-extend-color-border;
       }
       td, th {
         width: 25%;
@@ -237,7 +237,7 @@ $ms-font-base: 16px;
         display: table-cell;
         width: 35%;
         max-width: 300px;
-        border: 1px solid $ms-extend-color-border;
+        border: 1px solid @ms-extend-color-border;
       }
     }
     [id^=list] {
@@ -250,7 +250,7 @@ $ms-font-base: 16px;
   /* ms-landing */
   .ms-landing{
       .ms-landing-hero {
-        background-color: $ms-extend-color-aqua;
+        background-color: @ms-extend-color-aqua;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -270,12 +270,12 @@ $ms-font-base: 16px;
         padding: 7px 35px;
       }
       .btn-primary {
-        background-color: $ms-extend-color-links;
+        background-color: @ms-extend-color-links;
         border: none;
       }
       a{
         p{
-          color: $ms-extend-color-links;
+          color: @ms-extend-color-links;
           line-height: 22px;
         i:hover{
           text-decoration: none;
@@ -284,7 +284,7 @@ $ms-font-base: 16px;
     }
     .ms-landing-nav {
       padding: 10px 30px 30px 30px;
-      border-bottom: 2px solid $ms-extend-color-border;
+      border-bottom: 2px solid @ms-extend-color-border;
       .ms-landing-nav-container {
         width: 100%;
         max-width: 210px;
@@ -325,7 +325,7 @@ $ms-font-base: 16px;
 
     .ms-landing-row {
       padding: 30px 0px;
-      border-bottom: 2px solid $ms-extend-color-border;
+      border-bottom: 2px solid @ms-extend-color-border;
     }
     .ms-landing-row:last-child {
       border-bottom: none;
@@ -348,12 +348,12 @@ $ms-font-base: 16px;
   .ms-advisory-overview{
     .subsection-title {
       margin-bottom: 0px;
-      color: $ms-extend-color-aqua;
+      color: @ms-extend-color-aqua;
     }
     a{
       cursor: pointer;
       p{
-        color: $ms-extend-color-links;
+        color: @ms-extend-color-links;
       }
       p:hover{
         text-decoration: underline;
@@ -400,7 +400,7 @@ $ms-font-base: 16px;
       box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.2);
       z-index: 1;
       .ms-modal-header {
-        background-color: $ms-extend-color-aqua;
+        background-color: @ms-extend-color-aqua;
         color: #fff;
         padding: 20px;
         padding-right: 24px;
@@ -478,7 +478,7 @@ $ms-font-base: 16px;
       td, th {
           width: 1%;
           position: relative;
-          border: 1px solid $ms-extend-color-border;
+          border: 1px solid @ms-extend-color-border;
       }
       th{
         color: white;
@@ -497,7 +497,7 @@ $ms-font-base: 16px;
         margin-top: 30px;
         bottom: 0px;
         position: absolute;
-        color: $ms-extend-color-medium-gray;
+        color: @ms-extend-color-medium-gray;
       }
   }
   /* end advisory schedule */
@@ -731,17 +731,17 @@ $ms-font-base: 16px;
           article{
             margin: 0;
             padding: 15px 0;
-            border-top: 1px solid $ms-extend-color-border;
+            border-top: 1px solid @ms-extend-color-border;
             .ms-icon-copy{
               padding: 0;
               text-align: right;
               margin-top: 30px;
               cursor: pointer;
-              color: $ms-extend-color-links;
+              color: @ms-extend-color-links;
             }
             .ms-icon-copy:hover{
               text-decoration: underline;
-              text-decoration-color: $ms-extend-color-links;
+              text-decoration-color: @ms-extend-color-links;
             }
             #copy-confirmation:hover{
               cursor: default;
@@ -753,26 +753,26 @@ $ms-font-base: 16px;
     }
   }
   .nav-tabs{
-    border-bottom: 2px solid $ms-extend-color-border;
+    border-bottom: 2px solid @ms-extend-color-border;
     li{
       border: 0;
       a{
-        border: 1px solid $ms-extend-color-border;
+        border: 1px solid @ms-extend-color-border;
       }
     }
     li.active{
       a{
-        background-color: $ms-extend-color-aqua;
+        background-color: @ms-extend-color-aqua;
         color: white;
       }
     }
     li:not(.active){
       a{
-        background-color: $ms-extend-color-border;
+        background-color: @ms-extend-color-border;
       }
       a:hover{
         text-decoration: underline;
-        border-color: $ms-extend-color-border;
+        border-color: @ms-extend-color-border;
       }
     }
   }
@@ -812,14 +812,14 @@ $ms-font-base: 16px;
     li.active {
       border-top: none;
       a, :focus {
-        border-top: 1px solid $ms-extend-color-tabs;
+        border-top: 1px solid @ms-extend-color-tabs;
         border-bottom-color: transparent;
       }
     }
     li.active:hover, li.active:focus, li:hover, li:focus {
       border-top: none;
       a, a:hover {
-        border-top: 1px solid $ms-extend-color-tabs;
+        border-top: 1px solid @ms-extend-color-tabs;
       }
     }
   }
