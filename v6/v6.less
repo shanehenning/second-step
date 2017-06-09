@@ -18,6 +18,8 @@
 @bt-alert-hover-color: #b34304;
 
 .ssp-main-container {
+  max-width: 1600px;
+  margin: 0 auto;
   font-size: 16px;
   color: @body-color;
 
@@ -46,24 +48,24 @@
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
 
   h3 {
-    font-size: 1.3125em;
+    font-size: 1.5em;
   }
 
   h4 {
-    font-size: 1.125em;
+    font-size: 1.3125em;
   }
 
   h5 {
-    font-size: 1em;
+    font-size: 1.125em;
     margin-bottom: 8px;
   }
 
   h6 {
-    font-size: 0.875em;
+    font-size: 1em;
     margin-bottom: 8px;
   }
 
@@ -102,7 +104,7 @@
 
     &.intro {
       font-size: 1.185em;
-      line-height: 1.875em;
+      line-height: 30px;
       margin-top: 0;
       margin-bottom: 15px;
       color: @header-color;
@@ -305,7 +307,7 @@
     blockquote {
       font-family: @proxima-nova-rgregular;
       font-size: 1.3125em;
-      line-height: 1.75em;
+      line-height: 32px;
       color: #888;
       font-style: italic;
       margin: 0 0 20px;
@@ -407,7 +409,7 @@
       margin-left: 15px;
     }
     h4 {
-      line-height: 1.1em;
+      line-height: 22px;
     }
     section {
       padding-bottom: 30px;
@@ -645,10 +647,9 @@
 
   .row-copy-intro {
     padding: 40px 40px 30px;
-    line-height: 30px;
     p{
       font-size: 1.185em;
-      line-height: 1.4em;
+      line-height: 30px;
       margin-top: 0;
       margin-bottom: 15px;
       color: @header-color;
@@ -669,17 +670,13 @@
     img {
       position: relative;
       bottom: 5px;
-      margin: 10px 15px 10px 0;
+      margin: 20px 10px 10px 0;
       width: 40px;
-    }
-    h2, h3{
-      color: #222;
     }
     h3 {
       display: inline;
     }
     a {
-      color: #222;
       text-decoration: underline;
     }
     a:hover {
@@ -687,6 +684,11 @@
     }
     ul {
       padding-left: 20px;
+    }
+  }
+  .row-features-green{
+    h2, h3, p.intro, a, ul, ul li{
+      color: #222;
     }
   }
   .row-features-teal{
@@ -739,7 +741,7 @@
       font-family: @proxima-nova-rgregular;
       font-size: 1.375em;
       margin-bottom: 10px;
-      line-height: 2em;
+      line-height: 32px;
       border: 0;
       font-style: normal;
       color: #999;
@@ -749,7 +751,7 @@
       color: @header-color;
       font-size: 0.875em;
       font-style: normal;
-      line-height: 1.2em;
+      line-height: 19px;
     }
   }
   .row-testimonial-left {
@@ -1119,7 +1121,7 @@
       line-height: 28px;
     }
     h6 {
-      display: inline;
+      display: inline-block;
     }
     svg {
       position: relative;
@@ -1265,7 +1267,7 @@
       margin-top: 30px;
       font-size: 14px;
       font-style: normal;
-      line-height: 1.2em;
+      line-height: 19px;
     }
   }
 

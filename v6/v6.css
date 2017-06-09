@@ -1,4 +1,6 @@
 .ssp-main-container {
+  max-width: 1600px;
+  margin: 0 auto;
   font-size: 16px;
   color: #222;
   /* Custom Rows */
@@ -39,20 +41,20 @@
   font-size: 1.75em;
 }
 .ssp-main-container h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 .ssp-main-container h3 {
-  font-size: 1.3125em;
+  font-size: 1.5em;
 }
 .ssp-main-container h4 {
-  font-size: 1.125em;
+  font-size: 1.3125em;
 }
 .ssp-main-container h5 {
-  font-size: 1em;
+  font-size: 1.125em;
   margin-bottom: 8px;
 }
 .ssp-main-container h6 {
-  font-size: 0.875em;
+  font-size: 1em;
   margin-bottom: 8px;
 }
 .ssp-main-container strong {
@@ -93,7 +95,7 @@
 }
 .ssp-main-container p.intro {
   font-size: 1.185em;
-  line-height: 1.875em;
+  line-height: 30px;
   margin-top: 0;
   margin-bottom: 15px;
   color: #444;
@@ -287,7 +289,7 @@
 .ssp-main-container .quote blockquote {
   font-family: 'proxima_nova_rgregular', sans-serif;
   font-size: 1.3125em;
-  line-height: 1.75em;
+  line-height: 32px;
   color: #888;
   font-style: italic;
   margin: 0 0 20px;
@@ -376,7 +378,7 @@
   margin-left: 15px;
 }
 .ssp-main-container .row-webinar-gallery h4 {
-  line-height: 1.1em;
+  line-height: 22px;
 }
 .ssp-main-container .row-webinar-gallery section {
   padding-bottom: 30px;
@@ -585,11 +587,10 @@
 }
 .ssp-main-container .row-copy-intro {
   padding: 40px 40px 30px;
-  line-height: 30px;
 }
 .ssp-main-container .row-copy-intro p {
   font-size: 1.185em;
-  line-height: 1.4em;
+  line-height: 30px;
   margin-top: 0;
   margin-bottom: 15px;
   color: #444;
@@ -609,14 +610,8 @@
 .ssp-main-container .row-features-green img {
   position: relative;
   bottom: 5px;
-  margin: 10px 15px 10px 0;
+  margin: 20px 10px 10px 0;
   width: 40px;
-}
-.ssp-main-container .row-features-blue h2,
-.ssp-main-container .row-features-green h2,
-.ssp-main-container .row-features-blue h3,
-.ssp-main-container .row-features-green h3 {
-  color: #222;
 }
 .ssp-main-container .row-features-blue h3,
 .ssp-main-container .row-features-green h3 {
@@ -624,7 +619,6 @@
 }
 .ssp-main-container .row-features-blue a,
 .ssp-main-container .row-features-green a {
-  color: #222;
   text-decoration: underline;
 }
 .ssp-main-container .row-features-blue a:hover,
@@ -634,6 +628,14 @@
 .ssp-main-container .row-features-blue ul,
 .ssp-main-container .row-features-green ul {
   padding-left: 20px;
+}
+.ssp-main-container .row-features-green h2,
+.ssp-main-container .row-features-green h3,
+.ssp-main-container .row-features-green p.intro,
+.ssp-main-container .row-features-green a,
+.ssp-main-container .row-features-green ul,
+.ssp-main-container .row-features-green ul li {
+  color: #222;
 }
 .ssp-main-container .row-features-teal {
   background-color: #00c1bb;
@@ -688,7 +690,7 @@
   font-family: 'proxima_nova_rgregular', sans-serif;
   font-size: 1.375em;
   margin-bottom: 10px;
-  line-height: 2em;
+  line-height: 32px;
   border: 0;
   font-style: normal;
   color: #999;
@@ -699,7 +701,7 @@
   color: #444;
   font-size: 0.875em;
   font-style: normal;
-  line-height: 1.2em;
+  line-height: 19px;
 }
 .ssp-main-container .row-testimonial-left img,
 .ssp-main-container .row-testimonial-left cite {
@@ -1025,7 +1027,7 @@
 .ssp-main-container .row-table-equal-height-top h6,
 .ssp-main-container .row-table-equal-height-bottom h6,
 .ssp-main-container .row-table-equal-height-top-middles h6 {
-  display: inline;
+  display: inline-block;
 }
 .ssp-main-container .row-table-equal-height svg,
 .ssp-main-container .row-table-equal-height-md svg,
@@ -1183,7 +1185,7 @@
   margin-top: 30px;
   font-size: 14px;
   font-style: normal;
-  line-height: 1.2em;
+  line-height: 19px;
 }
 .ssp-main-container .row-success-banner figure,
 .ssp-main-container .row-success-feature figure {
