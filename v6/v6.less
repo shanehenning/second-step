@@ -1173,7 +1173,7 @@
     }
   }
 
-  .row-table-equal-height, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-button, .row-table-equal-height-top, .row-table-equal-height-bottom, .row-table-equal-height-top-middles {
+  .row-table-equal-height, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-button, .row-table-equal-height-top, .row-table-equal-height-bottom, .row-table-equal-height-top-middles, .row-table-equal-height-middle {
     [class^=col]{
       margin: 0 auto;
       height: 100%;
@@ -1197,7 +1197,7 @@
     }
   }
   .row-colored-frames, .row-colored-frames-icon{
-    .row-table-equal-height, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-button, .row-table-equal-height-top, .row-table-equal-height-bottom, .row-table-equal-height-top-middles {
+    .row-table-equal-height, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-button, .row-table-equal-height-top, .row-table-equal-height-bottom, .row-table-equal-height-top-middles, .row-table-equal-height-middle {
       [class^=col]{
       border-style: solid;
       border-width: 15px;
@@ -1977,7 +1977,7 @@
   /* End Misc */
 
   @media screen and (min-width: 992px) {
-    .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-bottom, .row-table-equal-height-top-middles {
+    .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-bottom, .row-table-equal-height-top-middles, .row-table-equal-height-middle  {
       display: table;
       table-layout: fixed;
       [class^=col] {
@@ -2010,6 +2010,11 @@
         vertical-align: top;
       }
       [class^=col]:nth-of-type(1){
+        vertical-align: middle;
+      }
+    }
+    .row-table-equal-height-middle{
+      [class^=col]{
         vertical-align: middle;
       }
     }
@@ -2363,7 +2368,6 @@
         right: 10px;
       }
     }
-  }
 
   .row-webinar-videos{
     h3{
