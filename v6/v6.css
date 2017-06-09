@@ -585,11 +585,10 @@
 }
 .ssp-main-container .row-copy-intro {
   padding: 40px 40px 30px;
-  line-height: 30px;
 }
 .ssp-main-container .row-copy-intro p {
   font-size: 1.185em;
-  line-height: 1.4em;
+  line-height: 30px;
   margin-top: 0;
   margin-bottom: 15px;
   color: #444;
@@ -1997,4 +1996,7 @@
   .ssp-main-container .carousel-control.right [class^=glyphicon] {
     right: 10px;
   }
+}
+.ssp-main-container .row-webinar-videos h3 {
+  padding-bottom: 15px;
 }
