@@ -26,7 +26,7 @@
     position: relative;
   }
   .item img{
-    height: 275px;
+    height: 275px !important;
     /*position: absolute;*/
     top: 0;
     left: 0;
@@ -38,12 +38,14 @@
     top: 30px;
     left: 15%;
     right: 15%;
+    z-index: 100000;
+    min-height: 200px;
   }
 
 
 </style>
 
-<div id="carousel-blue" class="carousel slide" data-ride="carousel">
+<div id="carousel-blue" class="carousel slide" data-ride="carousel" data-interval="100000000">
   <ol class="carousel-indicators">
     <li data-target="#carousel-blue" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-blue" data-slide-to="1"></li>
@@ -52,21 +54,21 @@
   <div class="carousel-inner">
     <div class="item active">
         <img src="http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png" alt="Second slide" />
-        <div class="carousel-content">
+        <div class="carousel-caption">
           <h4>From <strong class="text-uppercase">5th</strong> to the <strong class="text-uppercase">21st percentile</strong> in academic achievement</h4>
           <a href="#">Mary Todd Elementary in Lexington, KY</a>
         </div>
     </div>
     <div class="item">
         <img src="http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png" alt="Second slide" />
-        <div class="carousel-content">
+        <div class="carousel-caption">
           <h4>Just go. <strong class="text-uppercase">Go. Go!</strong> I don't care how. You can go by foot. You can <strong class="text-uppercase">go by cow</strong>.</h4>
           <a href="#">Will You Please Go Now!, Marvin K. Mooney </a>
         </div>
     </div>
     <div class="item">
       <img src="http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png" alt="Second slide" />
-      <div class="carousel-content">
+      <div class="carousel-caption">
         <h4>My wonderful weapon, the <strong class="text-uppercase">Jigger-Rock Snatchem</strong>, will fling 'em right back <strong class="text-uppercase">just as quick</strong> as we catch 'em.</h4>
         <a href="#">The Butter Battle Book</a>
       </div>
