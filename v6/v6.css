@@ -93,10 +93,10 @@
 }
 .ssp-main-container p.intro {
   font-size: 1.185em;
-  line-height: 1.4em;
+  line-height: 1.875em;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #222;
+  color: #444;
 }
 .ssp-main-container span.small {
   color: #222;
@@ -285,7 +285,7 @@
   margin: 0 20px 20px 0;
 }
 .ssp-main-container .quote blockquote {
-  font-family: 'proxima_nova_ltlight', sans-serif;
+  font-family: 'proxima_nova_rgregular', sans-serif;
   font-size: 1.3125em;
   line-height: 1.75em;
   color: #888;
@@ -585,8 +585,13 @@
 }
 .ssp-main-container .row-copy-intro {
   padding: 40px 40px 30px;
-  font-size: 19px;
-  color: #222;
+}
+.ssp-main-container .row-copy-intro p {
+  font-size: 1.185em;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #444;
 }
 .ssp-main-container .row-copy-callout {
   padding: 20px 20px 10px 30px;
@@ -606,10 +611,15 @@
   margin: 10px 15px 10px 0;
   width: 40px;
 }
+.ssp-main-container .row-features-blue h2,
+.ssp-main-container .row-features-green h2,
+.ssp-main-container .row-features-blue h3,
+.ssp-main-container .row-features-green h3 {
+  color: #222;
+}
 .ssp-main-container .row-features-blue h3,
 .ssp-main-container .row-features-green h3 {
   display: inline;
-  color: #222;
 }
 .ssp-main-container .row-features-blue a,
 .ssp-main-container .row-features-green a {
@@ -674,13 +684,13 @@
 }
 .ssp-main-container .row-testimonial-left blockquote,
 .ssp-main-container .row-testimonial-right blockquote {
-  font-family: 'proxima_nova_ltlight', sans-serif;
-  font-size: 1.3125em;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 1.375em;
   margin-bottom: 10px;
-  line-height: 1.75em;
+  line-height: 2em;
   border: 0;
   font-style: normal;
-  color: #888;
+  color: #999;
 }
 .ssp-main-container .row-testimonial-left cite,
 .ssp-main-container .row-testimonial-right cite {
