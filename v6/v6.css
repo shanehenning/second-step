@@ -1521,6 +1521,7 @@
 }
 .ssp-main-container .header-underline,
 .ssp-main-container .text-underline {
+
   border-bottom: 1px solid #aeaeae;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -1752,6 +1753,7 @@
 .ssp-main-container .background-purple {
   background-color: #6c3078;
 }
+
 .ssp-main-container .upper-rule {
   border-top: 1px solid #1a191a;
 }
@@ -1814,6 +1816,7 @@
     display: table-cell;
     vertical-align: top;
   }
+
   .ssp-main-container .row-table-equal-height-md [class^=col].align-top,
   .ssp-main-container .row-table-equal-height-md-one-third [class^=col].align-top,
   .ssp-main-container .row-table-equal-height-bottom [class^=col].align-top,
