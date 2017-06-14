@@ -1,7 +1,9 @@
 @proxima-nova-rgregular: 'proxima_nova_rgregular', sans-serif;
+@proxima-nova-regular-italic: 'proxima_nova_regular_italic', sans-serif;
 @proxima-nova-ltlight: 'proxima_nova_ltlight', sans-serif;
 @proxima-nova-ltsemibold: 'proxima_nova_ltsemibold', sans-serif;
 @proxima-nova-rgbold: 'proxima_nova_rgbold', sans-serif;
+@proxima-nova-bold-italic: 'proxima_nova_bold_italic', sans-serif;
 @proxima-nova-xbold: 'proxima_nova_xbold', sans-serif;
 @proxima-nova-thin: 'proxima_nova_thin', sans-serif;
 @header-color: #444;
@@ -13,13 +15,15 @@
 @grade-2-yellow: #fcb715;
 @grade-5-purple: #653279;
 @bpu-green: #33a86a;
+@cpu-red: #F84139;
 @bt-alert-bg-color: #d44e05;
 @bt-alert-border-color: #ab4501;
 @bt-alert-hover-color: #b34304;
+@kindergarten-red: #CE1443;
 @color-success-red: rgba(206,20,67,1);
 @color-success-blue: rgba(65,119,156, 1);
 @color-success-green: rgba(51,168,106,1);
-@color-success-purple: rgba(108,48,120, 1);
+@color-success-purple: rgba(101,50,121, 1);
 
 .ssp-main-container {
   max-width: 1600px;
@@ -31,15 +35,23 @@
     color: @body-color;
   }
 
+  .color-header-copy{
+    color: @header-color;
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: @proxima-nova-rgbold;
     color: @header-color;
     margin: 10px 0 5px;
-
+    em{
+      font-family: @proxima-nova-bold-italic;
+    }
     &.regular {
       font-family: @proxima-nova-rgregular;
       font-size: 1.500em;
+      em{
+        font-family: @proxima-nova-regular-italic;
+      }
     }
   }
 
@@ -73,8 +85,15 @@
     margin-bottom: 8px;
   }
 
-  strong {
+  strong, p strong {
     font-family: @proxima-nova-rgbold;
+    font-weight: 400;
+    em{
+      font-family: @proxima-nova-bold-italic;
+    }
+  }
+  em{
+    font-style: normal;
   }
 
   ol, p, ul {
@@ -83,13 +102,17 @@
     margin-top: 0;
     margin-bottom: 10px;
     color: @body-color;
-
+    em{
+      font-family: @proxima-nova-regular-italic;
+    }
     li {
       margin-bottom: 5px;
     }
 
     &.intro {
       font-size: 1.185em;
+      line-height: 30px;
+      color: @header-color;
     }
   }
 
@@ -101,9 +124,15 @@
       margin-top: 0;
       margin-bottom: 15px;
       color: @body-color;
+      em{
+        font-family: @proxima-nova-regular-italic;
+      }
     }
     &.byline, &.caption{
       font-family: @proxima-nova-rgbold;
+      em{
+        font-family: @proxima-nova-bold-italic;
+      }
     }
 
     &.intro {
@@ -115,9 +144,23 @@
     }
   }
 
-  span.small{
-    color: @body-color;
-    font-size: 0.875em;
+  strong{
+    &.intro{
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+
+  span{
+    &.intro{
+      font-size: 1.1875em;
+      line-height: 30px;
+      color: @header-color;
+    }
+    &.small{
+      color: @body-color;
+      font-size: 0.875em;
+    }
   }
 
   ul {
@@ -185,6 +228,9 @@
     color: #fff !important;
     font-family: @proxima-nova-rgbold;
     background: @bt-blue;
+    em{
+      font-family: @proxima-nova-bold-italic;
+    }
     &:hover {
       background-color: @bt-blue-hover;
       -moz-transition: all 0.2s ease-in;
@@ -202,6 +248,9 @@
       border: 2px solid @bt-alert-border-color;
       padding: 11px 60px;
       font-family: @proxima-nova-rgbold;
+      em{
+        font-family: @proxima-nova-bold-italic;
+      }
       &:hover {
         background-color: @bt-alert-hover-color;
         border: 2px solid@bt-alert-hover-color;
@@ -211,6 +260,9 @@
       p {
         font-family: @proxima-nova-rgbold;
         font-size: 1em;
+        em{
+          font-family: @proxima-nova-bold-italic;
+        }
       }
     }
     &.white-btn{
@@ -237,6 +289,9 @@
         color: @bt-blue;
         margin: 0;
         text-align: center;
+        em{
+          font-family: @proxima-nova-bold-italic;
+        }
       }
       &:hover p {
         color: #fff;
@@ -263,19 +318,19 @@
   }
 
   .font-white{
-    h1, h2, h3, h4, h5, h6, a, p, span, ul, ol, button, i, strong, li{
+    h1, h2, h3, h4, h5, h6, a, p, p.intro, span, span.intro, ul, ul.intro, ol, ol.intro, button, i, strong, li{
       color: #fff;
     }
   }
-  h3.font-green{
+  .font-green{
     color: @bpu-green;
     margin-bottom: 15px;
   }
-  h3.font-red{
+  .font-red{
     color: #ce1343;
     margin-bottom: 15px;
   }
-  h3.font-blue{
+  .font-blue{
     color: @bt-blue;
     margin-bottom: 15px;
   }
@@ -310,6 +365,9 @@
     margin-top: 0;
     margin-bottom: 15px;
     color: @body-color;
+    em{
+      font-family: @proxima-nova-bold-italic;
+    }
   }
 
   .quote {
@@ -327,6 +385,9 @@
       color: #888;
       font-style: italic;
       margin: 0 0 20px;
+      em{
+        font-family: @proxima-nova-regular-italic;
+      }
     }
     cite {
       font-family: @proxima-nova-rgregular;
@@ -334,6 +395,9 @@
       float: right;
       font-size: 0.875em;
       font-style: normal;
+      em{
+        font-family: @proxima-nova-regular-italic;
+      }
     }
   }
 
@@ -359,7 +423,7 @@
   }
 
   h3.text-banner{
-    font-family: 'proxima_nova_xbold';
+    font-family: @proxima-nova-xbold;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 15px;
@@ -376,11 +440,15 @@
     color: #888;
     margin-bottom: 20px;
     font-size: 1.125em;
+    em{
+      font-family: @proxima-nova-bold-italic;
+    }
   }
 
   .social-links {
     float: right;
-    display: inline;
+    // display: inline;
+    display: none;
     list-style-type: none;
     padding: 0;
     margin-top: 3px;
@@ -506,24 +574,6 @@
     // }
   }
 
-  .row-video-player{
-    // margin-top: 30px;
-    position: relative;
-    padding-bottom: 80px;
-    .video-container {
-      margin-bottom: 20px;
-      // img:hover {
-      //   opacity: 0.5;
-      //   transition: 0.5s;
-      // }
-    }
-    .ssp-btn {
-      // position: absolute;
-      // right: 15px;
-      // bottom: 0;
-    }
-  }
-
   .ssp-video-thumb:hover {
     cursor: pointer;
     -moz-transition: box-shadow 0.4s ease-out;
@@ -599,6 +649,9 @@
       margin-bottom: 10px;
       letter-spacing: 0.075px;
       font-size: 1.125em;
+      em{
+        font-family: @proxima-nova-bold-italic;
+      }
     }
   }
 
@@ -638,19 +691,37 @@
         width: 100%;
         display: table-cell;
         vertical-align: middle;
-        h2, p, ul {
+        padding-left: 40px;
+        padding-right: 40px;
+        h2, h4, p, ul {
           color: #fff;
           text-align: left;
-          width: 70%;
-          margin: 30px;
+          margin: 10px 0;
           font-family: @proxima-nova-rgbold;
-          font-weight: 600;
+          em{
+            font-family: @proxima-nova-bold-italic;
+          }
         }
         h2 {
-          font-size: 44px;
+          font-size: 2.75em;
+          line-height: 48px;
+          margin: 0;
+        }
+        h4{
+          color: #fff;
+          text-align: left;
+          font-size: 1.375em;
+          line-height: 28px;
+        }
+        h4.intro{
+          margin-bottom: 0;
+        }
+        hr.red{
+          border-top: 2px solid @cpu-red;
+          margin: 20px 0;
         }
         p, ul {
-          border-top: 2px solid #f84139;
+          border-top: 2px solid @cpu-red;
           padding-top: 30px;
           padding-left: 20px;
           font-size: 22px;
@@ -675,10 +746,14 @@
     li::before{
       content: ' ';
       font-size: 0px;
-      border: 3.5px solid #f84139;
+      border: 3.5px solid @kindergarten-red;
       position: relative;
       right: 12px;
       bottom: 7px;
+    }
+    .ssp-btn{
+      float: left;
+      margin: 10px 0;
     }
   }
 
@@ -703,7 +778,7 @@
       bottom: 0;
       width: 100%;
       padding: 20px 40px;
-      background-color: rgba(81, 127, 156, 0.9);
+      background-color: rgba(59, 108, 141, 0.9);
       h4, p {
         margin: 5px 0;
         color: #fff;
@@ -810,13 +885,16 @@
       margin: 0 20px 20px 0;
     }
     blockquote {
-      font-family: @proxima-nova-rgregular;
       font-size: 1.375em;
       margin-bottom: 10px;
       line-height: 32px;
       border: 0;
       font-style: normal;
       color: #999;
+      font-family: @proxima-nova-regular-italic;
+      em{
+        font-family: @proxima-nova-rgregular;
+      }
     }
     cite {
       font-family: @proxima-nova-rgregular;
@@ -825,6 +903,9 @@
       font-style: normal;
       line-height: 19px;
       float: right;
+      em{
+        font-family: @proxima-nova-regular-italic;
+      }
     }
   }
   .row-testimonial-left {
@@ -844,8 +925,15 @@
     }
   }
 
-  .row-half-image{
+  .row-half-image, .row-half-video{
     min-height: 400px;
+    h3{
+      line-height: 28px;
+    }
+    p:last-of-type + a{
+      display: block;
+      margin-top: -10px;
+    }
     aside {
       margin-top: 10px;
       padding: 40px;
@@ -897,12 +985,28 @@
     }
     li a {
       font-family: @proxima-nova-rgregular;
+      em{
+        font-family: @proxima-nova-regular-italic;
+      }
     }
     a {
       font-family: @proxima-nova-rgbold;
+      em{
+        font-family: @proxima-nova-bold-italic;
+      }
     }
     .ssp-btn{
       margin-top: 0;
+    }
+  }
+  .row-half-video{
+    min-height: 275px;
+    figure, h3{
+      cursor: pointer;
+    }
+    h3{
+      margin-top: 0;
+      margin-bottom: 28px;
     }
   }
 
@@ -950,10 +1054,11 @@
   }
 
   .row-colored-frames-icon{
+    padding: 25px 0 15px;
     article, aside{
-      padding: 10px 15px;
+      padding: 10px 25px;
       border: 15px solid #fba09c;
-      padding-top: 30px;
+      padding-top: 15px;
     }
       img {
         position: absolute;
@@ -979,6 +1084,9 @@
           color: #fff;
           font-family: @proxima-nova-rgregular;
           font-size: 16px;
+          em{
+            font-family: @proxima-nova-regular-italic;
+          }
         }
       }
     }
@@ -1099,6 +1207,9 @@
     }
     a, li a, p a {
       font-family: @proxima-nova-rgbold;
+      em{
+        font-family: @proxima-nova-bold-italic;
+      }
     }
   }
 
@@ -1334,6 +1445,7 @@
     }
     p, ul {
       font-size: 19px;
+      color: @header-color;
     }
     ul {
       list-style-type: square;
@@ -1457,6 +1569,9 @@
     }
     h3, h4, h5, h6{
       font-family: @proxima-nova-rgregular;
+      em{
+        font-family: @proxima-nova-regular-italic;
+      }
     }
     h2{
       font-size: 120px;
@@ -1756,9 +1871,16 @@
   }
 
   .header-underline, .text-underline {
+    padding-bottom: 10px;
       border-bottom: 1px solid #aeaeae;
-      padding-bottom: 10px;
       margin-bottom: 20px;
+  }
+
+  .border-top{
+    border-top: 1px solid #aeaeae;
+  }
+  .border-bottom{
+    border-bottom: 1px solid #aeaeae;
   }
 
   .upper-line-title, .upper-line-title-extra{
@@ -1767,8 +1889,11 @@
     padding-bottom: 10px;
     display: inline-block;
     background-color: transparent;
-    font-family: "proxima_nova_rgbold", "Proxima Nova", sans-serif;
+    font-family: @proxima-nova-rgbold;
     color: @header-color;
+    em{
+      font-family: @proxima-nova-bold-italic;
+    }
   }
   .upper-line-title-extra{
       padding-top: 20px;
@@ -1929,8 +2054,21 @@
       margin-bottom: 15px;
     }
   }
+  .link-list-spaced{
+    ul{
+      padding-left: 0;
+      list-style-type: none;
+      margin-top: 10px;
+    }
+    li{
+      margin-bottom: 30px;
+    }
+  }
 
   .list-columns{
+    hr{
+      margin: 20px 40px 30px;
+    }
     ul{
       list-style-type: none;
       padding-left: 0;
@@ -1942,13 +2080,29 @@
         }
         div:nth-of-type(1)::before{
           content: ' ';
+          line-height: 0;
           font-size: 0px;
-          border: 3.5px solid #fff;
+          border: 3.5px solid #222;
           position: relative;
           right: 12px;
           margin-left: -8px;
           bottom: 7px;
         }
+      }
+      li:last-of-type{
+        border-bottom:20px;
+      }
+      li::after{
+        display: block;
+        height: 40px;
+        border-bottom: 1px solid #aeaeae;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 40px;
+      }
+      li:last-of-type::after{
+        border-bottom-color: transparent;
+        height: 0;
       }
     }
     .small{
@@ -1994,7 +2148,7 @@
       background-color: rgba(248,65,57,0.6);
     }
     &-scarlet{
-      background-color: @color-success-red;
+      background-color: @kindergarten-red;
     }
     &-fire-engine{
       background-color: rgba(249,66,58,0.6);
@@ -2070,13 +2224,13 @@
   /* End Misc */
 
   @media screen and (min-width: 1200px){
-    .row-hero-image, .row-hero-bottom-text, .row-half-image{
-      min-height: 400px;
-      height: ~ 'calc(400px + 7.5vw)';
+    .row-hero-image, .row-hero-bottom-text, .row-half-image, .row-half-video{
+      // min-height: 400px;
+      // height: ~ 'calc(400px + 7.5vw)';
     }
     .row-webinar-videos{
       .object-fit{
-        min-height: 200px;
+        // min-height: 200px;
         // height: ~ 'calc(200px + 7.5vw)';
       }
     }
@@ -2162,18 +2316,14 @@
       h2{
         text-align: center;
       }
-    }
-    .row-related-links{
-      [class^=col]{
-        // margin-bottom: 40px;
+      h6{
+        font-size: 1.5em;
       }
     }
 
     .row-colored-frames, .row-colored-frames-icon{
       margin-left: 0;
       margin-right: 0;
-      // padding-left: 30px;
-      // padding-right: 30px;
       [class^=col-md] {
         width: auto;
       }
@@ -2186,6 +2336,8 @@
       }
     }
     .row-colored-frames-icon{
+      padding-top: 0;
+      padding-bottom: 30px;
       [class^=col-md]{
         margin: 40px auto;
       }
@@ -2318,7 +2470,7 @@
       }
     }
 
-    .row-half-image{
+    .row-half-image, .row-half-video{
       min-height: auto;
       aside {
         padding: 15px 0;
@@ -2398,9 +2550,14 @@
   }
 
   @media screen and (max-width: 500px){
-    .padding-standard, .padding-standard-top, .padding-standard-bottom, .row-half-image [class^=col], .row-copy-intro, .row-webinar-related{
+    .padding-standard, .padding-standard-top, .padding-standard-bottom, .row-half-image [class^=col], .row-half-video [class^=col], .row-copy-intro, .row-webinar-related{
       padding-left: 15px;
       padding-right: 15px;
+    }
+    .row-table-equal-height-bottom{
+      h6{
+        font-size: 1em;
+      }
     }
 
     .row-webinar-related{
@@ -2487,7 +2644,5 @@
       padding-bottom: 15px;
     }
   }
-
-
 }
 }
