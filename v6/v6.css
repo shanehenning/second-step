@@ -148,6 +148,10 @@
   font-size: 19px;
   line-height: 30px;
 }
+.ssp-main-container span {
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 1em;
+}
 .ssp-main-container span.intro {
   font-size: 1.1875em;
   line-height: 30px;
@@ -1690,7 +1694,7 @@
 }
 .ssp-main-container .header-underline,
 .ssp-main-container .text-underline {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #aeaeae;
   margin-bottom: 20px;
 }
