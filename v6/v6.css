@@ -543,6 +543,9 @@
   padding: 40px;
   padding-top: 0;
 }
+.ssp-main-container .padding-standard-narrow {
+  padding: 0 40px;
+}
 .ssp-main-container .padding-standard-no-background {
   padding: 40px 15px;
 }
@@ -700,7 +703,7 @@
 }
 .ssp-main-container .row-hero-image .ssp-btn {
   float: left;
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 .ssp-main-container .row-hero-bottom-text {
   overflow: hidden;
@@ -889,10 +892,6 @@
   margin-top: 10px;
   padding: 40px;
 }
-.ssp-main-container .row-half-image aside p,
-.ssp-main-container .row-half-video aside p {
-  margin-bottom: 30px;
-}
 .ssp-main-container .row-half-image figure,
 .ssp-main-container .row-half-video figure {
   position: relative;
@@ -1079,6 +1078,8 @@
   height: 200px;
   border: 1px solid black;
   border-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 .ssp-main-container .row-webinar-videos .video-title {
   display: block;
@@ -1303,6 +1304,9 @@
 }
 .ssp-main-container .row-table-equal-height-button .object-fit img {
   width: 100%;
+}
+.ssp-main-container .row-table-equal-height-button .img-responsive {
+  margin-bottom: 10px;
 }
 .ssp-main-container .row-table-equal-height-button .btn-width-100 {
   width: calc(100% - 30px);
@@ -1685,6 +1689,9 @@
 }
 .ssp-main-container .p-extra-bottom p {
   margin-bottom: 30px;
+}
+.ssp-main-container .list-unstyled {
+  list-style-type: none;
 }
 .ssp-main-container .ul-extra-bottom ul {
   margin-bottom: 30px;
