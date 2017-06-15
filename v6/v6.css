@@ -2020,6 +2020,9 @@
   .ssp-main-container .row-table-equal-height-middle [class^=col].align-top {
     vertical-align: top;
   }
+  .ssp-main-container .three-two-one section:nth-of-type(3n + 4) {
+    clear: left;
+  }
   .ssp-main-container .row-colored-frames .row-table-equal-height-md,
   .ssp-main-container .row-colored-frames-icon .row-table-equal-height-md {
     border-spacing: 30px;
@@ -2071,6 +2074,9 @@
   .ssp-main-container .row-table-equal-height-bottom [class^=col-md] img,
   .ssp-main-container .row-related-links [class^=col-md] img {
     display: inline-block;
+  }
+  .ssp-main-container .three-two-one section:nth-of-type(2n + 3) {
+    clear: left;
   }
   .ssp-main-container .row-table-equal-height-bottom h2 {
     text-align: center;
