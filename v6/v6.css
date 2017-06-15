@@ -952,6 +952,14 @@
 .ssp-main-container .row-half-video a em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
 }
+.ssp-main-container .row-half-image a strong,
+.ssp-main-container .row-half-video a strong {
+  font-family: 'proxima_nova_rgbold', sans-serif;
+}
+.ssp-main-container .row-half-image a strong em,
+.ssp-main-container .row-half-video a strong em {
+  font-family: 'proxima_nova_bold_italic', sans-serif;
+}
 .ssp-main-container .row-half-image strong,
 .ssp-main-container .row-half-video strong {
   font-family: 'proxima_nova_rgbold', sans-serif;
