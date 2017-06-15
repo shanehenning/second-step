@@ -880,7 +880,9 @@
   line-height: 28px;
 }
 .ssp-main-container .row-half-image p:last-of-type + a,
-.ssp-main-container .row-half-video p:last-of-type + a {
+.ssp-main-container .row-half-video p:last-of-type + a,
+.ssp-main-container .row-half-image ul:last-of-type + a,
+.ssp-main-container .row-half-video ul:last-of-type + a {
   display: block;
   margin-top: -10px;
 }
