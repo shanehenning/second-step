@@ -1831,11 +1831,13 @@
   margin-top: 0;
   display: inline-block;
 }
-.ssp-main-container .link-list-border-bottom li,
-.ssp-main-container .link-list-border-bottom li:last-of-type {
+.ssp-main-container .link-list-border-bottom li {
   border-bottom: 1px solid #aeaeae;
   padding-bottom: 15px;
   margin-bottom: 15px;
+}
+.ssp-main-container .link-list-border-bottom li:last-of-type {
+  border-bottom: none;
 }
 .ssp-main-container .link-list-spaced ul {
   padding-left: 0;
