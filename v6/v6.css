@@ -1993,6 +1993,9 @@
 .ssp-main-container .background-purple {
   background-color: #6c3078;
 }
+.ssp-main-container .background-success-red {
+  background-color: #ce1443;
+}
 .ssp-main-container .upper-rule {
   border-top: 1px solid #1a191a;
 }
