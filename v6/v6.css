@@ -836,11 +836,11 @@
   border: 0;
   font-style: normal;
   color: #999;
-  font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-family: 'proxima_nova_rgregular', sans-serif;
 }
 .ssp-main-container .row-testimonial-left blockquote em,
 .ssp-main-container .row-testimonial-right blockquote em {
-  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-family: 'proxima_nova_regular_italic', sans-serif;
 }
 .ssp-main-container .row-testimonial-left cite,
 .ssp-main-container .row-testimonial-right cite {
