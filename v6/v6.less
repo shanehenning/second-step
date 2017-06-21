@@ -35,8 +35,9 @@
     color: @body-color;
   }
 
-  .color-header-copy{
+  .color-header, .color-header:hover{
     color: @header-color;
+    text-decoration-color: @header-color;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -64,7 +65,7 @@
   }
 
   h2 {
-    font-size: 1.75em;
+    font-size: 1.625em;
   }
 
   h3 {
@@ -1353,7 +1354,7 @@
     [class^=col]{
       height: 100%;
       .button-bottom-container{
-        margin-bottom: 80px;
+        margin-bottom: 65px;
         position: relative;
       }
     }
@@ -1563,7 +1564,7 @@
   /* Bootstrap */
   /* Bootstrap Carousel */
   .carousel{
-    height: 300px;
+    height: 340px;
     ol, ul, p{
       li{
         margin-bottom: auto;
@@ -1645,22 +1646,46 @@
     padding: 15px 85px;
     display: table-cell;
     vertical-align: middle;
-    h4 {
-      // font-size: 44px;
-      // line-height: 44px;
+    .caption-open::before, .caption-close::after{
+      quotes: "“" "”";
+      font-size: 110px;
+      line-height: 1;
+      color: @header-color;
+      font-family: serif;
+      text-shadow: #808080 1px 1px 1px;
+    }
+    .caption-open::before{
+      content: open-quote;
+      float: left;
+      padding-right: 10px;
+      height: 50px;
+    }
+    .caption-close::after{
+      content: close-quote;
+      float: right;
+      position: relative;
+      width: 30px;
+      padding-left: 50px;
+      height: 50px;
+      right: 50px;
     }
     a{
       color: @header-color;
       text-decoration: underline;
       display: block;
       margin-top: 30px;
+      span{
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 4px;
+      }
     }
   }
   .carousel-control{
     background-image: none;
     opacity: 1;
   }
-  .carousel-control span{
+  .carousel-control i{
     transition: 200ms;
     border-width: 1px;
     border-style: solid;
@@ -1682,13 +1707,16 @@
 
   .mask{
     &-red{
-      .carousel-control span{
+      .carousel-control i{
         color: @color-success-red;
         border-color: @color-success-red;
       }
-      .carousel-control:hover span{
+      .carousel-control:hover i{
         color: #fff;
         background-color: @color-success-red;
+      }
+      .caption-open::before, .caption-close::after{
+        color: @color-success-red;
       }
       .carousel-indicators li{
         border-color: @color-success-red;
@@ -1706,13 +1734,16 @@
       }
     }
     &-blue{
-      .carousel-control span{
+      .carousel-control i{
         color: @color-success-blue;
         border-color: @color-success-blue;
       }
-      .carousel-control:hover span{
+      .carousel-control:hover i{
         color: #fff;
         background-color: @color-success-blue;
+      }
+      .caption-open::before, .caption-close::after{
+        color: @color-success-blue;
       }
       .carousel-indicators li{
         border-color: @color-success-blue;
@@ -1730,13 +1761,16 @@
       }
     }
     &-green{
-      .carousel-control span{
+      .carousel-control i{
         color: @color-success-green;
         border-color: @color-success-green;
       }
-      .carousel-control:hover span{
+      .carousel-control:hover i{
         color: #fff;
         background-color: @color-success-green;
+      }
+      .caption-open::before, .caption-close::after{
+        color: @color-success-green;
       }
       .carousel-indicators li{
         border-color: @color-success-green;
@@ -1754,13 +1788,16 @@
       }
     }
     &-purple{
-      .carousel-control span{
+      .carousel-control i{
         color: @color-success-purple;
         border-color: @color-success-purple;
       }
-      .carousel-control:hover span{
+      .carousel-control:hover i{
         color: #fff;
         background-color: @color-success-purple;
+      }
+      .caption-open::before, .caption-close::after{
+        color: @color-success-purple;
       }
       .carousel-indicators li{
         border-color: @color-success-purple;
@@ -1779,70 +1816,6 @@
     }
   }
 
-  // #carousel-red{
-  //   .carousel-control span{
-  //     color: rgba(206,19,67,1);
-  //     border-color: rgba(206,19,67,1);
-  //   }
-  //   .carousel-control:hover span{
-  //     color: #fff;
-  //     background-color: rgba(206,19,67,1);
-  //   }
-  //   .carousel-indicators li{
-  //     border-color: rgba(206,19,67,1);
-  //   }
-  //   .carousel-indicators li.active{
-  //     background-color: rgba(206,19,67,1);
-  //   }
-  // }
-  // #carousel-blue{
-  //   .carousel-control span{
-  //     color: rgba(65,119,156, 1);
-  //     border-color: rgba(65,119,156, 1);
-  //   }
-  //   .carousel-control:hover span{
-  //     color: #fff;
-  //     background-color: rgba(65,119,156, 1);
-  //   }
-  //   .carousel-indicators li{
-  //     border-color: rgba(65,119,156, 1);
-  //   }
-  //   .carousel-indicators li.active {
-  //     background-color: rgba(65,119,156, 1);
-  //   }
-  // }
-  // #carousel-green{
-  //   .carousel-control span{
-  //     color: rgba(51,168,106,1);
-  //     border-color: rgba(51,168,106,1);
-  //   }
-  //   .carousel-control:hover span{
-  //     color: #fff;
-  //     background-color: rgba(51,168,106,1);
-  //   }
-  //   .carousel-indicators li{
-  //     border-color: rgba(51,168,106,1);
-  //   }
-  //   .carousel-indicators li.active{
-  //     background-color: rgba(51,168,106,1);
-  //   }
-  // }
-  // #carousel-purple{
-  //   .carousel-control span{
-  //     color: rgba(108,48,120, 1);
-  //     border-color: rgba(108,48,120, 1);
-  //   }
-  //   .carousel-control:hover span{
-  //     color: #fff;
-  //     background-color: rgba(108,48,120, 1);
-  //   }
-  //   .carousel-indicators li{
-  //     border-color: rgba(108,48,120, 1);
-  //   }
-  //   .carousel-indicators li.active{
-  //     background-color: rgba(108,48,120, 1);
-  //   }
-  // }
   /* End Bootstrap Carousel */
 
   /* End Bootstrap */
@@ -1851,6 +1824,10 @@
   /* Misc */
   .relative{
     position: relative;
+  }
+
+  .d-block{
+    display: block;
   }
 
   .pdf-img-download{
@@ -2153,7 +2130,7 @@
     }
     &-blue {
       background-color: @bt-blue;
-      a, h4, span {
+      a, h4, i {
         display: inline;
         color: #fff;
       }
@@ -2531,7 +2508,7 @@
     .row-table-equal-height-button{
       [class^=col] {
         padding-bottom: 1px;
-        margin: 0 auto 50px;
+        margin: 0 auto 40px;
       }
       .object-fit{
         max-height: none;
