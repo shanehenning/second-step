@@ -15,8 +15,10 @@
 .ssp-main-container .color-body-copy {
   color: #222;
 }
-.ssp-main-container .color-header-copy {
+.ssp-main-container .color-header,
+.ssp-main-container .color-header:hover {
   color: #444;
+  text-decoration-color: #444;
 }
 .ssp-main-container h1,
 .ssp-main-container h2,
@@ -60,7 +62,7 @@
   font-size: 1.75em;
 }
 .ssp-main-container h2 {
-  font-size: 1.75em;
+  font-size: 1.625em;
 }
 .ssp-main-container h3 {
   font-size: 1.5em;
@@ -1316,7 +1318,7 @@
   height: 100%;
 }
 .ssp-main-container .row-table-equal-height-button [class^=col] .button-bottom-container {
-  margin-bottom: 80px;
+  margin-bottom: 65px;
   position: relative;
 }
 .ssp-main-container .row-table-equal-height-button .object-fit {
@@ -1492,7 +1494,7 @@
   background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
 }
 .ssp-main-container .carousel {
-  height: 300px;
+  height: 340px;
 }
 .ssp-main-container .carousel ol li,
 .ssp-main-container .carousel ul li,
@@ -1578,17 +1580,46 @@
   display: table-cell;
   vertical-align: middle;
 }
+.ssp-main-container .carousel-caption .caption-open::before,
+.ssp-main-container .carousel-caption .caption-close::after {
+  quotes: "“" "”";
+  font-size: 110px;
+  line-height: 1;
+  color: #444;
+  font-family: serif;
+  text-shadow: #808080 1px 1px 1px;
+}
+.ssp-main-container .carousel-caption .caption-open::before {
+  content: open-quote;
+  float: left;
+  padding-right: 10px;
+  height: 50px;
+}
+.ssp-main-container .carousel-caption .caption-close::after {
+  content: close-quote;
+  float: right;
+  position: relative;
+  width: 30px;
+  padding-left: 50px;
+  height: 50px;
+  right: 50px;
+}
 .ssp-main-container .carousel-caption a {
   color: #444;
   text-decoration: underline;
   display: block;
   margin-top: 30px;
 }
+.ssp-main-container .carousel-caption a span {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 4px;
+}
 .ssp-main-container .carousel-control {
   background-image: none;
   opacity: 1;
 }
-.ssp-main-container .carousel-control span {
+.ssp-main-container .carousel-control i {
   transition: 200ms;
   border-width: 1px;
   border-style: solid;
@@ -1606,13 +1637,17 @@
 .ssp-main-container .carousel-control.right [class^=glyphicon] {
   right: 15px;
 }
-.ssp-main-container .mask-red .carousel-control span {
+.ssp-main-container .mask-red .carousel-control i {
   color: #ce1443;
   border-color: #ce1443;
 }
-.ssp-main-container .mask-red .carousel-control:hover span {
+.ssp-main-container .mask-red .carousel-control:hover i {
   color: #fff;
   background-color: #ce1443;
+}
+.ssp-main-container .mask-red .caption-open::before,
+.ssp-main-container .mask-red .caption-close::after {
+  color: #ce1443;
 }
 .ssp-main-container .mask-red .carousel-indicators li {
   border-color: #ce1443;
@@ -1626,13 +1661,17 @@
 .ssp-main-container .mask-red.row-success-feature h3 {
   color: #ce1443;
 }
-.ssp-main-container .mask-blue .carousel-control span {
+.ssp-main-container .mask-blue .carousel-control i {
   color: #41779c;
   border-color: #41779c;
 }
-.ssp-main-container .mask-blue .carousel-control:hover span {
+.ssp-main-container .mask-blue .carousel-control:hover i {
   color: #fff;
   background-color: #41779c;
+}
+.ssp-main-container .mask-blue .caption-open::before,
+.ssp-main-container .mask-blue .caption-close::after {
+  color: #41779c;
 }
 .ssp-main-container .mask-blue .carousel-indicators li {
   border-color: #41779c;
@@ -1646,13 +1685,17 @@
 .ssp-main-container .mask-blue.row-success-feature h3 {
   color: #41779c;
 }
-.ssp-main-container .mask-green .carousel-control span {
+.ssp-main-container .mask-green .carousel-control i {
   color: #33a86a;
   border-color: #33a86a;
 }
-.ssp-main-container .mask-green .carousel-control:hover span {
+.ssp-main-container .mask-green .carousel-control:hover i {
   color: #fff;
   background-color: #33a86a;
+}
+.ssp-main-container .mask-green .caption-open::before,
+.ssp-main-container .mask-green .caption-close::after {
+  color: #33a86a;
 }
 .ssp-main-container .mask-green .carousel-indicators li {
   border-color: #33a86a;
@@ -1666,13 +1709,17 @@
 .ssp-main-container .mask-green.row-success-feature h3 {
   color: #33a86a;
 }
-.ssp-main-container .mask-purple .carousel-control span {
+.ssp-main-container .mask-purple .carousel-control i {
   color: #653279;
   border-color: #653279;
 }
-.ssp-main-container .mask-purple .carousel-control:hover span {
+.ssp-main-container .mask-purple .carousel-control:hover i {
   color: #fff;
   background-color: #653279;
+}
+.ssp-main-container .mask-purple .caption-open::before,
+.ssp-main-container .mask-purple .caption-close::after {
+  color: #653279;
 }
 .ssp-main-container .mask-purple .carousel-indicators li {
   border-color: #653279;
@@ -1688,6 +1735,9 @@
 }
 .ssp-main-container .relative {
   position: relative;
+}
+.ssp-main-container .d-block {
+  display: block;
 }
 .ssp-main-container .pdf-img-download {
   margin-bottom: 10px;
@@ -1940,7 +1990,7 @@
 }
 .ssp-main-container .background-blue a,
 .ssp-main-container .background-blue h4,
-.ssp-main-container .background-blue span {
+.ssp-main-container .background-blue i {
   display: inline;
   color: #fff;
 }
@@ -2295,7 +2345,7 @@
   }
   .ssp-main-container .row-table-equal-height-button [class^=col] {
     padding-bottom: 1px;
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
   }
   .ssp-main-container .row-table-equal-height-button .object-fit {
     max-height: none;
