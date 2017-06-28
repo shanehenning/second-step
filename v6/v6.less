@@ -1,10 +1,10 @@
-@proxima-nova-rgregular: 'proxima_nova_rgregular', sans-serif;
+@proxima-nova-rgregular:      'proxima_nova_rgregular', sans-serif;
 @proxima-nova-regular-italic: 'proxima_nova_regular_italic', sans-serif;
-@proxima-nova-ltlight: 'proxima_nova_ltlight', sans-serif;
-@proxima-nova-ltsemibold: 'proxima_nova_ltsemibold', sans-serif;
-@proxima-nova-rgbold: 'proxima_nova_rgbold', sans-serif;
-@proxima-nova-bold-italic: 'proxima_nova_bold_italic', sans-serif;
+@proxima-nova-rgbold:         'proxima_nova_rgbold', sans-serif;
+@proxima-nova-bold-italic:    'proxima_nova_bold_italic', sans-serif;
 @proxima-nova-xbold: 'proxima_nova_xbold', sans-serif;
+@proxima-nova-ltsemibold: 'proxima_nova_ltsemibold', sans-serif;
+@proxima-nova-ltlight: 'proxima_nova_ltlight', sans-serif;
 @proxima-nova-thin: 'proxima_nova_thin', sans-serif;
 @header-color: #444;
 @body-color: #222;
@@ -56,6 +56,7 @@
   h1 {
     // font-size: 24px;
     font-size: 1.5em;
+    line-height: 28px;
   }
 
   // h2.hero {
@@ -95,16 +96,6 @@
     margin-bottom: 8px;
   }
 
-  h1.page-title {
-    font-family: @proxima-nova-rgbold;
-    display: inline-block;
-    color: #888;
-    margin-bottom: 20px;
-    font-size: 1.125em;
-    em {
-      font-family: @proxima-nova-bold-italic;
-    }
-  }
   h3, h5 {
     text-transform: none;
   }
@@ -318,6 +309,13 @@
       &:hover p {
         color: #fff;
       }
+      &-white{
+        color: #fff !important;
+        border-color: #fff;
+        margin-top: 30px;
+        display: inline-block;
+        text-decoration: none;
+      }
     }
 
     // .ssp-btn (continued){
@@ -325,18 +323,15 @@
       width: 100%;
     }
     // .ssp-btn (continued){
-    &-ghost-white-btn {
+    &.ghost-btn-white {
       border: 1px solid #fff;
-      border-radius: 4px;
-      padding: 8px 7px 5px;
       color: #fff;
-      text-transform: uppercase;
       transition: 200ms;
       display: inline-block;
       &:hover {
-        background-color: rgba(255,255,255, 0.15);
+        background-color: #fff;
         text-decoration: none;
-        text-shadow: 1px 2px rgba(255,255,255, 0.15);
+        color: @bt-blue !important;
       }
     }
   }
@@ -430,11 +425,12 @@
     h1 {
       font-family: @proxima-nova-rgbold;
       display: inline-block;
-      color: #888;
+      color: @header-color;
       margin-top: 1px;
       margin-bottom: 10px;
       letter-spacing: 0.075px;
-      font-size: 1.125em;
+      font-size: 1.5em;
+      line-height: 28px;
       em {
         font-family: @proxima-nova-bold-italic;
       }
@@ -492,13 +488,38 @@
   }
 
   .row-testimonial {
-    .caption-open::before, .caption-close::after{
+    blockquote::before{
       quotes: "“" "”";
+      content: open-quote "\00a0" close-quote;
       font-size: 110px;
+      height: 70px;
+      display: block;
       line-height: 1;
       color: @header-color;
       font-family: serif;
       text-shadow: #808080 1px 1px 1px;
+    }
+    &.mask{
+      &-blue{
+        blockquote::before{
+          color: @color-success-blue;
+        }
+      }
+      &-red{
+        blockquote::before{
+          color: @color-success-red;
+        }
+      }
+      &-green{
+        blockquote::before{
+          color: @color-success-green;
+        }
+      }
+      &-purple{
+        blockquote::before{
+          color: @color-success-purple;
+        }
+      }
     }
     blockquote {
       font-size: 1.375em;
@@ -577,10 +598,46 @@
   }
 
   .row-feature-dotted{
+    ul{
+      list-style-type: none;
+    }
     li{
-      aside{
-        border-bottom: 1px solid dotted;
+      clear: both;
+      margin: 0;
+      padding-top: 20px;
+      // padding-bottom: 20px;
+      .media-body {
+        padding-left: 15px;
+        a{
+          display: block;
+          padding-bottom: 40px;
+          border-bottom: 1px dotted #444;
+          // margin-bottom: 20px;
+        }
       }
+      img{
+        max-height: 120px;
+        margin: 0 auto;
+      }
+    }
+
+    li:last-of-type{
+      .media-body a{
+        border-bottom: none;
+      }
+    }
+  }
+
+  .row-videos-gray{
+    section{
+      width: ~ 'calc(50% - 20px)';
+      background-color: #f1f1f1;
+      padding: 30px 60px 40px;
+      margin: 15px auto;
+    }
+    img{
+      // height: 250px;
+      margin: 20px 0;
     }
   }
 
@@ -744,6 +801,7 @@
   .row-success-banner {
     width: ~ 'calc(100% + 30px)';
     h3 {
+      font-family: @proxima-nova-xbold;
       font-size: 70px;
       line-height: 65px;
       margin-bottom: 20px;
@@ -1180,7 +1238,8 @@
   .modal-body {
     .limelight-player {
       width: 100% !important;
-      margin-bottom: 10px;
+      margin-top: 15px;
+      margin-bottom: 20px;
     }
   }
   /* End Modal */
