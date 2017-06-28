@@ -1214,6 +1214,28 @@
 .ssp-main-container .less-padding {
   padding: 13px 25px;
 }
+.ssp-main-container .toggle-check {
+  visibility: hidden;
+  position: absolute;
+  left: -999999px;
+}
+.ssp-main-container .ssp-btn.ghost-btn-filter {
+  border: 2px solid #41779c;
+  color: #41779c !important;
+  background-color: transparent !important;
+  padding: 11px 60px;
+  width: 100%;
+}
+.ssp-main-container .ssp-btn.ghost-btn-filter:hover {
+  background-color: rgba(65, 119, 156, 0.2) !important;
+}
+.ssp-main-container .toggle-check:checked + .ssp-btn.ghost-btn-filter {
+  background-color: #41779c !important;
+  color: #ffffff !important;
+}
+.ssp-main-container .toggle-check:checked + .ssp-btn.ghost-btn-filter:hover {
+  background-color: rgba(65, 119, 156, 0.8) !important;
+}
 .ssp-main-container .pdf-img-download {
   margin-bottom: 10px;
 }
