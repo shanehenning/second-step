@@ -521,6 +521,9 @@
 .ssp-main-container .row-webinar-gallery h6 {
   display: block !important;
 }
+.ssp-main-container .row-webinar-gallery p {
+  font-size: 0.875em;
+}
 .ssp-main-container .row-webinar-gallery section {
   padding-bottom: 30px;
 }
