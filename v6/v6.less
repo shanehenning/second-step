@@ -1,7 +1,9 @@
-@proxima-nova-rgregular:      'proxima_nova_rgregular', sans-serif;
+@proxima-nova-rgregular: 'proxima_nova_rgregular', sans-serif;
 @proxima-nova-regular-italic: 'proxima_nova_regular_italic', sans-serif;
-@proxima-nova-rgbold:         'proxima_nova_rgbold', sans-serif;
-@proxima-nova-bold-italic:    'proxima_nova_bold_italic', sans-serif;
+@proxima-nova-ltlight: 'proxima_nova_ltlight', sans-serif;
+@proxima-nova-ltsemibold: 'proxima_nova_ltsemibold', sans-serif;
+@proxima-nova-rgbold: 'proxima_nova_rgbold', sans-serif;
+@proxima-nova-bold-italic: 'proxima_nova_bold_italic', sans-serif;
 @proxima-nova-xbold: 'proxima_nova_xbold', sans-serif;
 @proxima-nova-ltsemibold: 'proxima_nova_ltsemibold', sans-serif;
 @proxima-nova-ltlight: 'proxima_nova_ltlight', sans-serif;
@@ -783,11 +785,32 @@
         }
       }
     }
-    img {
-      margin: 15px 0;
-      width: 100%;
+    &.mask-red {
+      figure {
+        background-image: url('http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png');
+      }
+    }
+    &.mask-blue {
+      figure {
+        background-image: url('https://readingresultspdx.org/wp-content/uploads/2016/07/smiling-girl-cutout.png');
+      }
+    }
+    &.mask-green {
+      figure {
+        background-image: url('http://www.graceplacenaples.org/wp-content/uploads/2015/08/bus-girl1.png');
+      }
+    }
+    &.mask-purple {
+      figure {
+        background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
+      }
     }
   }
+  video.video-success {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  // End Success Stories
 
   // Success Stories
   .row-success-banner, .row-success-feature {
@@ -1620,6 +1643,97 @@
       color: #de2c28;
     }
   }
+
+  /* Webinar page */
+  .filter-results {
+    display: none;
+  }
+  .live-webinar {
+      border: 1px solid grey;
+      padding: 25px;
+      margin-bottom: 40px;
+  }
+
+  .on-demand-webinar{
+    text-align: center;
+    background: #f2eee6;
+    margin-bottom: 60px;
+    padding-bottom:20px;
+
+    img{
+      margin-bottom: 20px;  
+    }
+
+    p{
+      font-size: 2em; 
+      font-weight: 100;
+    }
+  }
+  .sidebar{
+    padding: 20px;
+
+    ul{
+      li{
+        list-style-type: none;
+        margin-left: -40px; 
+        padding: 20px 0;
+      }
+    }
+  }
+  input[type=checkbox], input[type=radio] {
+      margin: 20px 10px 0 0;
+  } 
+
+  /* new SEL page */
+
+  .color-circles{
+    text-align: center;
+    span {
+      display: inline-block;
+      margin: 0 auto 20px;
+      padding: 0 8px;
+
+      p{
+        height: 200px;
+        width: 200px;
+        border-style: solid;
+        border-width: 18px;
+        border-radius: 50%;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #888;
+        text-align: center;
+        display: table-cell;     
+        vertical-align: middle;
+      }
+      .border-color{
+        &-green{
+          border-color: #2ac49a;
+        }
+        &-magenta{
+          border-color: #cb15cb;
+        }
+        &-blue{
+          border-color: #004eff;
+        }
+        &-orange{
+          border-color: #ff6c00;
+        }
+        &-yellow{
+          border-color: #ffd200;
+        }
+        &-lime{
+          border-color: #78c811;
+        }
+        &-purple{
+          border-color: #a800ff;
+        }
+        &-skyblue{
+          border-color: #009cff;
+        }
+      }
+    }
+  } 
   /* End Misc */
   @media screen and (min-width: 992px) {
     .row-table-equal-height-bottom, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-middle, .row-table-equal-height-top-middles {

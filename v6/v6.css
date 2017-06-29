@@ -10,6 +10,8 @@
   /* End Modal */
   /* End Bootstrap */
   /* Misc */
+  /* Webinar page */
+  /* new SEL page */
   /* End Misc */
 }
 .ssp-main-container .color-body-copy {
@@ -1156,11 +1158,78 @@
 }
 .ssp-main-container .modal-body .limelight-player {
   width: 100% !important;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .ssp-main-container .relative {
   position: relative;
+}
+.ssp-main-container .text-uppercase {
+  text-transform: uppercase;
+}
+.ssp-main-container .zero-margin {
+  margin: 0;
+}
+.ssp-main-container .padding-standard {
+  padding: 40px;
+}
+.ssp-main-container .padding-standard-top {
+  padding: 40px 40px 0;
+}
+.ssp-main-container .mask-green .carousel-control i {
+  color: #33a86a;
+  border-color: #33a86a;
+}
+.ssp-main-container .mask-green .carousel-control:hover i {
+  color: #fff;
+  background-color: #33a86a;
+}
+.ssp-main-container .mask-green .caption-close::after,
+.ssp-main-container .mask-green .caption-open::before {
+  color: #33a86a;
+}
+.ssp-main-container .mask-green .carousel-indicators li {
+  border-color: #33a86a;
+}
+.ssp-main-container .padding-tall {
+  padding: 40px 0;
+}
+.ssp-main-container .padding-tall-no-background {
+  padding: 40px 15px;
+}
+.ssp-main-container .padding-tall-no-background-top {
+  padding: 40px 15px 0;
+}
+.ssp-main-container .mask-purple .carousel-control i {
+  color: #653279;
+  border-color: #653279;
+}
+.ssp-main-container .mask-purple .carousel-control:hover i {
+  color: #fff;
+  background-color: #653279;
+}
+.ssp-main-container .mask-purple .caption-close::after,
+.ssp-main-container .mask-purple .caption-open::before {
+  color: #653279;
+}
+.ssp-main-container .mask-purple .carousel-indicators li {
+  border-color: #653279;
+}
+.ssp-main-container .mask-purple .carousel-indicators li.active {
+  background-color: #653279;
+}
+.ssp-main-container .mask-purple.row-success-banner {
+  background-color: #653279;
+}
+.ssp-main-container .mask-purple.row-success-feature h3 {
+  color: #653279;
+}
+.ssp-main-container .modal-body .limelight-player {
+  width: 100% !important;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.ssp-main-container .less-padding {
+  padding: 13px 25px;
 }
 .ssp-main-container .text-uppercase {
   text-transform: uppercase;
@@ -1503,6 +1572,84 @@
 }
 .ssp-main-container .social-links .fa-youtube-square {
   color: #de2c28;
+}
+.ssp-main-container .filter-results {
+  display: none;
+}
+.ssp-main-container .live-webinar {
+  border: 1px solid grey;
+  padding: 25px;
+  margin-bottom: 40px;
+}
+.ssp-main-container .on-demand-webinar {
+  text-align: center;
+  background: #f2eee6;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+.ssp-main-container .on-demand-webinar img {
+  margin-bottom: 20px;
+}
+.ssp-main-container .on-demand-webinar p {
+  font-size: 2em;
+  font-weight: 100;
+}
+.ssp-main-container .sidebar {
+  padding: 20px;
+}
+.ssp-main-container .sidebar ul li {
+  list-style-type: none;
+  margin-left: -40px;
+  padding: 20px 0;
+}
+.ssp-main-container input[type=checkbox],
+.ssp-main-container input[type=radio] {
+  margin: 20px 10px 0 0;
+}
+.ssp-main-container .color-circles {
+  text-align: center;
+}
+.ssp-main-container .color-circles span {
+  display: inline-block;
+  margin: 0 auto 20px;
+  padding: 0 8px;
+}
+.ssp-main-container .color-circles span p {
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-width: 18px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #888;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.ssp-main-container .color-circles span .border-color-green {
+  border-color: #2ac49a;
+}
+.ssp-main-container .color-circles span .border-color-magenta {
+  border-color: #cb15cb;
+}
+.ssp-main-container .color-circles span .border-color-blue {
+  border-color: #004eff;
+}
+.ssp-main-container .color-circles span .border-color-orange {
+  border-color: #ff6c00;
+}
+.ssp-main-container .color-circles span .border-color-yellow {
+  border-color: #ffd200;
+}
+.ssp-main-container .color-circles span .border-color-lime {
+  border-color: #78c811;
+}
+.ssp-main-container .color-circles span .border-color-purple {
+  border-color: #a800ff;
+}
+.ssp-main-container .color-circles span .border-color-skyblue {
+  border-color: #009cff;
 }
 @media screen and (min-width: 992px) {
   .ssp-main-container .row-table-equal-height-bottom,
