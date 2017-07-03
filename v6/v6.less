@@ -10,7 +10,6 @@
 @proxima-nova-thin: 'proxima_nova_thin', sans-serif;
 @header-color: #444;
 @body-color: #222;
-@medium-gray: #888;
 @a-link-color: #0077c7;
 @a-link-visited: #8a42a6;
 @bt-blue: #41779c;
@@ -83,7 +82,7 @@
   }
 
   h4 {
-    // font-size: 24px; 
+    // font-size: 24px;
     font-size: 1.5em;
   }
 
@@ -168,7 +167,6 @@
       margin-top: 0;
       margin-bottom: 15px;
     }
-
   }
 
   span {
@@ -358,9 +356,7 @@
     color: @bt-blue;
     margin-bottom: 15px;
   }
-  .font-med-gray{
-    color:@medium-gray
-  }
+
   .full-width {
     width: 100%;
     padding: 13px 25px;
@@ -400,7 +396,7 @@
       font-family: @proxima-nova-rgregular;
       font-size: 1.5em;
       line-height: 32px;
-      color: @medium-gray;
+      color: #888;
       font-style: italic;
       margin: 0 0 20px;
       em {
@@ -423,12 +419,6 @@
     margin-top: 40px;
     margin-bottom: 40px;
     border-top: 1px solid #aeaeae;
-
-    &.dotted{
-      border-top: 1px dotted #aeaeae;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
   }
 
   // Custom Rows
@@ -681,25 +671,6 @@
         border-bottom: none;
       }
     }
-
-    li:last-of-type{
-      .media-body a{
-        border-bottom: none;
-      }
-    }
-  }
-
-  .row-videos-gray{
-    section{
-      width: ~ 'calc(50% - 20px)';
-      background-color: #f1f1f1;
-      padding: 30px 60px 40px;
-      margin: 15px auto;
-    }
-    img{
-      // height: 250px;
-      margin: 20px 0;
-    }
   }
 
   .row-videos-gray{
@@ -789,12 +760,13 @@
       margin: 0 auto;
       height: 100%;
     }
-    h2.product-features {
+    .product-features {
       color: @bt-blue;
       line-height: 28px;
     }
     h6 {
       display: inline-block;
+      font-size: 1em;
     }
     svg {
       position: relative;
@@ -880,15 +852,6 @@
         background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
       }
     }
-    &.mask-purple {
-      figure {
-        background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
-      }
-    }
-  }
-  video.video-success {
-    margin-top: 30px;
-    margin-bottom: 20px;
   }
   video.video-success {
     margin-top: 30px;
@@ -1562,11 +1525,26 @@
     padding: 6px 1px 6px 5px;
   }
 
-  .link-list {
+  .link-list, .link-list-border-bottom{
     ul {
       padding: 0;
       list-style-type: none;
       margin-top: 30px;
+    }
+  }
+  .link-list-border-bottom {
+    ul {
+      margin-top: 0;
+      display: inline-block;
+    }
+    li {
+      display: inline-block;
+      border-bottom: 1px solid #aeaeae;
+      padding-bottom: 30px;
+      margin-top: 30px;
+    }
+    li:last-of-type {
+      border-bottom: none;
     }
   }
   .link-list-spaced {
@@ -1798,8 +1776,10 @@
         border-width: 18px;
         border-radius: 50%;
         font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
         text-transform: uppercase;
-        color: @medium-gray;
+        color: #888;
         text-align: center;
         display: table-cell;
         vertical-align: middle;
@@ -1900,7 +1880,7 @@
     }
 
     .row-table-equal-height-bottom {
-      h2 {
+      .product-features {
         text-align: center;
       }
       h6 {
