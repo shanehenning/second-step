@@ -11,7 +11,7 @@
 @header-color: #444;
 @body-color: #222;
 @medium-gray: #888;
-@a-link-color: #205c96;
+@a-link-color: #0077c7;
 @a-link-visited: #8a42a6;
 @bt-blue: #41779c;
 @bt-blue-hover: #4ba0c8;
@@ -398,7 +398,7 @@
     }
     blockquote {
       font-family: @proxima-nova-rgregular;
-      font-size: 1.3125em;
+      font-size: 1.5em;
       line-height: 32px;
       color: @medium-gray;
       font-style: italic;
@@ -411,7 +411,7 @@
       font-family: @proxima-nova-rgregular;
       color: #222;
       float: right;
-      font-size: 0.875em;
+      font-size: 1em;
       font-style: normal;
       em {
         font-family: @proxima-nova-regular-italic;
@@ -450,7 +450,7 @@
   }
 
   .row-hero-image {
-    height: 500px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     img {
@@ -469,7 +469,6 @@
       padding-left: 40px;
       padding-right: 40px;
       background-color: rgba(241,241,241,0.85);
-      // width: 45%;
       height: 500px;
     }
     aside {
@@ -478,7 +477,6 @@
       vertical-align: middle;
     }
     h2 {
-      color: @bt-blue;
       // font-size: 48px;
       font-size: 3em;
       line-height: 52px;
@@ -496,6 +494,8 @@
     .ssp-btn.ghost-btn {
       margin-top: 40px;
       font-size: 24px;
+      padding-left: 45px;
+      padding-right: 45px;
     }
   }
 
@@ -504,12 +504,14 @@
       quotes: "“" "”";
       content: open-quote "\00a0" close-quote;
       font-size: 110px;
+      text-align: center;
       height: 70px;
       display: block;
       line-height: 1;
       color: @header-color;
       font-family: serif;
       text-shadow: #808080 1px 1px 1px;
+      margin-top: 10px;
     }
     &.mask{
       &-blue{
@@ -534,26 +536,63 @@
       }
     }
     blockquote {
-      font-size: 1.375em;
+      font-size: 1.5em;
       margin-bottom: 10px;
       line-height: 32px;
       border: 0;
       font-style: normal;
       color: #999;
-      font-family: @proxima-nova-rgregular;
+      font-family: @proxima-nova-regular-italic;
       em{
-        font-family: @proxima-nova-regular-italic;
+        font-family: @proxima-nova-rgregular;
       }
     }
     cite {
       font-family: @proxima-nova-rgregular;
-      color: @header-color;
-      font-size: 0.875em;
+      color: @body-color;
+      font-size: 1em;
       font-style: normal;
       line-height: 19px;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
       em{
         font-family: @proxima-nova-regular-italic;
       }
+    }
+  }
+
+  .row-half-image{
+    min-height: 400px;
+    p:last-of-type + a, ul:last-of-type + a {
+      display: block;
+      margin-top: -10px;
+    }
+    aside {
+      margin-top: 10px;
+      padding: 40px;
+    }
+    figure {
+      position: relative;
+      float: left;
+      padding: 0;
+      background-position: center;
+      background-size: cover;
+      height: 250px;
+      display: table-cell;
+    }
+    figure::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+    .ssp-btn{
+      margin-top: 0;
     }
   }
 
@@ -614,6 +653,7 @@
 
   .row-feature-dotted{
     ul{
+      padding-left: 0;
       list-style-type: none;
     }
     li{
@@ -668,6 +708,9 @@
       background-color: #f1f1f1;
       padding: 30px 60px 40px;
       margin: 15px auto;
+      article{
+        width: auto;
+      }
     }
     img{
       // height: 250px;
@@ -850,6 +893,7 @@
   video.video-success {
     margin-top: 30px;
     margin-bottom: 20px;
+    min-width: 100%;
   }
   // End Success Stories
 
@@ -991,7 +1035,7 @@
     cite {
       display: block;
       margin-top: 30px;
-      font-size: 14px;
+      font-size: 1em;
       font-style: normal;
       line-height: 19px;
     }
@@ -1083,6 +1127,9 @@
       font-size: 120px;
       line-height: 1;
       margin: 0;
+      span{
+        font-family: @proxima-nova-rgbold;
+      }
     }
     h2.small {
       font-size: 80px;
@@ -1394,6 +1441,12 @@
     background-color: rgba(65, 119, 156, 0.8) !important;
   }
 
+  .img-badge{
+    width: 125px;
+    border-radius: 75px;
+    margin: 0 auto;
+  }
+
   .pdf-img-download {
     margin-bottom: 10px;
   }
@@ -1576,6 +1629,10 @@
     padding-left: 20px;
   }
 
+  .color-blue{
+    color: @bt-blue;
+  }
+
   .background {
     &-light-gray {
       background-color: #f1f1f1;
@@ -1702,11 +1759,11 @@
     padding-bottom:20px;
 
     img{
-      margin-bottom: 20px;  
+      margin-bottom: 20px;
     }
 
     p{
-      font-size: 2em; 
+      font-size: 2em;
       font-weight: 100;
     }
   }
@@ -1716,14 +1773,14 @@
     ul{
       li{
         list-style-type: none;
-        margin-left: -40px; 
+        margin-left: -40px;
         padding: 20px 0;
       }
     }
   }
   input[type=checkbox], input[type=radio] {
       margin: 20px 10px 0 0;
-  } 
+  }
 
   /* new SEL page */
 
@@ -1744,7 +1801,7 @@
         text-transform: uppercase;
         color: @medium-gray;
         text-align: center;
-        display: table-cell;     
+        display: table-cell;
         vertical-align: middle;
       }
       .border-color{
@@ -1774,7 +1831,7 @@
         }
       }
     }
-  } 
+  }
   /* End Misc */
   @media screen and (min-width: 992px) {
     .row-table-equal-height-bottom, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-middle, .row-table-equal-height-top-middles {
@@ -1819,6 +1876,11 @@
       [class^=col]:nth-of-type(1) {
         vertical-align: middle;
       }
+    }
+
+    .row-table-ie-md {
+      margin: 0;
+      width: 100%;
     }
   }
   @media screen and (max-width: 991px) {
@@ -1946,7 +2008,7 @@
       }
     }
 
-    .row-classroom-kits, .row-table-equal-height, .row-table-equal-height-bottom, .row-table-equal-height-button, .row-table-equal-height-top {
+    .row-classroom-kits, .row-table-equal-height, .row-table-equal-height-bottom, .row-table-equal-height-button, .row-table-equal-height-top, .row-feature-image {
       [class^=col] {
         float: none;
         width: 450px;
@@ -1965,6 +2027,43 @@
         img {
           width: 410px;
         }
+      }
+    }
+    .row-feature-image{
+      article[class^=col]{
+          margin: 25px auto;
+      }
+    }
+
+    .row-half-image{
+      min-height: auto;
+      aside {
+        padding: 15px 0;
+      }
+      figure[class^=col]{
+        display: block;
+        margin: 0 auto;
+        height: 250px;
+      }
+    }
+
+    .row-videos-gray{
+      section{
+        width: 100%;
+        article{
+          max-width: 450px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .row-feature-dotted{
+      .media{
+        max-width: 450px;
+        margin: 0 auto;
+      }
+      .media-left{
+        display: block;
       }
     }
 

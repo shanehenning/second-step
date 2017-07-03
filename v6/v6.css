@@ -191,12 +191,12 @@
 .ssp-main-container a {
   font-family: 'proxima_nova_rgregular', sans-serif;
   cursor: pointer;
-  color: #205c96;
-  text-decoration-color: #205c96;
+  color: #0077c7;
+  text-decoration-color: #0077c7;
   text-decoration: none;
 }
 .ssp-main-container a:hover {
-  color: #205c96;
+  color: #0077c7;
   text-decoration: underline;
 }
 .ssp-main-container a:visited {
@@ -204,10 +204,10 @@
   text-decoration-color: #8a42a6;
 }
 .ssp-main-container a:active {
-  color: #205c96;
+  color: #0077c7;
 }
 .ssp-main-container a.copy {
-  color: #205c96;
+  color: #0077c7;
 }
 .ssp-main-container a.copy:visited {
   color: #8a42a6;
@@ -388,7 +388,7 @@
 }
 .ssp-main-container .quote blockquote {
   font-family: 'proxima_nova_rgregular', sans-serif;
-  font-size: 1.3125em;
+  font-size: 1.5em;
   line-height: 32px;
   color: #888;
   font-style: italic;
@@ -401,7 +401,7 @@
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #222;
   float: right;
-  font-size: 0.875em;
+  font-size: 1em;
   font-style: normal;
 }
 .ssp-main-container .quote cite em {
@@ -429,7 +429,7 @@
   font-family: 'proxima_nova_bold_italic', sans-serif;
 }
 .ssp-main-container .row-hero-image {
-  height: 500px;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -457,7 +457,6 @@
   vertical-align: middle;
 }
 .ssp-main-container .row-hero-image h2 {
-  color: #41779c;
   font-size: 3em;
   line-height: 52px;
   margin-bottom: 40px;
@@ -474,17 +473,21 @@
 .ssp-main-container .row-hero-image .ssp-btn.ghost-btn {
   margin-top: 40px;
   font-size: 24px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .ssp-main-container .row-testimonial blockquote::before {
   quotes: "“" "”";
   content: open-quote "\00a0" close-quote;
   font-size: 110px;
+  text-align: center;
   height: 70px;
   display: block;
   line-height: 1;
   color: #444;
   font-family: serif;
   text-shadow: #808080 1px 1px 1px;
+  margin-top: 10px;
 }
 .ssp-main-container .row-testimonial.mask-blue blockquote::before {
   color: #41779c;
@@ -499,29 +502,69 @@
   color: #653279;
 }
 .ssp-main-container .row-testimonial blockquote {
-  font-size: 1.375em;
+  font-size: 1.5em;
   margin-bottom: 10px;
   line-height: 32px;
   border: 0;
   font-style: normal;
   color: #999;
-  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-family: 'proxima_nova_regular_italic', sans-serif;
 }
 .ssp-main-container .row-testimonial blockquote em {
-  font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-family: 'proxima_nova_rgregular', sans-serif;
 }
 .ssp-main-container .row-testimonial cite {
   font-family: 'proxima_nova_rgregular', sans-serif;
-  color: #444;
-  font-size: 0.875em;
+  color: #222;
+  font-size: 1em;
   font-style: normal;
   line-height: 19px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .ssp-main-container .row-testimonial cite em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
 }
+.ssp-main-container .row-half-image {
+  min-height: 400px;
+}
+.ssp-main-container .row-half-image p:last-of-type + a,
+.ssp-main-container .row-half-image ul:last-of-type + a {
+  display: block;
+  margin-top: -10px;
+}
+.ssp-main-container .row-half-image aside {
+  margin-top: 10px;
+  padding: 40px;
+}
+.ssp-main-container .row-half-image figure {
+  position: relative;
+  float: left;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  display: table-cell;
+}
+.ssp-main-container .row-half-image figure::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.ssp-main-container .row-half-image .ssp-btn {
+  margin-top: 0;
+}
 .ssp-main-container .row-webinar-gallery h6 {
   display: block !important;
+}
+.ssp-main-container .row-webinar-gallery p {
+  font-size: 0.875em;
 }
 .ssp-main-container .row-webinar-gallery section {
   padding-bottom: 30px;
@@ -551,6 +594,7 @@
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 .ssp-main-container .row-feature-dotted ul {
+  padding-left: 0;
   list-style-type: none;
 }
 .ssp-main-container .row-feature-dotted li {
@@ -578,6 +622,9 @@
   background-color: #f1f1f1;
   padding: 30px 60px 40px;
   margin: 15px auto;
+}
+.ssp-main-container .row-videos-gray section article {
+  width: auto;
 }
 .ssp-main-container .row-videos-gray img {
   margin: 20px 0;
@@ -752,9 +799,22 @@
 .ssp-main-container .row-help-and-support section ul li:last-of-type {
   border-bottom: 1px solid #aeaeae;
 }
-.ssp-main-container .row-help-and-support img {
-  margin: 15px 0;
-  width: 100%;
+.ssp-main-container .row-help-and-support.mask-red figure {
+  background-image: url('http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png');
+}
+.ssp-main-container .row-help-and-support.mask-blue figure {
+  background-image: url('https://readingresultspdx.org/wp-content/uploads/2016/07/smiling-girl-cutout.png');
+}
+.ssp-main-container .row-help-and-support.mask-green figure {
+  background-image: url('http://www.graceplacenaples.org/wp-content/uploads/2015/08/bus-girl1.png');
+}
+.ssp-main-container .row-help-and-support.mask-purple figure {
+  background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
+}
+.ssp-main-container video.video-success {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  min-width: 100%;
 }
 .ssp-main-container .row-success-banner figure,
 .ssp-main-container .row-success-feature figure {
@@ -869,7 +929,7 @@
 .ssp-main-container .row-funding-circles cite {
   display: block;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 1em;
   font-style: normal;
   line-height: 19px;
 }
@@ -958,6 +1018,9 @@
   font-size: 120px;
   line-height: 1;
   margin: 0;
+}
+.ssp-main-container .carousel-inner h2 span {
+  font-family: 'proxima_nova_rgbold', sans-serif;
 }
 .ssp-main-container .carousel-inner h2.small {
   font-size: 80px;
@@ -1158,78 +1221,11 @@
 }
 .ssp-main-container .modal-body .limelight-player {
   width: 100% !important;
-  margin-bottom: 10px;
-}
-.ssp-main-container .relative {
-  position: relative;
-}
-.ssp-main-container .text-uppercase {
-  text-transform: uppercase;
-}
-.ssp-main-container .zero-margin {
-  margin: 0;
-}
-.ssp-main-container .padding-standard {
-  padding: 40px;
-}
-.ssp-main-container .padding-standard-top {
-  padding: 40px 40px 0;
-}
-.ssp-main-container .mask-green .carousel-control i {
-  color: #33a86a;
-  border-color: #33a86a;
-}
-.ssp-main-container .mask-green .carousel-control:hover i {
-  color: #fff;
-  background-color: #33a86a;
-}
-.ssp-main-container .mask-green .caption-close::after,
-.ssp-main-container .mask-green .caption-open::before {
-  color: #33a86a;
-}
-.ssp-main-container .mask-green .carousel-indicators li {
-  border-color: #33a86a;
-}
-.ssp-main-container .padding-tall {
-  padding: 40px 0;
-}
-.ssp-main-container .padding-tall-no-background {
-  padding: 40px 15px;
-}
-.ssp-main-container .padding-tall-no-background-top {
-  padding: 40px 15px 0;
-}
-.ssp-main-container .mask-purple .carousel-control i {
-  color: #653279;
-  border-color: #653279;
-}
-.ssp-main-container .mask-purple .carousel-control:hover i {
-  color: #fff;
-  background-color: #653279;
-}
-.ssp-main-container .mask-purple .caption-close::after,
-.ssp-main-container .mask-purple .caption-open::before {
-  color: #653279;
-}
-.ssp-main-container .mask-purple .carousel-indicators li {
-  border-color: #653279;
-}
-.ssp-main-container .mask-purple .carousel-indicators li.active {
-  background-color: #653279;
-}
-.ssp-main-container .mask-purple.row-success-banner {
-  background-color: #653279;
-}
-.ssp-main-container .mask-purple.row-success-feature h3 {
-  color: #653279;
-}
-.ssp-main-container .modal-body .limelight-player {
-  width: 100% !important;
   margin-top: 15px;
   margin-bottom: 20px;
 }
-.ssp-main-container .less-padding {
-  padding: 13px 25px;
+.ssp-main-container .relative {
+  position: relative;
 }
 .ssp-main-container .text-uppercase {
   text-transform: uppercase;
@@ -1304,6 +1300,11 @@
 }
 .ssp-main-container .toggle-check:checked + .ssp-btn.ghost-btn-filter:hover {
   background-color: rgba(65, 119, 156, 0.8) !important;
+}
+.ssp-main-container .img-badge {
+  width: 125px;
+  border-radius: 75px;
+  margin: 0 auto;
 }
 .ssp-main-container .pdf-img-download {
   margin-bottom: 10px;
@@ -1467,6 +1468,9 @@
 .ssp-main-container ol.no-indent,
 .ssp-main-container ul.no-indent {
   padding-left: 20px;
+}
+.ssp-main-container .color-blue {
+  color: #41779c;
 }
 .ssp-main-container .background-light-gray {
   background-color: #f1f1f1;
@@ -1703,6 +1707,10 @@
   .ssp-main-container .row-table-equal-height-bottom [class^=col]:nth-of-type(1) {
     vertical-align: middle;
   }
+  .ssp-main-container .row-table-ie-md {
+    margin: 0;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 991px) {
   .ssp-main-container .row-related-links [class^=col-md],
@@ -1828,7 +1836,8 @@
   .ssp-main-container .row-table-equal-height [class^=col],
   .ssp-main-container .row-table-equal-height-bottom [class^=col],
   .ssp-main-container .row-table-equal-height-button [class^=col],
-  .ssp-main-container .row-table-equal-height-top [class^=col] {
+  .ssp-main-container .row-table-equal-height-top [class^=col],
+  .ssp-main-container .row-feature-image [class^=col] {
     float: none;
     width: 450px;
     max-width: 100%;
@@ -1844,6 +1853,34 @@
   }
   .ssp-main-container .row-table-equal-height-button .object-fit img {
     width: 410px;
+  }
+  .ssp-main-container .row-feature-image article[class^=col] {
+    margin: 25px auto;
+  }
+  .ssp-main-container .row-half-image {
+    min-height: auto;
+  }
+  .ssp-main-container .row-half-image aside {
+    padding: 15px 0;
+  }
+  .ssp-main-container .row-half-image figure[class^=col] {
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+  }
+  .ssp-main-container .row-videos-gray section {
+    width: 100%;
+  }
+  .ssp-main-container .row-videos-gray section article {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .ssp-main-container .row-feature-dotted .media {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .ssp-main-container .row-feature-dotted .media-left {
+    display: block;
   }
   .ssp-main-container .table-striped-dark table {
     width: 100%;
