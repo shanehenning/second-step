@@ -429,7 +429,7 @@
   font-family: 'proxima_nova_bold_italic', sans-serif;
 }
 .ssp-main-container .row-hero-image {
-  height: 500px;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -473,6 +473,8 @@
 .ssp-main-container .row-hero-image .ssp-btn.ghost-btn {
   margin-top: 40px;
   font-size: 24px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .ssp-main-container .row-testimonial blockquote::before {
   quotes: "“" "”";
@@ -1298,6 +1300,11 @@
 }
 .ssp-main-container .toggle-check:checked + .ssp-btn.ghost-btn-filter:hover {
   background-color: rgba(65, 119, 156, 0.8) !important;
+}
+.ssp-main-container .img-badge {
+  width: 125px;
+  border-radius: 75px;
+  margin: 0 auto;
 }
 .ssp-main-container .pdf-img-download {
   margin-bottom: 10px;
