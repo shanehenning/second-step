@@ -354,9 +354,6 @@
   color: #41779c;
   margin-bottom: 15px;
 }
-.ssp-main-container .font-med-gray {
-  color: #888;
-}
 .ssp-main-container .full-width {
   width: 100%;
   padding: 13px 25px;
@@ -414,11 +411,6 @@
   margin-top: 40px;
   margin-bottom: 40px;
   border-top: 1px solid #aeaeae;
-}
-.ssp-main-container hr.dotted {
-  border-top: 1px dotted #aeaeae;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 .ssp-main-container .row-page-title {
   margin: 0;
@@ -625,18 +617,6 @@
 .ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
   border-bottom: none;
 }
-.ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
-  border-bottom: none;
-}
-.ssp-main-container .row-videos-gray section {
-  width: calc(50% - 20px);
-  background-color: #f1f1f1;
-  padding: 30px 60px 40px;
-  margin: 15px auto;
-}
-.ssp-main-container .row-videos-gray img {
-  margin: 20px 0;
-}
 .ssp-main-container .row-videos-gray section {
   width: calc(50% - 20px);
   background-color: #f1f1f1;
@@ -719,14 +699,14 @@
   margin: 0 auto;
   height: 100%;
 }
-.ssp-main-container .row-table-equal-height h2.product-features,
-.ssp-main-container .row-table-equal-height-bottom h2.product-features,
-.ssp-main-container .row-table-equal-height-button h2.product-features,
-.ssp-main-container .row-table-equal-height-md h2.product-features,
-.ssp-main-container .row-table-equal-height-md-one-third h2.product-features,
-.ssp-main-container .row-table-equal-height-middle h2.product-features,
-.ssp-main-container .row-table-equal-height-top h2.product-features,
-.ssp-main-container .row-table-equal-height-top-middles h2.product-features {
+.ssp-main-container .row-table-equal-height .product-features,
+.ssp-main-container .row-table-equal-height-bottom .product-features,
+.ssp-main-container .row-table-equal-height-button .product-features,
+.ssp-main-container .row-table-equal-height-md .product-features,
+.ssp-main-container .row-table-equal-height-md-one-third .product-features,
+.ssp-main-container .row-table-equal-height-middle .product-features,
+.ssp-main-container .row-table-equal-height-top .product-features,
+.ssp-main-container .row-table-equal-height-top-middles .product-features {
   color: #41779c;
   line-height: 28px;
 }
@@ -739,6 +719,7 @@
 .ssp-main-container .row-table-equal-height-top h6,
 .ssp-main-container .row-table-equal-height-top-middles h6 {
   display: inline-block;
+  font-size: 1em;
 }
 .ssp-main-container .row-table-equal-height svg,
 .ssp-main-container .row-table-equal-height-bottom svg,
@@ -830,13 +811,6 @@
 }
 .ssp-main-container .row-help-and-support.mask-purple figure {
   background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
-}
-.ssp-main-container .row-help-and-support.mask-purple figure {
-  background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
-}
-.ssp-main-container video.video-success {
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 .ssp-main-container video.video-success {
   margin-top: 30px;
@@ -1442,10 +1416,24 @@
 .ssp-main-container .glyphicon-triangle-right {
   padding: 6px 1px 6px 5px;
 }
-.ssp-main-container .link-list ul {
+.ssp-main-container .link-list ul,
+.ssp-main-container .link-list-border-bottom ul {
   padding: 0;
   list-style-type: none;
   margin-top: 30px;
+}
+.ssp-main-container .link-list-border-bottom ul {
+  margin-top: 0;
+  display: inline-block;
+}
+.ssp-main-container .link-list-border-bottom li {
+  display: inline-block;
+  border-bottom: 1px solid #aeaeae;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
+.ssp-main-container .link-list-border-bottom li:last-of-type {
+  border-bottom: none;
 }
 .ssp-main-container .link-list-spaced ul {
   padding-left: 0;
@@ -1657,6 +1645,8 @@
   border-width: 18px;
   border-radius: 50%;
   font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-transform: uppercase;
   color: #888;
   text-align: center;
@@ -1763,7 +1753,7 @@
   .ssp-main-container .three-two-one section:nth-of-type(2n + 3) {
     clear: left;
   }
-  .ssp-main-container .row-table-equal-height-bottom h2 {
+  .ssp-main-container .row-table-equal-height-bottom .product-features {
     text-align: center;
   }
   .ssp-main-container .row-table-equal-height-bottom h6 {
