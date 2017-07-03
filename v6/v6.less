@@ -5,9 +5,12 @@
 @proxima-nova-rgbold: 'proxima_nova_rgbold', sans-serif;
 @proxima-nova-bold-italic: 'proxima_nova_bold_italic', sans-serif;
 @proxima-nova-xbold: 'proxima_nova_xbold', sans-serif;
+@proxima-nova-ltsemibold: 'proxima_nova_ltsemibold', sans-serif;
+@proxima-nova-ltlight: 'proxima_nova_ltlight', sans-serif;
 @proxima-nova-thin: 'proxima_nova_thin', sans-serif;
 @header-color: #444;
 @body-color: #222;
+@medium-gray: #888;
 @a-link-color: #205c96;
 @a-link-visited: #8a42a6;
 @bt-blue: #41779c;
@@ -56,6 +59,7 @@
   h1 {
     // font-size: 24px;
     font-size: 1.5em;
+    line-height: 28px;
   }
 
   // h2.hero {
@@ -95,23 +99,13 @@
     margin-bottom: 8px;
   }
 
-  h1.page-title {
-    font-family: @proxima-nova-rgbold;
-    display: inline-block;
-    color: #888;
-    margin-bottom: 20px;
-    font-size: 1.125em;
-    em {
-      font-family: @proxima-nova-bold-italic;
-    }
-  }
   h3, h5 {
     text-transform: none;
   }
 
   p strong, strong {
     font-family: @proxima-nova-rgbold;
-    font-weight: 700;
+    font-weight: 400;
     em {
       font-family: @proxima-nova-bold-italic;
     }
@@ -174,6 +168,7 @@
       margin-top: 0;
       margin-bottom: 15px;
     }
+
   }
 
   span {
@@ -318,6 +313,13 @@
       &:hover p {
         color: #fff;
       }
+      &-white{
+        color: #fff !important;
+        border-color: #fff;
+        margin-top: 30px;
+        display: inline-block;
+        text-decoration: none;
+      }
     }
 
     // .ssp-btn (continued){
@@ -325,18 +327,15 @@
       width: 100%;
     }
     // .ssp-btn (continued){
-    &-ghost-white-btn {
+    &.ghost-btn-white {
       border: 1px solid #fff;
-      border-radius: 4px;
-      padding: 8px 7px 5px;
       color: #fff;
-      text-transform: uppercase;
       transition: 200ms;
       display: inline-block;
       &:hover {
-        background-color: rgba(255,255,255, 0.15);
+        background-color: #fff;
         text-decoration: none;
-        text-shadow: 1px 2px rgba(255,255,255, 0.15);
+        color: @bt-blue !important;
       }
     }
   }
@@ -359,7 +358,9 @@
     color: @bt-blue;
     margin-bottom: 15px;
   }
-
+  .font-med-gray{
+    color:@medium-gray
+  }
   .full-width {
     width: 100%;
     padding: 13px 25px;
@@ -399,7 +400,7 @@
       font-family: @proxima-nova-rgregular;
       font-size: 1.3125em;
       line-height: 32px;
-      color: #888;
+      color: @medium-gray;
       font-style: italic;
       margin: 0 0 20px;
       em {
@@ -422,6 +423,12 @@
     margin-top: 40px;
     margin-bottom: 40px;
     border-top: 1px solid #aeaeae;
+
+    &.dotted{
+      border-top: 1px dotted #aeaeae;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   // Custom Rows
@@ -430,11 +437,12 @@
     h1 {
       font-family: @proxima-nova-rgbold;
       display: inline-block;
-      color: #888;
+      color: @header-color;
       margin-top: 1px;
       margin-bottom: 10px;
       letter-spacing: 0.075px;
-      font-size: 1.125em;
+      font-size: 1.5em;
+      line-height: 28px;
       em {
         font-family: @proxima-nova-bold-italic;
       }
@@ -463,7 +471,6 @@
       background-color: rgba(241,241,241,0.85);
       // width: 45%;
       height: 500px;
-
     }
     aside {
       margin: 0 auto;
@@ -493,13 +500,38 @@
   }
 
   .row-testimonial {
-    .caption-open::before, .caption-close::after{
+    blockquote::before{
       quotes: "“" "”";
+      content: open-quote "\00a0" close-quote;
       font-size: 110px;
+      height: 70px;
+      display: block;
       line-height: 1;
       color: @header-color;
       font-family: serif;
       text-shadow: #808080 1px 1px 1px;
+    }
+    &.mask{
+      &-blue{
+        blockquote::before{
+          color: @color-success-blue;
+        }
+      }
+      &-red{
+        blockquote::before{
+          color: @color-success-red;
+        }
+      }
+      &-green{
+        blockquote::before{
+          color: @color-success-green;
+        }
+      }
+      &-purple{
+        blockquote::before{
+          color: @color-success-purple;
+        }
+      }
     }
     blockquote {
       font-size: 1.375em;
@@ -528,6 +560,9 @@
   .row-webinar-gallery {
     h6{
       display: block !important;
+    }
+    p{
+      font-size: 0.875em;
     }
     section {
       padding-bottom: 30px;
@@ -578,10 +613,46 @@
   }
 
   .row-feature-dotted{
+    ul{
+      list-style-type: none;
+    }
     li{
-      aside{
-        border-bottom: 1px solid dotted;
+      clear: both;
+      margin: 0;
+      padding-top: 20px;
+      // padding-bottom: 20px;
+      .media-body {
+        padding-left: 15px;
+        a{
+          display: block;
+          padding-bottom: 40px;
+          border-bottom: 1px dotted #444;
+          // margin-bottom: 20px;
+        }
       }
+      img{
+        max-height: 120px;
+        margin: 0 auto;
+      }
+    }
+
+    li:last-of-type{
+      .media-body a{
+        border-bottom: none;
+      }
+    }
+  }
+
+  .row-videos-gray{
+    section{
+      width: ~ 'calc(50% - 20px)';
+      background-color: #f1f1f1;
+      padding: 30px 60px 40px;
+      margin: 15px auto;
+    }
+    img{
+      // height: 250px;
+      margin: 20px 0;
     }
   }
 
@@ -727,11 +798,32 @@
         }
       }
     }
-    img {
-      margin: 15px 0;
-      width: 100%;
+    &.mask-red {
+      figure {
+        background-image: url('http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png');
+      }
+    }
+    &.mask-blue {
+      figure {
+        background-image: url('https://readingresultspdx.org/wp-content/uploads/2016/07/smiling-girl-cutout.png');
+      }
+    }
+    &.mask-green {
+      figure {
+        background-image: url('http://www.graceplacenaples.org/wp-content/uploads/2015/08/bus-girl1.png');
+      }
+    }
+    &.mask-purple {
+      figure {
+        background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
+      }
     }
   }
+  video.video-success {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  // End Success Stories
 
   // Success Stories
   .row-success-banner, .row-success-feature {
@@ -745,6 +837,7 @@
   .row-success-banner {
     width: ~ 'calc(100% + 30px)';
     h3 {
+      font-family: @proxima-nova-xbold;
       font-size: 70px;
       line-height: 65px;
       margin-bottom: 20px;
@@ -1181,7 +1274,8 @@
   .modal-body {
     .limelight-player {
       width: 100% !important;
-      margin-bottom: 10px;
+      margin-top: 15px;
+      margin-bottom: 20px;
     }
   }
   /* End Modal */
@@ -1247,6 +1341,29 @@
   }
   .less-padding {
     padding: 13px 25px;
+  }
+
+  .toggle-check {
+    visibility: hidden;
+    position: absolute;
+    left: -999999px;
+  }
+  .ssp-btn.ghost-btn-filter {
+    border: 2px solid #41779c;
+    color: #41779c !important;
+    background-color: transparent !important;
+    padding: 11px 60px;
+    width: 100%;
+  }
+  .ssp-btn.ghost-btn-filter:hover {
+    background-color: rgba(65, 119, 156, 0.2) !important;
+  }
+  .toggle-check:checked + .ssp-btn.ghost-btn-filter {
+    background-color: #41779c !important;
+    color: #ffffff !important;
+  }
+  .toggle-check:checked + .ssp-btn.ghost-btn-filter:hover {
+    background-color: rgba(65, 119, 156, 0.8) !important;
   }
 
   .pdf-img-download {
@@ -1597,7 +1714,7 @@
         border-radius: 50%;
         font-size: 18px;
         text-transform: uppercase;
-        color: #888;
+        color: @medium-gray;
         text-align: center;
         display: table-cell;     
         vertical-align: middle;
@@ -1630,9 +1747,6 @@
       }
     }
   } 
-
-
-
   /* End Misc */
   @media screen and (min-width: 992px) {
     .row-table-equal-height-bottom, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-middle, .row-table-equal-height-top-middles {
@@ -1678,7 +1792,6 @@
         vertical-align: middle;
       }
     }
-    
   }
   @media screen and (max-width: 991px) {
     .row-related-links, .row-table-equal-height-bottom, .row-table-equal-height-md, .row-table-equal-height-md-one-third {
@@ -1753,7 +1866,6 @@
     .carousel-caption-wrapper {
       min-height: 320px;
     }
-    
   }
   @media screen and (min-width: 768px) {
     .row-table-two-columns-equal-height {
