@@ -44,50 +44,52 @@
       <p>We've combined social-emotional learning (SEL) with bullying prevention and child protection to form a cohesive foundation to whole-school success.</p>
     </div>
 
-    <div class="row padding-tall row-table-ie row-table-equal-height">
-      <section class="col-sm-6">
-        <div class="text-center">
-          <img class="img-responsive" src="http://www.cfchildren.org//portals/1/SS_Multi/ss_img/repack-el-5-bundle.png" alt="Product Placeholder">
-        </div>
-      </section>
-      <section class="col-sm-6">
-        <figure>
-          <h6 class="upper-line-title">El&ndash;3 <em>Second Step </em> Social&ndash;Emotional Learning</h6>
-          <h3>Who is this for?</h3>
-          <p>We developed the <em>Second Step </em> SEL program to work in:</p>
-          <ul class="no-indent">
-            <li><a href="#">Early Learning through Middle School classrooms.</a></li>
-            <li><a href="#">Bullying Prevention available for K&ndash;5</a></li>
-            <li><a href="#">Child Protection Unit available for EL&ndash;5</a></li>
-          </ul>
-          <strong><a href="#"><i class="glyphicon glyphicon-menu-right"></i><i class="glyphicon glyphicon-menu-right"></i> Shop all <em>Second Step </em> bundles</a></strong>
-        </figure>
-      </section>
+    <div class="row padding-tall background-light-gray">
+      <div class="row-table-ie row-table-equal-height">
+        <section class="col-sm-6">
+          <div class="text-center">
+            <img class="img-responsive" src="/Portals/0/common-img/suite-product-photo.png" alt="Product Placeholder">
+          </div>
+        </section>
+        <section class="col-sm-6">
+          <div>
+            <h6 class="upper-line-title padding-bottom"> <em>Second Step </em> Suite</h6>
+            <p>By integrating our evidence-based social-emotional learning (SEL) program with our bullying prevention and child protection units, we’ve formed a cohesive foundation for a safe and supportive learning environment. Together, these products
+              can help you achieve real and lasting results.</p>
+          </div>
+        </section>
+      </div>
     </div>
 
-    <div class="row row-features-blue padding-standard">
-      <h3 class="header-underline">Schoolwide Success: Choosing the <em>Second Step </em>Suite</h3>
-      <section class="col-sm-6">
-        <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Compass">
-        <h3>Thriving Students</h3>
-        <p>Give students the tools to learn, grow, and thrive in the classroom</p>
-      </section>
-      <section class="col-sm-6">
-        <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Compass">
-        <h3>Supported Staff</h3>
-        <p>Provide educators with the foundation for a safe learning environment</p>
-      </section>
+    <div class="row padding-standard-top">
+      <h3 class="col-sm-12">Why Choose the  <em>Second Step </em>Suite?</h3>
       <div class="clearfix-block"></div>
-      <section class="col-sm-6">
-        <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Compass">
-        <h3>Powerful Schools</h3>
-        <p>Set your school up for success with skills that build strong students</p>
-      </section>
-      <section class="col-sm-6">
-        <img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-orange/bfa/bfa_map-marker/bfa_map-marker_flat-circle-white-on-orange_512x512.png" alt="Compass">
-        <h3>Sustained Success</h3>
-        <p>Build lasting results with skills that impact students today and tomorrow</p>
-      </section>
+      <div class="row-colored-frames-icon">
+        <section class="row-table-equal-height-md">
+          <article class="col-md-6">
+            <img src="/Portals/0/common-img/button-icon.png" alt="Empathy Icon">
+            <h4>Thriving Students</h4>
+            <p>Students gain the skills they need to become caring, confident, and capable learners and problem-solvers.</p>
+          </article>
+          <article class="col-md-6">
+            <img src="/Portals/0/common-img/button-icon.png" alt="Empathy Icon">
+            <h4>Supported Staff</h4>
+            <p>Educators get the tools needed to create safe, respectful classrooms, so they spend less time managing behavior and more time teaching.</p>
+          </article>
+        </section>
+        <section class="row-table-equal-height-md">
+          <article class="col-md-6">
+            <img src="/Portals/0/common-img/button-icon.png" alt="Empathy Icon">
+            <h4>Effective Schools</h4>
+            <p>Our coordinated approach eliminates duplication and improves impact, saving schools time and money.</p>
+          </article>
+          <article class="col-md-6">
+            <img src="/Portals/0/common-img/button-icon.png" alt="Empathy Icon">
+            <h4>Sustained Success</h4>
+            <p>Interactive staff training and ongoing support help ensure successful implementation and continuous improvement</p>
+          </article>
+        </section>
+      </div>
     </div>
 
     <div class="row padding-standard">
@@ -303,7 +305,9 @@
       function equalHeightColumns() {
         var $videoAsidesAll = $('.row-webinar-videos aside');
         var videoAsidesArray = [];
-        $videoAsidesAll.css({'height': 'auto'});
+        $videoAsidesAll.css({
+          'height': 'auto'
+        });
         $videoAsidesAll.each(function() {
           videoAsidesArray.push($(this).height());
         });
@@ -311,9 +315,13 @@
 
 
         if ($(window).width() > 992) {
-          $videoAsidesAll.css({'height': videoAsidesLong});
+          $videoAsidesAll.css({
+            'height': videoAsidesLong
+          });
         } else {
-          $videoAsidesAll.css({'height': 'auto'});
+          $videoAsidesAll.css({
+            'height': 'auto'
+          });
         }
       }
       equalHeightColumns();
