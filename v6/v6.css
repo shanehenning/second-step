@@ -354,6 +354,9 @@
   color: #41779c;
   margin-bottom: 15px;
 }
+.ssp-main-container .font-med-gray {
+  color: #888;
+}
 .ssp-main-container .full-width {
   width: 100%;
   padding: 13px 25px;
@@ -411,6 +414,11 @@
   margin-top: 40px;
   margin-bottom: 40px;
   border-top: 1px solid #aeaeae;
+}
+.ssp-main-container hr.dotted {
+  border-top: 1px dotted #aeaeae;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .ssp-main-container .row-page-title {
   margin: 0;
@@ -617,6 +625,18 @@
 .ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
   border-bottom: none;
 }
+.ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
+  border-bottom: none;
+}
+.ssp-main-container .row-videos-gray section {
+  width: calc(50% - 20px);
+  background-color: #f1f1f1;
+  padding: 30px 60px 40px;
+  margin: 15px auto;
+}
+.ssp-main-container .row-videos-gray img {
+  margin: 20px 0;
+}
 .ssp-main-container .row-videos-gray section {
   width: calc(50% - 20px);
   background-color: #f1f1f1;
@@ -810,6 +830,18 @@
 }
 .ssp-main-container .row-help-and-support.mask-purple figure {
   background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
+}
+.ssp-main-container .row-help-and-support.mask-purple figure {
+  background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
+}
+.ssp-main-container video.video-success {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.ssp-main-container video.video-success {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  min-width: 100%;
 }
 .ssp-main-container video.video-success {
   margin-top: 30px;
