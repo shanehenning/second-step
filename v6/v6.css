@@ -817,6 +817,11 @@
   margin-bottom: 20px;
   min-width: 100%;
 }
+.ssp-main-container video.video-success {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  min-width: 100%;
+}
 .ssp-main-container .row-success-banner figure,
 .ssp-main-container .row-success-feature figure {
   background-position: center;
