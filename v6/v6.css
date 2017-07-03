@@ -488,7 +488,10 @@
   quotes: "“" "”";
   content: open-quote "\00a0" close-quote;
   font-size: 110px;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> 5f6fd496ab97c8de3dc5e77fe4b21033e6f4b4e6
   height: 70px;
   display: block;
   line-height: 1;
@@ -496,6 +499,18 @@
   font-family: serif;
   text-shadow: #808080 1px 1px 1px;
   margin-top: 10px;
+}
+.ssp-main-container .row-testimonial.mask-blue blockquote::before {
+  color: #41779c;
+}
+.ssp-main-container .row-testimonial.mask-red blockquote::before {
+  color: #ce1443;
+}
+.ssp-main-container .row-testimonial.mask-green blockquote::before {
+  color: #33a86a;
+}
+.ssp-main-container .row-testimonial.mask-purple blockquote::before {
+  color: #653279;
 }
 .ssp-main-container .row-testimonial.mask-blue blockquote::before {
   color: #41779c;
@@ -602,7 +617,10 @@
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 .ssp-main-container .row-feature-dotted ul {
+<<<<<<< HEAD
   padding-left: 0;
+=======
+>>>>>>> 5f6fd496ab97c8de3dc5e77fe4b21033e6f4b4e6
   list-style-type: none;
 }
 .ssp-main-container .row-feature-dotted li {
@@ -625,9 +643,12 @@
 .ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
   border-bottom: none;
 }
+<<<<<<< HEAD
 .ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
   border-bottom: none;
 }
+=======
+>>>>>>> 5f6fd496ab97c8de3dc5e77fe4b21033e6f4b4e6
 .ssp-main-container .row-videos-gray section {
   width: calc(50% - 20px);
   background-color: #f1f1f1;
@@ -636,6 +657,7 @@
 }
 .ssp-main-container .row-videos-gray img {
   margin: 20px 0;
+<<<<<<< HEAD
 }
 .ssp-main-container .row-videos-gray section {
   width: calc(50% - 20px);
@@ -648,6 +670,8 @@
 }
 .ssp-main-container .row-videos-gray img {
   margin: 20px 0;
+=======
+>>>>>>> 5f6fd496ab97c8de3dc5e77fe4b21033e6f4b4e6
 }
 .ssp-main-container .row-webinar-videos aside {
   padding: 20px 40px;
@@ -1266,6 +1290,74 @@
 .ssp-main-container .padding-standard-top {
   padding: 40px 40px 0;
 }
+.ssp-main-container .mask-green .carousel-control i {
+  color: #33a86a;
+  border-color: #33a86a;
+}
+.ssp-main-container .mask-green .carousel-control:hover i {
+  color: #fff;
+  background-color: #33a86a;
+}
+.ssp-main-container .mask-green .caption-close::after,
+.ssp-main-container .mask-green .caption-open::before {
+  color: #33a86a;
+}
+.ssp-main-container .mask-green .carousel-indicators li {
+  border-color: #33a86a;
+}
+.ssp-main-container .padding-tall {
+  padding: 40px 0;
+}
+.ssp-main-container .padding-tall-no-background {
+  padding: 40px 15px;
+}
+.ssp-main-container .padding-tall-no-background-top {
+  padding: 40px 15px 0;
+}
+.ssp-main-container .mask-purple .carousel-control i {
+  color: #653279;
+  border-color: #653279;
+}
+.ssp-main-container .mask-purple .carousel-control:hover i {
+  color: #fff;
+  background-color: #653279;
+}
+.ssp-main-container .mask-purple .caption-close::after,
+.ssp-main-container .mask-purple .caption-open::before {
+  color: #653279;
+}
+.ssp-main-container .mask-purple .carousel-indicators li {
+  border-color: #653279;
+}
+.ssp-main-container .mask-purple .carousel-indicators li.active {
+  background-color: #653279;
+}
+.ssp-main-container .mask-purple.row-success-banner {
+  background-color: #653279;
+}
+.ssp-main-container .mask-purple.row-success-feature h3 {
+  color: #653279;
+}
+.ssp-main-container .modal-body .limelight-player {
+  width: 100% !important;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.ssp-main-container .less-padding {
+  padding: 13px 25px;
+}
+.ssp-main-container .text-uppercase {
+  text-transform: uppercase;
+}
+.ssp-main-container .zero-margin {
+  margin: 0;
+}
+.ssp-main-container .padding-standard {
+  padding: 40px;
+}
+.ssp-main-container .padding-standard-top {
+  padding: 40px 40px 0;
+}
 .ssp-main-container .padding-standard-bottom {
   padding: 0 40px 40px;
 }
@@ -1328,11 +1420,14 @@
 .ssp-main-container .toggle-check:checked + .ssp-btn.ghost-btn-filter:hover {
   background-color: rgba(65, 119, 156, 0.8) !important;
 }
+<<<<<<< HEAD
 .ssp-main-container .img-badge {
   width: 125px;
   border-radius: 75px;
   margin: 0 auto;
 }
+=======
+>>>>>>> 5f6fd496ab97c8de3dc5e77fe4b21033e6f4b4e6
 .ssp-main-container .pdf-img-download {
   margin-bottom: 10px;
 }
