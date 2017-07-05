@@ -57,7 +57,7 @@
   font-family: 'proxima_nova_regular_italic', sans-serif;
 }
 .ssp-main-container h1 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 28px;
 }
 .ssp-main-container h2.large {
@@ -464,7 +464,7 @@
   padding-left: 40px;
   padding-right: 40px;
   background-color: rgba(241, 241, 241, 0.85);
-  height: 500px;
+  height: 400px;
 }
 .ssp-main-container .row-hero-image aside {
   margin: 0 auto;
@@ -474,7 +474,8 @@
 .ssp-main-container .row-hero-image h2 {
   font-size: 3em;
   line-height: 52px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .ssp-main-container .row-hero-image h2 em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
@@ -486,10 +487,9 @@
   margin-bottom: 0;
 }
 .ssp-main-container .row-hero-image .ssp-btn.ghost-btn {
-  margin-top: 40px;
   font-size: 24px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .ssp-main-container .row-testimonial blockquote::before {
   quotes: "“" "”";
@@ -543,9 +543,6 @@
 }
 .ssp-main-container .row-testimonial cite em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
-}
-.ssp-main-container .row-half-image {
-  min-height: 400px;
 }
 .ssp-main-container .row-half-image p:last-of-type + a,
 .ssp-main-container .row-half-image ul:last-of-type + a {
@@ -801,6 +798,15 @@
 }
 .ssp-main-container .equal-height-bottom-item {
   min-height: 45px;
+}
+.ssp-main-container .row-student-assemessment {
+  text-align: center;
+}
+.ssp-main-container .row-student-assemessment img {
+  margin: 25px auto;
+}
+.ssp-main-container .row-student-assemessment [class^=col] {
+  float: none;
 }
 .ssp-main-container .row-help-and-support section {
   margin: 30px 0 25px;
@@ -1330,6 +1336,9 @@
   border-radius: 75px;
   margin: 0 auto;
 }
+.ssp-main-container .icon-feature {
+  max-width: 250px;
+}
 .ssp-main-container .pdf-img-download {
   margin-bottom: 10px;
 }
@@ -1512,6 +1521,9 @@
 }
 .ssp-main-container .color-blue {
   color: #41779c;
+}
+.ssp-main-container .color-medium-gray {
+  color: #888;
 }
 .ssp-main-container .background-light-gray {
   background-color: #f1f1f1;
@@ -1746,6 +1758,10 @@
   .ssp-main-container .row-table-equal-height-top-middles [class^=col] {
     vertical-align: top;
   }
+  .ssp-main-container .row-table-equal-height-top-middles [class^=col] img {
+    margin: 0 auto;
+    display: block;
+  }
   .ssp-main-container .row-table-equal-height-top-middles [class^=col]:nth-of-type(1) {
     vertical-align: middle;
   }
@@ -1772,6 +1788,7 @@
 @media screen and (max-width: 991px) {
   .ssp-main-container .row-related-links [class^=col-md],
   .ssp-main-container .row-table-equal-height-bottom [class^=col-md],
+  .ssp-main-container .row-table-equal-height-top-middles [class^=col-md],
   .ssp-main-container .row-table-equal-height-md [class^=col-md],
   .ssp-main-container .row-table-equal-height-md-one-third [class^=col-md] {
     float: none;
@@ -1781,6 +1798,7 @@
   }
   .ssp-main-container .row-related-links [class^=col-md] img,
   .ssp-main-container .row-table-equal-height-bottom [class^=col-md] img,
+  .ssp-main-container .row-table-equal-height-top-middles [class^=col-md] img,
   .ssp-main-container .row-table-equal-height-md [class^=col-md] img,
   .ssp-main-container .row-table-equal-height-md-one-third [class^=col-md] img {
     display: inline-block;
@@ -1900,6 +1918,10 @@
     max-width: 100%;
     margin: 0 auto;
   }
+  .ssp-main-container .row-table-equal-height figure[class^=col] {
+    display: block;
+    margin: 25px auto;
+  }
   .ssp-main-container .row-table-equal-height-button [class^=col] {
     padding-bottom: 1px;
     margin: 0 auto 40px;
@@ -1938,6 +1960,15 @@
   }
   .ssp-main-container .row-feature-dotted .media-left {
     display: block;
+  }
+  .ssp-main-container .row-student-assemessment [class^=col] {
+    margin: 25px auto;
+    text-align: left;
+    width: 450px;
+    padding: 0;
+  }
+  .ssp-main-container .row-student-assemessment img {
+    width: 450px;
   }
   .ssp-main-container .table-striped-dark table {
     width: 100%;
