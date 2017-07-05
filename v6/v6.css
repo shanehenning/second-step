@@ -178,6 +178,12 @@
   color: #222;
   font-size: 0.875em;
 }
+.ssp-main-container span.large {
+  font-size: 3em;
+}
+.ssp-main-container span.jumbo {
+  font-size: 5em;
+}
 .ssp-main-container ul {
   list-style-type: square;
 }
@@ -354,6 +360,10 @@
   color: #41779c;
   margin-bottom: 15px;
 }
+.ssp-main-container .font-orange {
+  color: #f15722;
+  margin-bottom: 15px;
+}
 .ssp-main-container .full-width {
   width: 100%;
   padding: 13px 25px;
@@ -411,6 +421,11 @@
   margin-top: 40px;
   margin-bottom: 40px;
   border-top: 1px solid #aeaeae;
+}
+.ssp-main-container hr.dotted {
+  border-top: 1px dotted #aeaeae;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .ssp-main-container .row-page-title {
   margin: 0;
@@ -488,6 +503,9 @@
   font-family: serif;
   text-shadow: #808080 1px 1px 1px;
   margin-top: 10px;
+}
+.ssp-main-container .row-testimonial.no-quotes blockquote::before {
+  display: none;
 }
 .ssp-main-container .row-testimonial.mask-blue blockquote::before {
   color: #41779c;
@@ -1380,6 +1398,9 @@
 .ssp-main-container .border-top {
   border-top: 1px solid #aeaeae;
 }
+.ssp-main-container .border-top-thick {
+  border-top: 8px solid #464646;
+}
 .ssp-main-container .border-bottom {
   border-bottom: 1px solid #aeaeae;
 }
@@ -1556,6 +1577,20 @@
 }
 .ssp-main-container .color-row-blue {
   background-color: #41779c;
+}
+.ssp-main-container .teal-circle {
+  background: #26bbc3;
+  height: 130px;
+  width: 130px;
+  display: table-cell;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+.ssp-main-container .yellow-block {
+  background: #ffd621;
+  border-radius: 20px;
 }
 .ssp-main-container .row-third-right {
   padding-right: 0;
