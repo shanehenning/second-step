@@ -58,7 +58,7 @@
 
   h1 {
     // font-size: 24px;
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 28px;
   }
 
@@ -466,7 +466,7 @@
       padding-left: 40px;
       padding-right: 40px;
       background-color: rgba(241,241,241,0.85);
-      height: 500px;
+      height: 400px;
     }
     aside {
       margin: 0 auto;
@@ -477,7 +477,8 @@
       // font-size: 48px;
       font-size: 3em;
       line-height: 52px;
-      margin-bottom: 40px;
+      margin-top: 10px;
+      margin-bottom: 20px;
       em {
         font-family: @proxima-nova-bold-italic;
       }
@@ -489,10 +490,9 @@
       margin-bottom: 0;
     }
     .ssp-btn.ghost-btn {
-      margin-top: 40px;
       font-size: 24px;
-      padding-left: 45px;
-      padding-right: 45px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 
@@ -560,7 +560,7 @@
   }
 
   .row-half-image{
-    min-height: 400px;
+    // min-height: 400px;
     p:last-of-type + a, ul:last-of-type + a {
       display: block;
       margin-top: -10px;
@@ -820,6 +820,16 @@
   }
   .equal-height-bottom-item {
     min-height: 45px;
+  }
+
+  .row-student-assemessment{
+    text-align: center;
+    img{
+      margin: 25px auto;
+    }
+    [class^=col]{
+      float: none;
+    }
   }
 
   .row-help-and-support {
@@ -1422,6 +1432,10 @@
     margin: 0 auto;
   }
 
+  .icon-feature{
+    max-width: 250px;
+  }
+
   .pdf-img-download {
     margin-bottom: 10px;
   }
@@ -1621,6 +1635,9 @@
 
   .color-blue{
     color: @bt-blue;
+  }
+  .color-medium-gray{
+    color: @medium-gray;
   }
 
   .background {
@@ -1849,6 +1866,10 @@
     .row-table-equal-height-top-middles {
       [class^=col] {
         vertical-align: top;
+        img{
+          margin: 0 auto;
+          display: block;
+        }
       }
       [class^=col]:nth-of-type(1) {
         vertical-align: middle;
@@ -1876,7 +1897,7 @@
     }
   }
   @media screen and (max-width: 991px) {
-    .row-related-links, .row-table-equal-height-bottom, .row-table-equal-height-md, .row-table-equal-height-md-one-third {
+    .row-related-links, .row-table-equal-height-bottom, .row-table-equal-height-top-middles, .row-table-equal-height-md, .row-table-equal-height-md-one-third {
       [class^=col-md] {
         float: none;
         width: 450px;
@@ -2008,6 +2029,12 @@
         margin: 0 auto;
       }
     }
+    .row-table-equal-height{
+      figure[class^=col]{
+        display: block;
+        margin: 25px auto;
+      }
+    }
     .row-table-equal-height-button {
       [class^=col] {
         padding-bottom: 1px;
@@ -2056,6 +2083,18 @@
       }
       .media-left{
         display: block;
+      }
+    }
+
+    .row-student-assemessment{
+      [class^=col]{
+        margin: 25px auto;
+        text-align: left;
+        width: 450px;
+        padding: 0;
+      }
+       img{
+        width: 450px;
       }
     }
 
