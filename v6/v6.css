@@ -348,6 +348,30 @@
 .ssp-main-container .font-white ul.intro {
   color: #fff;
 }
+.ssp-main-container .font-dark a,
+.ssp-main-container .font-dark button,
+.ssp-main-container .font-dark h1,
+.ssp-main-container .font-dark h2,
+.ssp-main-container .font-dark h3,
+.ssp-main-container .font-dark h4,
+.ssp-main-container .font-dark h5,
+.ssp-main-container .font-dark h6,
+.ssp-main-container .font-dark i,
+.ssp-main-container .font-dark li,
+.ssp-main-container .font-dark ol,
+.ssp-main-container .font-dark ol.intro,
+.ssp-main-container .font-dark p,
+.ssp-main-container .font-dark p.intro,
+.ssp-main-container .font-dark span,
+.ssp-main-container .font-dark span.intro,
+.ssp-main-container .font-dark strong,
+.ssp-main-container .font-dark ul,
+.ssp-main-container .font-dark ul.intro {
+  color: #333;
+}
+.ssp-main-container .font-dark a {
+  text-decoration: underline;
+}
 .ssp-main-container .font-green {
   color: #33a86a;
   margin-bottom: 15px;
@@ -411,7 +435,7 @@
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #222;
   float: right;
-  font-size: 1em;
+  font-size: 19px;
   font-style: normal;
 }
 .ssp-main-container .quote cite em {
@@ -449,6 +473,7 @@
   overflow: hidden;
 }
 .ssp-main-container .row-hero-image img {
+  width: 1200px;
   position: absolute;
   margin: auto;
   min-height: 100%;
@@ -534,7 +559,7 @@
 .ssp-main-container .row-testimonial cite {
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #222;
-  font-size: 1em;
+  font-size: 19px;
   font-style: normal;
   line-height: 19px;
   display: block;
@@ -624,6 +649,11 @@
   display: block;
   padding-bottom: 40px;
   border-bottom: 1px dotted #444;
+}
+.ssp-main-container .row-feature-dotted li .media-body a.regular {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: none;
 }
 .ssp-main-container .row-feature-dotted li img {
   max-height: 120px;
@@ -788,8 +818,7 @@
 .ssp-main-container .row-table-equal-height-button .img-responsive {
   margin-bottom: 10px;
 }
-.ssp-main-container .row-table-equal-height-button .btn-width-100 {
-  width: calc(100% - 30px);
+.ssp-main-container .row-table-equal-height-button .button-bottom {
   margin: 0 auto;
   bottom: 0;
   left: 0;
@@ -959,7 +988,7 @@
 .ssp-main-container .row-funding-circles cite {
   display: block;
   margin-top: 30px;
-  font-size: 1em;
+  font-size: 19px;
   font-style: normal;
   line-height: 19px;
 }
@@ -1525,6 +1554,17 @@
 .ssp-main-container .color-medium-gray {
   color: #888;
 }
+.ssp-main-container .background-sel {
+  background-image: url('/Portals/0/common-img/SS-Section-G-IMG.jpg');
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(0deg);
+  border: 1px dotted #aeaeae;
+}
+.ssp-main-container .background-sel section {
+  background-color: rgba(241, 241, 241, 0);
+  transform: rotateY(0deg);
+}
 .ssp-main-container .background-light-gray {
   background-color: #f1f1f1;
 }
@@ -1591,6 +1631,9 @@
   background-color: #41779c;
 }
 .ssp-main-container .teal-circle {
+  display: inline-block;
+}
+.ssp-main-container .teal-circle span {
   background: #26bbc3;
   height: 160px;
   width: 160px;
@@ -1824,6 +1867,13 @@
   .ssp-main-container .row-table-equal-height-md-one-third [class^=col-md] img {
     display: inline-block;
   }
+  .ssp-main-container .row-related-links .teal-circle,
+  .ssp-main-container .row-table-equal-height-bottom .teal-circle,
+  .ssp-main-container .row-table-equal-height-top-middles .teal-circle,
+  .ssp-main-container .row-table-equal-height-md .teal-circle,
+  .ssp-main-container .row-table-equal-height-md-one-third .teal-circle {
+    margin-bottom: 20px;
+  }
   .ssp-main-container .three-two-one section:nth-of-type(2n + 3) {
     clear: left;
   }
@@ -1939,6 +1989,14 @@
     max-width: 100%;
     margin: 0 auto;
   }
+  .ssp-main-container .row-classroom-kits .teal-circle,
+  .ssp-main-container .row-table-equal-height .teal-circle,
+  .ssp-main-container .row-table-equal-height-bottom .teal-circle,
+  .ssp-main-container .row-table-equal-height-button .teal-circle,
+  .ssp-main-container .row-table-equal-height-top .teal-circle,
+  .ssp-main-container .row-feature-image .teal-circle {
+    margin-bottom: 20px;
+  }
   .ssp-main-container .row-table-equal-height figure[class^=col] {
     display: block;
     margin: 25px auto;
@@ -1991,11 +2049,22 @@
   .ssp-main-container .row-student-assemessment img {
     width: 450px;
   }
+  .ssp-main-container .background-sel {
+    background-image: url(Portals/0/common-img/SS-Section-G-IMG.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-position-x: 520px;
+    transform: rotateY(180deg);
+  }
+  .ssp-main-container .background-sel section {
+    background-color: rgba(241, 241, 241, 0.85);
+    transform: rotateY(-180deg);
+  }
   .ssp-main-container .table-striped-dark table {
     width: 100%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
   .ssp-main-container .padding-standard,
   .ssp-main-container .padding-standard-bottom,
   .ssp-main-container .padding-standard-top,
