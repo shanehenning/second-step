@@ -1592,13 +1592,34 @@
 }
 .ssp-main-container .teal-circle {
   background: #26bbc3;
-  height: 130px;
-  width: 130px;
+  height: 160px;
+  width: 160px;
   display: table-cell;
   border-radius: 50%;
   text-align: center;
   color: white;
   vertical-align: middle;
+}
+.ssp-main-container .orange-circle {
+  background: #f84139;
+  height: 150px;
+  width: 150px;
+  padding: 25px;
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transform: translate(25%, 40%);
+}
+.ssp-main-container .orange-circle p {
+  transform: rotate(-10deg);
+  display: table-cell;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1;
 }
 .ssp-main-container .yellow-block {
   background: #ffd621;
