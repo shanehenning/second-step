@@ -347,8 +347,15 @@
 
   .font-white {
     a, button, h1, h2, h3, h4, h5, h6, i, li, ol, ol.intro, p, p.intro, span, span.intro, strong, ul, ul.intro {
-    // *{
       color: #fff;
+    }
+  }
+  .font-dark{
+    a, button, h1, h2, h3, h4, h5, h6, i, li, ol, ol.intro, p, p.intro, span, span.intro, strong, ul, ul.intro {
+      color: #333;
+    }
+    a{
+      text-decoration: underline;
     }
   }
   .font-green {
@@ -418,7 +425,7 @@
       font-family: @proxima-nova-rgregular;
       color: #222;
       float: right;
-      font-size: 1em;
+      font-size: 19px;
       font-style: normal;
       em {
         font-family: @proxima-nova-regular-italic;
@@ -461,6 +468,7 @@
     position: relative;
     overflow: hidden;
     img {
+      width: 1200px;
       position: absolute;
       margin: auto;
       min-height: 100%;
@@ -522,7 +530,7 @@
     }
     &.no-quotes{
       blockquote::before{
-        display: none;  
+        display: none;
       }
 
     }
@@ -563,7 +571,7 @@
     cite {
       font-family: @proxima-nova-rgregular;
       color: @body-color;
-      font-size: 1em;
+      font-size: 19px;
       font-style: normal;
       line-height: 19px;
       display: block;
@@ -673,14 +681,17 @@
       clear: both;
       margin: 0;
       padding-top: 20px;
-      // padding-bottom: 20px;
       .media-body {
         padding-left: 15px;
         a{
           display: block;
           padding-bottom: 40px;
           border-bottom: 1px dotted #444;
-          // margin-bottom: 20px;
+        }
+        a.regular{
+          display: block;
+          padding-bottom: 10px;
+          border-bottom: none;
         }
       }
       img{
@@ -825,8 +836,7 @@
     .img-responsive {
       margin-bottom: 10px;
     }
-    .btn-width-100 {
-      width: ~ 'calc(100% - 30px)';
+    .button-bottom {
       margin: 0 auto;
       bottom: 0;
       left: 0;
@@ -1036,7 +1046,7 @@
     cite {
       display: block;
       margin-top: 30px;
-      font-size: 1em;
+      font-size: 19px;
       font-style: normal;
       line-height: 19px;
     }
@@ -1660,6 +1670,17 @@
   }
 
   .background {
+    &-sel{
+      background-image: url('/Portals/0/common-img/SS-Section-G-IMG.jpg');
+      background-position: center;
+      background-size: cover;
+      transform: rotateY(0deg);
+      border: 1px dotted #aeaeae;
+      section{
+        background-color: rgba(241, 241, 241, 0);
+        transform: rotateY(0deg);
+      }
+    }
     &-light-gray {
       background-color: #f1f1f1;
     }
@@ -1726,6 +1747,8 @@
     }
   }
 .teal-circle {
+  display: inline-block;
+  span{
     background: #26bbc3;
     height: 130px;
     width: 130px;
@@ -1734,6 +1757,7 @@
     text-align: center;
     color: white;
     vertical-align: middle;
+  }
 }
 .yellow-block{
   background: #ffd621;
@@ -1939,6 +1963,9 @@
           display: inline-block;
         }
       }
+      .teal-circle{
+        margin-bottom: 20px;
+      }
     }
     .three-two-one section:nth-of-type(2n + 3) {
       clear: left;
@@ -2060,6 +2087,9 @@
         max-width: 100%;
         margin: 0 auto;
       }
+      .teal-circle{
+        margin-bottom: 20px;
+      }
     }
     .row-table-equal-height{
       figure[class^=col]{
@@ -2130,13 +2160,25 @@
       }
     }
 
+    .background-sel{
+      background-image: url(Portals/0/common-img/SS-Section-G-IMG.jpg);
+      background-size: cover;
+      background-position: center right;
+      background-position-x: 520px;
+      transform: rotateY(180deg);
+      section{
+        background-color: rgba(241, 241, 241, 0.85);
+        transform: rotateY(-180deg);
+      }
+    }
+
     .table-striped-dark {
       table {
         width: 100%;
       }
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 575px) {
     .padding-standard, .padding-standard-bottom, .padding-standard-top, .row-copy-intro, .row-half-image [class^=col], .row-half-video [class^=col], .row-webinar-related {
       padding-left: 15px;
       padding-right: 15px;
