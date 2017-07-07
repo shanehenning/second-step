@@ -1652,7 +1652,7 @@
   color: white;
   border-radius: 50%;
   text-decoration: none;
-  transform: translate(25%, 40%);
+  transform: translate(-50%, 140%);
 }
 .ssp-main-container .orange-circle p {
   transform: rotate(-10deg);
