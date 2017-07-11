@@ -68,6 +68,7 @@
 }
 .ssp-main-container h3 {
   font-size: 1.75em;
+  line-height: 33px;
 }
 .ssp-main-container h4 {
   font-size: 1.5em;
@@ -75,6 +76,7 @@
 .ssp-main-container h5 {
   font-size: 1.3125em;
   margin-bottom: 8px;
+  line-height: 1.1em;
 }
 .ssp-main-container h6 {
   font-size: 1.125em;
@@ -100,8 +102,8 @@
 }
 .ssp-main-container p strong.large,
 .ssp-main-container strong.large {
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 19px;
+  line-height: 30px;
 }
 .ssp-main-container em {
   font-style: normal;
@@ -135,8 +137,8 @@
 .ssp-main-container ol.large,
 .ssp-main-container p.large,
 .ssp-main-container ul.large {
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 19px;
+  line-height: 30px;
 }
 .ssp-main-container p.byline,
 .ssp-main-container p.caption,
@@ -179,7 +181,8 @@
   font-size: 0.875em;
 }
 .ssp-main-container span.large {
-  font-size: 3em;
+  font-size: 19px;
+  line-height: 30px;
 }
 .ssp-main-container span.jumbo {
   font-size: 5em;
@@ -240,16 +243,16 @@
   color: #fff !important;
   font-family: 'proxima_nova_rgbold', sans-serif;
   background: #41779c;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .ssp-main-container .ssp-btn em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
 }
 .ssp-main-container .ssp-btn:hover {
   background-color: #4ba0c8;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   text-decoration: none;
 }
 .ssp-main-container .ssp-btn:visited {
@@ -498,6 +501,7 @@
 }
 .ssp-main-container .row-hero-image h2 {
   font-size: 3em;
+  color: #555;
   line-height: 52px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -527,7 +531,6 @@
   color: #444;
   font-family: serif;
   text-shadow: #808080 1px 1px 1px;
-  margin-top: 10px;
 }
 .ssp-main-container .row-testimonial.no-quotes blockquote::before {
   display: none;
@@ -547,6 +550,7 @@
 .ssp-main-container .row-testimonial blockquote {
   font-size: 1.5em;
   margin-bottom: 10px;
+  padding-top: 0;
   line-height: 32px;
   border: 0;
   font-style: normal;
@@ -746,6 +750,7 @@
 }
 .ssp-main-container .row-table-equal-height [class^=col],
 .ssp-main-container .row-table-equal-height-bottom [class^=col],
+.ssp-main-container .row-table-equal-height-bottom-sm [class^=col],
 .ssp-main-container .row-table-equal-height-button [class^=col],
 .ssp-main-container .row-table-equal-height-md [class^=col],
 .ssp-main-container .row-table-equal-height-md-one-third [class^=col],
@@ -767,6 +772,7 @@
 }
 .ssp-main-container .row-table-equal-height .product-features,
 .ssp-main-container .row-table-equal-height-bottom .product-features,
+.ssp-main-container .row-table-equal-height-bottom-sm .product-features,
 .ssp-main-container .row-table-equal-height-button .product-features,
 .ssp-main-container .row-table-equal-height-md .product-features,
 .ssp-main-container .row-table-equal-height-md-one-third .product-features,
@@ -778,6 +784,7 @@
 }
 .ssp-main-container .row-table-equal-height h6,
 .ssp-main-container .row-table-equal-height-bottom h6,
+.ssp-main-container .row-table-equal-height-bottom-sm h6,
 .ssp-main-container .row-table-equal-height-button h6,
 .ssp-main-container .row-table-equal-height-md h6,
 .ssp-main-container .row-table-equal-height-md-one-third h6,
@@ -789,6 +796,7 @@
 }
 .ssp-main-container .row-table-equal-height svg,
 .ssp-main-container .row-table-equal-height-bottom svg,
+.ssp-main-container .row-table-equal-height-bottom-sm svg,
 .ssp-main-container .row-table-equal-height-button svg,
 .ssp-main-container .row-table-equal-height-md svg,
 .ssp-main-container .row-table-equal-height-md-one-third svg,
@@ -801,6 +809,7 @@
 }
 .ssp-main-container .row-table-equal-height figure,
 .ssp-main-container .row-table-equal-height-bottom figure,
+.ssp-main-container .row-table-equal-height-bottom-sm figure,
 .ssp-main-container .row-table-equal-height-button figure,
 .ssp-main-container .row-table-equal-height-md figure,
 .ssp-main-container .row-table-equal-height-md-one-third figure,
@@ -813,6 +822,7 @@
 }
 .ssp-main-container .row-table-equal-height .img-responsive,
 .ssp-main-container .row-table-equal-height-bottom .img-responsive,
+.ssp-main-container .row-table-equal-height-bottom-sm .img-responsive,
 .ssp-main-container .row-table-equal-height-button .img-responsive,
 .ssp-main-container .row-table-equal-height-md .img-responsive,
 .ssp-main-container .row-table-equal-height-md-one-third .img-responsive,
@@ -911,9 +921,6 @@
   line-height: 65px;
   margin-bottom: 20px;
 }
-.ssp-main-container .row-success-banner figure {
-  filter: grayscale(100%);
-}
 .ssp-main-container .row-success-banner.mask-red figure {
   background-image: url('http://smiles4keeps.com/wp-content/uploads/2016/02/Slider-girl.png');
 }
@@ -925,9 +932,6 @@
 }
 .ssp-main-container .row-success-banner.mask-purple figure {
   background-image: url('https://www.westlakepediatricdentist.com/wp-content/themes/custom5/images/little-kid.png');
-}
-.ssp-main-container .row-success-feature figure {
-  filter: grayscale(100%);
 }
 .ssp-main-container .row-success-feature h3 {
   font-size: 46px;
@@ -1313,6 +1317,19 @@
 .ssp-main-container .zero-margin {
   margin: 0;
 }
+.ssp-main-container h2.section-title {
+  margin-bottom: 25px;
+}
+.ssp-main-container h3.section-title {
+  margin-bottom: 20px;
+}
+.ssp-main-container h4.section-title,
+.ssp-main-container h5.section-title {
+  margin-bottom: 15px;
+}
+.ssp-main-container h6.section-title {
+  margin-bottom: 12.5px;
+}
 .ssp-main-container .padding-standard {
   padding: 40px;
 }
@@ -1581,6 +1598,7 @@
   background-size: cover;
   transform: rotateY(0deg);
   border: 1px dotted #aeaeae;
+  background-repeat-y: no-repeat;
 }
 .ssp-main-container .background-sel section {
   background-color: rgba(241, 241, 241, 0);
@@ -1666,6 +1684,7 @@
 }
 .ssp-main-container .orange-circle {
   background: #f84139;
+  position: absolute;
   height: 150px;
   width: 150px;
   padding: 25px;
@@ -1673,7 +1692,7 @@
   color: white;
   border-radius: 50%;
   text-decoration: none;
-  transform: translate(-50%, 140%);
+  transform: translate(-5%, 5%);
 }
 .ssp-main-container .orange-circle p {
   transform: rotate(-10deg);
@@ -1882,9 +1901,6 @@
   .ssp-main-container .row-table-equal-height-middle [class^=col] {
     vertical-align: middle;
   }
-  .ssp-main-container .row-table-equal-height-bottom {
-    width: 100%;
-  }
   .ssp-main-container .row-table-equal-height-bottom [class^=col] {
     vertical-align: bottom;
   }
@@ -1923,12 +1939,6 @@
   }
   .ssp-main-container .three-two-one section:nth-of-type(2n + 3) {
     clear: left;
-  }
-  .ssp-main-container .row-table-equal-height-bottom .product-features {
-    text-align: center;
-  }
-  .ssp-main-container .row-table-equal-height-bottom h6 {
-    font-size: 1.5em;
   }
   .ssp-main-container .row-webinar-videos section,
   .ssp-main-container .row-webinar-videos section[class^=col-md] {
@@ -1996,6 +2006,7 @@
   }
   .ssp-main-container .row-table-equal-height,
   .ssp-main-container .row-table-equal-height-button,
+  .ssp-main-container .row-table-equal-height-bottom-sm,
   .ssp-main-container .row-table-equal-height-top,
   .ssp-main-container .row-table-ie {
     display: table;
@@ -2003,10 +2014,17 @@
   }
   .ssp-main-container .row-table-equal-height [class^=col],
   .ssp-main-container .row-table-equal-height-button [class^=col],
+  .ssp-main-container .row-table-equal-height-bottom-sm [class^=col],
   .ssp-main-container .row-table-equal-height-top [class^=col],
   .ssp-main-container .row-table-ie [class^=col] {
     float: none;
     display: table-cell;
+    vertical-align: middle;
+  }
+  .ssp-main-container .row-table-equal-height-bottom-sm [class^=col] {
+    vertical-align: bottom;
+  }
+  .ssp-main-container .row-table-equal-height-bottom-sm [class^=col]:nth-of-type(1) {
     vertical-align: middle;
   }
   .ssp-main-container .row-table-ie {
@@ -2028,6 +2046,7 @@
   .ssp-main-container .row-classroom-kits [class^=col],
   .ssp-main-container .row-table-equal-height [class^=col],
   .ssp-main-container .row-table-equal-height-bottom [class^=col],
+  .ssp-main-container .row-table-equal-height-bottom-sm [class^=col],
   .ssp-main-container .row-table-equal-height-button [class^=col],
   .ssp-main-container .row-table-equal-height-top [class^=col],
   .ssp-main-container .row-feature-image [class^=col] {
@@ -2039,6 +2058,7 @@
   .ssp-main-container .row-classroom-kits .teal-circle,
   .ssp-main-container .row-table-equal-height .teal-circle,
   .ssp-main-container .row-table-equal-height-bottom .teal-circle,
+  .ssp-main-container .row-table-equal-height-bottom-sm .teal-circle,
   .ssp-main-container .row-table-equal-height-button .teal-circle,
   .ssp-main-container .row-table-equal-height-top .teal-circle,
   .ssp-main-container .row-feature-image .teal-circle {
@@ -2047,6 +2067,12 @@
   .ssp-main-container .row-table-equal-height figure[class^=col] {
     display: block;
     margin: 25px auto;
+  }
+  .ssp-main-container .row-table-equal-height-bottom-sm [class^=col] {
+    vertical-align: bottom;
+  }
+  .ssp-main-container .row-table-equal-height-bottom-sm [class^=col]:nth-of-type(1) {
+    vertical-align: middle;
   }
   .ssp-main-container .row-table-equal-height-button [class^=col] {
     padding-bottom: 1px;
@@ -2122,7 +2148,8 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .ssp-main-container .row-table-equal-height-bottom h6 {
+  .ssp-main-container .row-table-equal-height-bottom h6,
+  .ssp-main-container .row-table-equal-height-bottom-sm h6 {
     font-size: 1em;
   }
   .ssp-main-container .row-webinar-related aside {

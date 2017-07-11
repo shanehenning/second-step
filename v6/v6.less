@@ -70,33 +70,39 @@
   h2.large {
     // font-size: 40px;
     font-size: 2.5em;
+    // line-height: ;
   }
 
   h2 {
     // font-size: 35px;
     font-size: 2.1875em;
+    // line-height: ;
   }
 
   h3 {
     // font-size: 28px;
     font-size: 1.75em;
+    line-height: 33px;
   }
 
   h4 {
     // font-size: 24px;
     font-size: 1.5em;
+    // line-height: ;
   }
 
   h5 {
     // font-size: 21px;
     font-size: 1.3125em;
     margin-bottom: 8px;
+    line-height: 1.1em;
   }
 
   h6 {
     // font-size: 18px;
     font-size: 1.125em;
     margin-bottom: 8px;
+    // line-height: ;
   }
 
   h3, h5 {
@@ -114,8 +120,8 @@
       line-height: 30px;
     }
     &.large{
-      font-size: 24px;
-      line-height: 35px;
+      font-size: 19px;
+      line-height: 30px;
     }
   }
 
@@ -141,8 +147,8 @@
       color: @header-color;
     }
     &.large{
-      font-size: 24px;
-      line-height: 35px;
+      font-size: 19px;
+      line-height: 30px;
     }
   }
 
@@ -183,7 +189,8 @@
       font-size: 0.875em;
     }
     &.large{
-      font-size: 3em;
+      font-size: 19px;
+      line-height: 30px;
     }
     &.jumbo{
       font-size: 5em;
@@ -248,15 +255,15 @@
     color: #fff !important;
     font-family: @proxima-nova-rgbold;
     background: @bt-blue;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     em {
       font-family: @proxima-nova-bold-italic;
     }
     &:hover {
       background-color: @bt-blue-hover;
-      -moz-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      -webkit-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in;
       text-decoration: none;
     }
     &:visited {
@@ -494,6 +501,7 @@
     h2 {
       // font-size: 48px;
       font-size: 3em;
+      color: #555;
       line-height: 52px;
       margin-top: 10px;
       margin-bottom: 20px;
@@ -526,7 +534,6 @@
       color: @header-color;
       font-family: serif;
       text-shadow: #808080 1px 1px 1px;
-      margin-top: 10px;
     }
     &.no-quotes{
       blockquote::before{
@@ -559,6 +566,7 @@
     blockquote {
       font-size: 1.5em;
       margin-bottom: 10px;
+      padding-top: 0;
       line-height: 32px;
       border: 0;
       font-style: normal;
@@ -797,7 +805,7 @@
     }
   }
 
-  .row-table-equal-height, .row-table-equal-height-bottom, .row-table-equal-height-button, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-middle, .row-table-equal-height-top, .row-table-equal-height-top-middles {
+  .row-table-equal-height, .row-table-equal-height-bottom, .row-table-equal-height-bottom-sm, .row-table-equal-height-button, .row-table-equal-height-md, .row-table-equal-height-md-one-third, .row-table-equal-height-middle, .row-table-equal-height-top, .row-table-equal-height-top-middles {
     [class^=col] {
       margin: 0 auto;
       height: 100%;
@@ -942,9 +950,6 @@
       line-height: 65px;
       margin-bottom: 20px;
     }
-    figure {
-      filter: grayscale(100%);
-    }
     &.mask-red {
       figure {
         background-image: url('http://smiles4keeps.com/wp-content/uploads/2016/02/Slider-girl.png');
@@ -968,9 +973,6 @@
   }
 
   .row-success-feature {
-    figure {
-      filter: grayscale(100%);
-    }
     h3 {
       font-size: 46px;
       line-height: 46px;
@@ -1397,6 +1399,23 @@
     margin: 0;
   }
 
+  h2.section-title{
+    margin-bottom: 25px;
+  }
+
+  h3.section-title{
+    margin-bottom: 20px;
+  }
+
+  h4, h5{
+    &.section-title{
+      margin-bottom: 15px;
+    }
+  }
+  h6.section-title{
+    margin-bottom: 12.5px;
+  }
+
   .padding {
     &-standard {
       padding: 40px;
@@ -1693,6 +1712,7 @@
       background-size: cover;
       transform: rotateY(0deg);
       border: 1px dotted #aeaeae;
+      background-repeat-y: no-repeat;
       section{
         background-color: rgba(241, 241, 241, 0);
         transform: rotateY(0deg);
@@ -1778,6 +1798,7 @@
 }
 .orange-circle{
   background: #f84139;
+  position: absolute;
     height: 150px;
     width: 150px;
     padding: 25px;
@@ -1785,7 +1806,7 @@
     color: white;
     border-radius: 50%;
      text-decoration: none;
-    transform: translate(-50%,140%);
+    transform: translate(-5%,5%);
 
     p{
       transform: rotate(-10deg) ;
@@ -1986,7 +2007,7 @@
       }
     }
     .row-table-equal-height-bottom {
-      width: 100%;
+      // width: 100%;
       [class^=col] {
         vertical-align: bottom;
       }
@@ -2017,15 +2038,6 @@
     }
     .three-two-one section:nth-of-type(2n + 3) {
       clear: left;
-    }
-
-    .row-table-equal-height-bottom {
-      .product-features {
-        text-align: center;
-      }
-      h6 {
-        font-size: 1.5em;
-      }
     }
 
     .row-webinar-videos {
@@ -2094,12 +2106,20 @@
       }
     }
 
-    .row-table-equal-height, .row-table-equal-height-button, .row-table-equal-height-top, .row-table-ie {
+    .row-table-equal-height, .row-table-equal-height-button, .row-table-equal-height-bottom-sm, .row-table-equal-height-top, .row-table-ie {
       display: table;
       table-layout: fixed;
       [class^=col] {
         float: none;
         display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .row-table-equal-height-bottom-sm{
+      [class^=col] {
+        vertical-align: bottom;
+      }
+      [class^=col]:nth-of-type(1) {
         vertical-align: middle;
       }
     }
@@ -2128,7 +2148,7 @@
       }
     }
 
-    .row-classroom-kits, .row-table-equal-height, .row-table-equal-height-bottom, .row-table-equal-height-button, .row-table-equal-height-top, .row-feature-image {
+    .row-classroom-kits, .row-table-equal-height, .row-table-equal-height-bottom, .row-table-equal-height-bottom-sm, .row-table-equal-height-button, .row-table-equal-height-top, .row-feature-image {
       [class^=col] {
         float: none;
         width: 450px;
@@ -2143,6 +2163,15 @@
       figure[class^=col]{
         display: block;
         margin: 25px auto;
+      }
+    }
+    .row-table-equal-height-bottom-sm {
+      // width: 100%;
+      [class^=col] {
+        vertical-align: bottom;
+      }
+      [class^=col]:nth-of-type(1) {
+        vertical-align: middle;
       }
     }
     .row-table-equal-height-button {
@@ -2230,7 +2259,7 @@
       padding-left: 15px;
       padding-right: 15px;
     }
-    .row-table-equal-height-bottom {
+    .row-table-equal-height-bottom, .row-table-equal-height-bottom-sm {
       h6 {
         font-size: 1em;
       }
