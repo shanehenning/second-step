@@ -662,10 +662,21 @@
 .ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
   border-bottom: none;
 }
+.ssp-main-container .row-videos-gray {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 20px;
+  border-collapse: separate;
+}
+.ssp-main-container .row-videos-gray:before,
+.ssp-main-container .row-videos-gray:after {
+  display: none;
+}
 .ssp-main-container .row-videos-gray section {
-  width: calc(50% - 20px);
+  float: none;
+  display: table-cell;
   background-color: #f1f1f1;
-  padding: 30px 60px 40px;
+  padding: 30px;
   margin: 15px auto;
 }
 .ssp-main-container .row-videos-gray section article {
@@ -743,6 +754,16 @@
 .ssp-main-container .row-table-equal-height-top-middles [class^=col] {
   margin: 0 auto;
   height: 100%;
+}
+.ssp-main-container .row-table-equal-height.gray-columns,
+.ssp-main-container .row-table-equal-height-bottom.gray-columns,
+.ssp-main-container .row-table-equal-height-button.gray-columns,
+.ssp-main-container .row-table-equal-height-md.gray-columns,
+.ssp-main-container .row-table-equal-height-md-one-third.gray-columns,
+.ssp-main-container .row-table-equal-height-middle.gray-columns,
+.ssp-main-container .row-table-equal-height-top.gray-columns,
+.ssp-main-container .row-table-equal-height-top-middles.gray-columns {
+  border-spacing: 20px;
 }
 .ssp-main-container .row-table-equal-height .product-features,
 .ssp-main-container .row-table-equal-height-bottom .product-features,
@@ -1812,6 +1833,32 @@
   .ssp-main-container .row-table-equal-height-middle [class^=col].align-top,
   .ssp-main-container .row-table-equal-height-top-middles [class^=col].align-top {
     vertical-align: top;
+  }
+  .ssp-main-container .row-table-equal-height-bottom.gray-columns:before,
+  .ssp-main-container .row-table-equal-height-md.gray-columns:before,
+  .ssp-main-container .row-table-equal-height-md-one-third.gray-columns:before,
+  .ssp-main-container .row-table-equal-height-middle.gray-columns:before,
+  .ssp-main-container .row-table-equal-height-top-middles.gray-columns:before,
+  .ssp-main-container .row-table-equal-height-bottom.gray-columns:after,
+  .ssp-main-container .row-table-equal-height-md.gray-columns:after,
+  .ssp-main-container .row-table-equal-height-md-one-third.gray-columns:after,
+  .ssp-main-container .row-table-equal-height-middle.gray-columns:after,
+  .ssp-main-container .row-table-equal-height-top-middles.gray-columns:after {
+    display: none;
+  }
+  .ssp-main-container .row-table-equal-height-bottom.gray-columns,
+  .ssp-main-container .row-table-equal-height-md.gray-columns,
+  .ssp-main-container .row-table-equal-height-md-one-third.gray-columns,
+  .ssp-main-container .row-table-equal-height-middle.gray-columns,
+  .ssp-main-container .row-table-equal-height-top-middles.gray-columns {
+    width: auto;
+  }
+  .ssp-main-container .row-table-equal-height-bottom.gray-columns [class^=col],
+  .ssp-main-container .row-table-equal-height-md.gray-columns [class^=col],
+  .ssp-main-container .row-table-equal-height-md-one-third.gray-columns [class^=col],
+  .ssp-main-container .row-table-equal-height-middle.gray-columns [class^=col],
+  .ssp-main-container .row-table-equal-height-top-middles.gray-columns [class^=col] {
+    background: #e6e5e9;
   }
   .ssp-main-container .three-two-one section:nth-of-type(3n + 4) {
     clear: left;
