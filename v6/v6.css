@@ -57,7 +57,7 @@
   font-family: 'proxima_nova_regular_italic', sans-serif;
 }
 .ssp-main-container h1 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 28px;
 }
 .ssp-main-container h2.large {
@@ -177,6 +177,12 @@
 .ssp-main-container span.small {
   color: #222;
   font-size: 0.875em;
+}
+.ssp-main-container span.large {
+  font-size: 3em;
+}
+.ssp-main-container span.jumbo {
+  font-size: 5em;
 }
 .ssp-main-container ul {
   list-style-type: square;
@@ -342,6 +348,30 @@
 .ssp-main-container .font-white ul.intro {
   color: #fff;
 }
+.ssp-main-container .font-dark a,
+.ssp-main-container .font-dark button,
+.ssp-main-container .font-dark h1,
+.ssp-main-container .font-dark h2,
+.ssp-main-container .font-dark h3,
+.ssp-main-container .font-dark h4,
+.ssp-main-container .font-dark h5,
+.ssp-main-container .font-dark h6,
+.ssp-main-container .font-dark i,
+.ssp-main-container .font-dark li,
+.ssp-main-container .font-dark ol,
+.ssp-main-container .font-dark ol.intro,
+.ssp-main-container .font-dark p,
+.ssp-main-container .font-dark p.intro,
+.ssp-main-container .font-dark span,
+.ssp-main-container .font-dark span.intro,
+.ssp-main-container .font-dark strong,
+.ssp-main-container .font-dark ul,
+.ssp-main-container .font-dark ul.intro {
+  color: #333;
+}
+.ssp-main-container .font-dark a {
+  text-decoration: underline;
+}
 .ssp-main-container .font-green {
   color: #33a86a;
   margin-bottom: 15px;
@@ -352,6 +382,10 @@
 }
 .ssp-main-container .font-blue {
   color: #41779c;
+  margin-bottom: 15px;
+}
+.ssp-main-container .font-orange {
+  color: #f15722;
   margin-bottom: 15px;
 }
 .ssp-main-container .full-width {
@@ -401,7 +435,7 @@
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #222;
   float: right;
-  font-size: 1em;
+  font-size: 19px;
   font-style: normal;
 }
 .ssp-main-container .quote cite em {
@@ -439,6 +473,7 @@
   overflow: hidden;
 }
 .ssp-main-container .row-hero-image img {
+  width: 1200px;
   position: absolute;
   margin: auto;
   min-height: 100%;
@@ -454,7 +489,7 @@
   padding-left: 40px;
   padding-right: 40px;
   background-color: rgba(241, 241, 241, 0.85);
-  height: 500px;
+  height: 400px;
 }
 .ssp-main-container .row-hero-image aside {
   margin: 0 auto;
@@ -464,7 +499,8 @@
 .ssp-main-container .row-hero-image h2 {
   font-size: 3em;
   line-height: 52px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .ssp-main-container .row-hero-image h2 em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
@@ -476,10 +512,9 @@
   margin-bottom: 0;
 }
 .ssp-main-container .row-hero-image .ssp-btn.ghost-btn {
-  margin-top: 40px;
   font-size: 24px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .ssp-main-container .row-testimonial blockquote::before {
   quotes: "“" "”";
@@ -493,6 +528,9 @@
   font-family: serif;
   text-shadow: #808080 1px 1px 1px;
   margin-top: 10px;
+}
+.ssp-main-container .row-testimonial.no-quotes blockquote::before {
+  display: none;
 }
 .ssp-main-container .row-testimonial.mask-blue blockquote::before {
   color: #41779c;
@@ -521,7 +559,7 @@
 .ssp-main-container .row-testimonial cite {
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #222;
-  font-size: 1em;
+  font-size: 19px;
   font-style: normal;
   line-height: 19px;
   display: block;
@@ -530,9 +568,6 @@
 }
 .ssp-main-container .row-testimonial cite em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
-}
-.ssp-main-container .row-half-image {
-  min-height: 400px;
 }
 .ssp-main-container .row-half-image p:last-of-type + a,
 .ssp-main-container .row-half-image ul:last-of-type + a {
@@ -614,6 +649,11 @@
   display: block;
   padding-bottom: 40px;
   border-bottom: 1px dotted #444;
+}
+.ssp-main-container .row-feature-dotted li .media-body a.regular {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: none;
 }
 .ssp-main-container .row-feature-dotted li img {
   max-height: 120px;
@@ -799,8 +839,7 @@
 .ssp-main-container .row-table-equal-height-button .img-responsive {
   margin-bottom: 10px;
 }
-.ssp-main-container .row-table-equal-height-button .btn-width-100 {
-  width: calc(100% - 30px);
+.ssp-main-container .row-table-equal-height-button .button-bottom {
   margin: 0 auto;
   bottom: 0;
   left: 0;
@@ -809,6 +848,15 @@
 }
 .ssp-main-container .equal-height-bottom-item {
   min-height: 45px;
+}
+.ssp-main-container .row-student-assemessment {
+  text-align: center;
+}
+.ssp-main-container .row-student-assemessment img {
+  margin: 25px auto;
+}
+.ssp-main-container .row-student-assemessment [class^=col] {
+  float: none;
 }
 .ssp-main-container .row-help-and-support section {
   margin: 30px 0 25px;
@@ -961,7 +1009,7 @@
 .ssp-main-container .row-funding-circles cite {
   display: block;
   margin-top: 30px;
-  font-size: 1em;
+  font-size: 19px;
   font-style: normal;
   line-height: 19px;
 }
@@ -1338,6 +1386,9 @@
   border-radius: 75px;
   margin: 0 auto;
 }
+.ssp-main-container .icon-feature {
+  max-width: 250px;
+}
 .ssp-main-container .pdf-img-download {
   margin-bottom: 10px;
 }
@@ -1405,6 +1456,9 @@
 }
 .ssp-main-container .border-top {
   border-top: 1px solid #aeaeae;
+}
+.ssp-main-container .border-top-thick {
+  border-top: 8px solid #464646;
 }
 .ssp-main-container .border-bottom {
   border-bottom: 1px solid #aeaeae;
@@ -1518,6 +1572,20 @@
 .ssp-main-container .color-blue {
   color: #41779c;
 }
+.ssp-main-container .color-medium-gray {
+  color: #888;
+}
+.ssp-main-container .background-sel {
+  background-image: url('/Portals/0/common-img/SS-Section-G-IMG.jpg');
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(0deg);
+  border: 1px dotted #aeaeae;
+}
+.ssp-main-container .background-sel section {
+  background-color: rgba(241, 241, 241, 0);
+  transform: rotateY(0deg);
+}
 .ssp-main-container .background-light-gray {
   background-color: #f1f1f1;
 }
@@ -1582,6 +1650,44 @@
 }
 .ssp-main-container .color-row-blue {
   background-color: #41779c;
+}
+.ssp-main-container .teal-circle {
+  display: inline-block;
+}
+.ssp-main-container .teal-circle span {
+  background: #26bbc3;
+  height: 160px;
+  width: 160px;
+  display: table-cell;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+.ssp-main-container .orange-circle {
+  background: #f84139;
+  height: 150px;
+  width: 150px;
+  padding: 25px;
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transform: translate(-50%, 140%);
+}
+.ssp-main-container .orange-circle p {
+  transform: rotate(-10deg);
+  display: table-cell;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1;
+}
+.ssp-main-container .yellow-block {
+  background: #ffd621;
+  border-radius: 20px;
 }
 .ssp-main-container .row-third-right {
   padding-right: 0;
@@ -1763,6 +1869,10 @@
   .ssp-main-container .row-table-equal-height-top-middles [class^=col] {
     vertical-align: top;
   }
+  .ssp-main-container .row-table-equal-height-top-middles [class^=col] img {
+    margin: 0 auto;
+    display: block;
+  }
   .ssp-main-container .row-table-equal-height-top-middles [class^=col]:nth-of-type(1) {
     vertical-align: middle;
   }
@@ -1789,6 +1899,7 @@
 @media screen and (max-width: 991px) {
   .ssp-main-container .row-related-links [class^=col-md],
   .ssp-main-container .row-table-equal-height-bottom [class^=col-md],
+  .ssp-main-container .row-table-equal-height-top-middles [class^=col-md],
   .ssp-main-container .row-table-equal-height-md [class^=col-md],
   .ssp-main-container .row-table-equal-height-md-one-third [class^=col-md] {
     float: none;
@@ -1798,9 +1909,17 @@
   }
   .ssp-main-container .row-related-links [class^=col-md] img,
   .ssp-main-container .row-table-equal-height-bottom [class^=col-md] img,
+  .ssp-main-container .row-table-equal-height-top-middles [class^=col-md] img,
   .ssp-main-container .row-table-equal-height-md [class^=col-md] img,
   .ssp-main-container .row-table-equal-height-md-one-third [class^=col-md] img {
     display: inline-block;
+  }
+  .ssp-main-container .row-related-links .teal-circle,
+  .ssp-main-container .row-table-equal-height-bottom .teal-circle,
+  .ssp-main-container .row-table-equal-height-top-middles .teal-circle,
+  .ssp-main-container .row-table-equal-height-md .teal-circle,
+  .ssp-main-container .row-table-equal-height-md-one-third .teal-circle {
+    margin-bottom: 20px;
   }
   .ssp-main-container .three-two-one section:nth-of-type(2n + 3) {
     clear: left;
@@ -1917,6 +2036,18 @@
     max-width: 100%;
     margin: 0 auto;
   }
+  .ssp-main-container .row-classroom-kits .teal-circle,
+  .ssp-main-container .row-table-equal-height .teal-circle,
+  .ssp-main-container .row-table-equal-height-bottom .teal-circle,
+  .ssp-main-container .row-table-equal-height-button .teal-circle,
+  .ssp-main-container .row-table-equal-height-top .teal-circle,
+  .ssp-main-container .row-feature-image .teal-circle {
+    margin-bottom: 20px;
+  }
+  .ssp-main-container .row-table-equal-height figure[class^=col] {
+    display: block;
+    margin: 25px auto;
+  }
   .ssp-main-container .row-table-equal-height-button [class^=col] {
     padding-bottom: 1px;
     margin: 0 auto 40px;
@@ -1956,11 +2087,31 @@
   .ssp-main-container .row-feature-dotted .media-left {
     display: block;
   }
+  .ssp-main-container .row-student-assemessment [class^=col] {
+    margin: 25px auto;
+    text-align: left;
+    width: 450px;
+    padding: 0;
+  }
+  .ssp-main-container .row-student-assemessment img {
+    width: 450px;
+  }
+  .ssp-main-container .background-sel {
+    background-image: url(Portals/0/common-img/SS-Section-G-IMG.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-position-x: 520px;
+    transform: rotateY(180deg);
+  }
+  .ssp-main-container .background-sel section {
+    background-color: rgba(241, 241, 241, 0.85);
+    transform: rotateY(-180deg);
+  }
   .ssp-main-container .table-striped-dark table {
     width: 100%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
   .ssp-main-container .padding-standard,
   .ssp-main-container .padding-standard-bottom,
   .ssp-main-container .padding-standard-top,
