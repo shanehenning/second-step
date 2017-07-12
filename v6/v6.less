@@ -528,16 +528,18 @@
 
   .row-testimonial {
     blockquote::before{
-      quotes: "“" "”";
-      content: open-quote "\00a0" close-quote;
-      font-size: 110px;
+      // quotes: "“" "”";
+      // content: open-quote "\00a0" close-quote;
+      // font-size: 110px;
+      content: url('/Portals/0/common-img/quote-marks.png');
+      font-size: 77px;
       text-align: center;
       height: 70px;
       display: block;
       line-height: 1;
       color: @header-color;
       font-family: serif;
-      text-shadow: #808080 1px 1px 1px;
+      // text-shadow: #808080 1px 1px 1px;
     }
     &.no-quotes{
       blockquote::before{

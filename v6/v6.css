@@ -526,16 +526,14 @@
   padding-right: 30px;
 }
 .ssp-main-container .row-testimonial blockquote::before {
-  quotes: "“" "”";
-  content: open-quote "\00a0" close-quote;
-  font-size: 110px;
+  content: url('/Portals/0/common-img/quote-marks.png');
+  font-size: 77px;
   text-align: center;
   height: 70px;
   display: block;
   line-height: 1;
   color: #444;
   font-family: serif;
-  text-shadow: #808080 1px 1px 1px;
 }
 .ssp-main-container .row-testimonial.no-quotes blockquote::before {
   display: none;
