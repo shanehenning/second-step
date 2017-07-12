@@ -10,6 +10,7 @@
   /* End Modal */
   /* End Bootstrap */
   /* Misc */
+  /* Icon Opacity */
   /* Webinar page */
   /* new SEL page */
   /* End Misc */
@@ -107,6 +108,7 @@
 }
 .ssp-main-container em {
   font-style: normal;
+  font-family: 'proxima_nova_regular_italic', sans-serif;
 }
 .ssp-main-container ol,
 .ssp-main-container p,
@@ -475,7 +477,7 @@
   position: relative;
   overflow: hidden;
 }
-.ssp-main-container .row-hero-image img {
+.ssp-main-container .row-hero-image img:not(.ss-logo) {
   width: 1200px;
   position: absolute;
   margin: auto;
@@ -485,6 +487,9 @@
   bottom: -9999px;
   left: -9999px;
   right: -9999px;
+}
+.ssp-main-container .row-hero-image .ss-logo {
+  max-height: 50px;
 }
 .ssp-main-container .row-hero-image section {
   display: table;
@@ -678,11 +683,10 @@
 }
 .ssp-main-container .row-videos-gray section {
   float: none;
-  display: inline-block;
+  display: table-cell;
   background-color: #f1f1f1;
   padding: 30px;
   margin: 15px auto;
-  width: 100%;
 }
 .ssp-main-container .row-videos-gray section article {
   width: auto;
@@ -1405,6 +1409,12 @@
   border-radius: 75px;
   margin: 0 auto;
 }
+.ssp-main-container img[src*=icon_] {
+  opacity: .5;
+}
+.ssp-main-container .background-gray img[src*=icon_] {
+  opacity: 1;
+}
 .ssp-main-container .icon-feature {
   max-width: 250px;
 }
@@ -1881,30 +1891,6 @@
   .ssp-main-container .row-table-equal-height-top-middles.gray-columns [class^=col] {
     background: #e6e5e9;
   }
-  .ssp-main-container .row-videos-gray {
-    display: table;
-    table-layout: fixed;
-    border-spacing: 20px;
-    border-collapse: separate;
-  }
-  .ssp-main-container .row-videos-gray:before,
-  .ssp-main-container .row-videos-gray:after {
-    display: none;
-  }
-  .ssp-main-container .row-videos-gray section {
-    float: none;
-    display: table-cell;
-    background-color: #f1f1f1;
-    padding: 30px;
-    margin: 15px auto;
-    width: 50%;
-  }
-  .ssp-main-container .row-videos-gray section article {
-    width: auto;
-  }
-  .ssp-main-container .row-videos-gray img {
-    margin: 20px 0;
-  }
   .ssp-main-container .three-two-one section:nth-of-type(3n + 4) {
     clear: left;
   }
@@ -2127,7 +2113,6 @@
   }
   .ssp-main-container .row-videos-gray section {
     width: 100%;
-    display: inline-block;
   }
   .ssp-main-container .row-videos-gray section article {
     max-width: 450px;
