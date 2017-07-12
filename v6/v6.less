@@ -127,6 +127,7 @@
 
   em {
     font-style: normal;
+    font-family: @proxima-nova-regular-italic;
   }
 
   ol, p, ul {
@@ -468,13 +469,13 @@
         font-family: @proxima-nova-bold-italic;
       }
     }
-  }
+  } 
 
   .row-hero-image {
     height: 400px;
     position: relative;
     overflow: hidden;
-    img {
+    img:not(.ss-logo) {
       width: 1200px;
       position: absolute;
       margin: auto;
@@ -484,6 +485,9 @@
       bottom: -9999px;
       left: -9999px;
       right: -9999px;
+    }
+    .ss-logo{
+      max-height: 50px;
     }
     section {
       display: table;
@@ -723,17 +727,16 @@
       &:before, &:after{
         display: none;
       }
-     section{
-        float: none;
-        display: inline-block;
-        background-color: #f1f1f1;
-        padding: 30px;
-        margin: 15px auto;
-        width: 100%;
-        article{
-          width: auto;
-        }
+    section{
+      float: none;
+      display: table-cell;
+      background-color: #f1f1f1;
+      padding: 30px;
+      margin: 15px auto;
+      article{
+        width: auto;
       }
+    }
     img{
       // height: 250px;
       margin: 20px 0;
@@ -816,8 +819,8 @@
 
       [class^=col]{
        .background-gray{
-          
-       } 
+
+       }
       }
     }
     .product-features {
@@ -1495,6 +1498,16 @@
     margin: 0 auto;
   }
 
+  /* Icon Opacity */
+  img[src*=icon_]{
+    opacity: .5;
+  }
+  .background-gray{
+    img[src*=icon_]{
+      opacity: 1;
+    }
+  }
+
   .icon-feature{
     max-width: 250px;
   }
@@ -1981,30 +1994,6 @@
         }
       }
     }
-     .row-videos-gray{
-        display: table;
-        table-layout: fixed;
-        border-spacing:20px;
-        border-collapse: separate;
-        &:before, &:after{
-          display: none;
-        }
-      section{
-        float: none;
-        display: table-cell;
-        background-color: #f1f1f1;
-        padding: 30px;
-        margin: 15px auto;
-        width: 50%;
-        article{
-          width: auto;
-        }
-      }
-      img{
-        // height: 250px;
-        margin: 20px 0;
-      }
-    }
     .three-two-one section:nth-of-type(3n + 4) {
       clear: left;
     }
@@ -2229,11 +2218,10 @@
         height: 250px;
       }
     }
+
     .row-videos-gray{
-      
       section{
         width: 100%;
-        display: inline-block;
         article{
           max-width: 450px;
           margin: 0 auto;
