@@ -669,27 +669,57 @@
 .ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
   border-bottom: none;
 }
-.ssp-main-container .row-videos-gray {
+.ssp-main-container .row-equal-sections {
   display: table;
   table-layout: fixed;
   border-spacing: 20px;
   border-collapse: separate;
 }
-.ssp-main-container .row-videos-gray:before,
-.ssp-main-container .row-videos-gray:after {
+.ssp-main-container .row-equal-sections:before,
+.ssp-main-container .row-equal-sections:after {
   display: none;
 }
-.ssp-main-container .row-videos-gray section {
+.ssp-main-container .row-equal-sections [class^=col-] {
   float: none;
   display: table-cell;
-  background-color: #f1f1f1;
   padding: 30px;
   margin: 15px auto;
+  vertical-align: top;
 }
-.ssp-main-container .row-videos-gray section article {
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-blue {
+  background-color: #4683d4;
+  padding: 20px;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-blue a:hover {
+  text-decoration: none;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-blue p {
+  color: white;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-green {
+  background-color: #7ecb7b;
+  padding: 20px;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-green a:hover {
+  text-decoration: none;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-green p {
+  color: white;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-purple {
+  background-color: #bb84f9;
+  padding: 20px;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-purple a:hover {
+  text-decoration: none;
+}
+.ssp-main-container .row-equal-sections [class^=col-].background-mind-yeti-purple p {
+  color: white;
+}
+.ssp-main-container .row-equal-sections [class^=col-] article {
   width: auto;
 }
-.ssp-main-container .row-videos-gray img {
+.ssp-main-container .row-equal-sections img {
   margin: 20px 0;
 }
 .ssp-main-container .row-webinar-videos aside {

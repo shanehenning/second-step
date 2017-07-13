@@ -721,7 +721,7 @@
     }
   }
 
-  .row-videos-gray{
+  .row-equal-sections{
       display: table;
       table-layout: fixed;
       border-spacing:20px;
@@ -729,15 +729,50 @@
       &:before, &:after{
         display: none;
       }
-    section{
+    [class^=col-]{
       float: none;
       display: table-cell;
-      background-color: #f1f1f1;
       padding: 30px;
       margin: 15px auto;
+      vertical-align: top;
+      &.background-mind-yeti{
+         &-blue{
+           a:hover{
+            text-decoration: none;
+          }
+          background-color: #4683d4;
+          padding: 20px;
+          p{
+            color: white;
+          }
+        }
+         &-green{
+           a:hover{
+              text-decoration: none;
+            }
+            background-color: #7ecb7b;
+             padding: 20px;
+            p{
+              color: white;
+            }
+          }
+          &-purple{
+            a:hover{
+              text-decoration: none;
+            }
+            background-color: #bb84f9;
+             padding: 20px;
+            p{
+              color: white;
+            }
+          }
+
+      }
+     
       article{
         width: auto;
       }
+
     }
     img{
       // height: 250px;
