@@ -1632,7 +1632,8 @@
 .ssp-main-container .color-medium-gray {
   color: #888;
 }
-.ssp-main-container .background-sel {
+.ssp-main-container .background-sel,
+.ssp-main-container .background-sel-home {
   background-image: url('/Portals/0/common-img/SS-Section-G-IMG.jpg');
   background-position: center;
   background-size: cover;
@@ -1640,9 +1641,13 @@
   border: 1px dotted #aeaeae;
   background-repeat-y: no-repeat;
 }
-.ssp-main-container .background-sel section {
+.ssp-main-container .background-sel section,
+.ssp-main-container .background-sel-home section {
   background-color: rgba(241, 241, 241, 0);
   transform: rotateY(0deg);
+}
+.ssp-main-container .background-sel-home {
+  background-image: url('/Portals/0/common-img/SS-Home-Section-G-Girl-Ponytail-Smiling-Desk.jpg');
 }
 .ssp-main-container .background-light-gray {
   background-color: #f1f1f1;
@@ -1732,7 +1737,7 @@
   color: white;
   border-radius: 50%;
   text-decoration: none;
-  transform: translate(-5%, 5%);
+  transform: translate(-75%, 5%);
 }
 .ssp-main-container .orange-circle p {
   transform: rotate(-10deg);
@@ -2067,6 +2072,9 @@
   .ssp-main-container .row-table-equal-height-bottom-sm [class^=col]:nth-of-type(1) {
     vertical-align: middle;
   }
+  .ssp-main-container .row-table-equal-height figure[class^=col] {
+    background-repeat: no-repeat;
+  }
   .ssp-main-container .row-table-ie {
     margin: 0;
     width: 100%;
@@ -2107,6 +2115,9 @@
   .ssp-main-container .row-table-equal-height figure[class^=col] {
     display: block;
     margin: 25px auto;
+    min-height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .ssp-main-container .row-table-equal-height-bottom-sm [class^=col] {
     vertical-align: bottom;

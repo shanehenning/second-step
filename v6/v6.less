@@ -469,7 +469,7 @@
         font-family: @proxima-nova-bold-italic;
       }
     }
-  } 
+  }
 
   .row-hero-image {
     height: 400px;
@@ -1757,7 +1757,7 @@
   }
 
   .background {
-    &-sel{
+    &-sel, &-sel-home{
       background-image: url('/Portals/0/common-img/SS-Section-G-IMG.jpg');
       background-position: center;
       background-size: cover;
@@ -1768,6 +1768,9 @@
         background-color: rgba(241, 241, 241, 0);
         transform: rotateY(0deg);
       }
+    }
+    &-sel-home{
+      background-image: url('/Portals/0/common-img/SS-Home-Section-G-Girl-Ponytail-Smiling-Desk.jpg');
     }
     &-light-gray {
       background-color: #f1f1f1;
@@ -1857,7 +1860,7 @@
     color: white;
     border-radius: 50%;
      text-decoration: none;
-    transform: translate(-5%,5%);
+    transform: translate(-75%,5%);
 
     p{
       transform: rotate(-10deg) ;
@@ -2174,6 +2177,11 @@
         vertical-align: middle;
       }
     }
+    .row-table-equal-height{
+      figure[class^=col]{
+        background-repeat: no-repeat;
+      }
+    }
 
     .row-table-ie {
       margin: 0;
@@ -2214,6 +2222,9 @@
       figure[class^=col]{
         display: block;
         margin: 25px auto;
+        min-height: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
     .row-table-equal-height-bottom-sm {
