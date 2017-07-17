@@ -143,7 +143,7 @@
       margin-bottom: 5px;
     }
     &.intro {
-      font-size: 1.185em;
+      font-size: 19px;
       line-height: 30px;
       color: @header-color;
     }
@@ -181,7 +181,7 @@
     font-family: @proxima-nova-rgregular;
     font-size: 1em;
     &.intro {
-      font-size: 1.1875em;
+      font-size: 19px;
       line-height: 30px;
       color: @header-color;
     }
@@ -721,65 +721,6 @@
     }
   }
 
-  .row-equal-sections{
-      display: table;
-      table-layout: fixed;
-      border-spacing:20px;
-      border-collapse: separate;
-      &:before, &:after{
-        display: none;
-      }
-    [class^=col-]{
-      float: none;
-      display: table-cell;
-      padding: 30px;
-      margin: 15px auto;
-      vertical-align: top;
-      &.background-mind-yeti{
-         &-blue{
-           a:hover{
-            text-decoration: none;
-          }
-          background-color: #4683d4;
-          padding: 20px;
-          p{
-            color: white;
-          }
-        }
-         &-green{
-           a:hover{
-              text-decoration: none;
-            }
-            background-color: #7ecb7b;
-             padding: 20px;
-            p{
-              color: white;
-            }
-          }
-          &-purple{
-            a:hover{
-              text-decoration: none;
-            }
-            background-color: #bb84f9;
-             padding: 20px;
-            p{
-              color: white;
-            }
-          }
-
-      }
-     
-      article{
-        width: auto;
-      }
-
-    }
-    img{
-      // height: 250px;
-      margin: 20px 0;
-    }
-  }
-
   .row-webinar-videos {
     aside {
       padding: 20px 40px;
@@ -912,6 +853,43 @@
   }
   .equal-height-bottom-item {
     min-height: 45px;
+  }
+
+  .row-equal-sections{
+    [class^=col]{
+      &.background-mind-yeti{
+         &-blue{
+           a:hover{
+            text-decoration: none;
+          }
+          background-color: #4683d4;
+          padding: 20px;
+          p{
+            color: white;
+          }
+        }
+         &-green{
+           a:hover{
+              text-decoration: none;
+            }
+            background-color: #7ecb7b;
+             padding: 20px;
+            p{
+              color: white;
+            }
+          }
+          &-purple{
+            a:hover{
+              text-decoration: none;
+            }
+            background-color: #bb84f9;
+             padding: 20px;
+            p{
+              color: white;
+            }
+          }
+      }
+    }
   }
 
   .row-student-assemessment{
@@ -1430,6 +1408,18 @@
   /* Misc */
   .relative {
     position: relative;
+  }
+
+  .md-left-sm-center, .lg-left-md-center{
+    text-align: left;
+  }
+
+  .md-center-sm-left, .lg-center-md-left{
+    text-align: center;
+  }
+
+  .md-right-sm-center{
+    text-align: right;
   }
 
   .text-uppercase {
@@ -2094,17 +2084,6 @@
       clear: left;
     }
 
-    .row-webinar-videos {
-      section, section[class^=col-md] {
-        width: 450px;
-        max-width: 100%;
-        margin: 0 auto;
-        .object-fit {
-          height: 175px;
-        }
-      }
-    }
-
     .carousel {
       height: 350px;
       h2 {
@@ -2141,6 +2120,14 @@
     }
     .carousel-caption-wrapper {
       min-height: 320px;
+    }
+
+    .lg-left-md-center{
+      text-align: center;
+    }
+
+    .lg-center-md-left{
+      text-align: left;
     }
   }
   @media screen and (min-width: 768px) {
@@ -2196,6 +2183,33 @@
     .row-table-equal-height-button {
       [class^=col] {
         vertical-align: top;
+      }
+    }
+
+    .row-equal-sections{
+        display: table;
+        table-layout: fixed;
+        border-spacing:20px;
+        width: ~ 'calc(100% + 70px)';
+        position: relative;
+        right: 20px;
+        overflow: hidden;
+        border-collapse: separate;
+        &:before, &:after{
+          display: none;
+        }
+      [class^=col]{
+        float: none;
+        display: table-cell;
+        padding: 30px;
+        margin: 15px auto;
+        vertical-align: top;
+        article{
+          width: auto;
+        }
+      }
+      img{
+        margin: 20px 0;
       }
     }
   }
@@ -2267,15 +2281,50 @@
       }
     }
 
-    .row-videos-gray{
-      section{
-        width: 100%;
+    .row-webinar-videos {
+      aside {
+        width: 450px;
+        max-width: 100%;
+        margin: 0 auto;
+        .object-fit {
+          height: 175px;
+        }
+      }
+    }
+
+    .md-left-sm-center{
+      text-align: center;
+    }
+
+    .md-center-sm-left{
+      text-align: left;
+    }
+
+    .md-right-sm-center{
+      text-align: center;
+    }
+
+    .row-equal-sections{
+      [class^=col]{
+        width: 450px;
+        right: auto;
+        overflow: auto;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+        max-width: 100%;
         article{
           max-width: 450px;
           margin: 0 auto;
         }
+        img{
+          margin: 10px auto;
+        }
+      }
+      [class^=col]:last-of-type{
+        margin-bottom: 0;
       }
     }
+
     .row-feature-dotted{
       .media{
         max-width: 450px;
@@ -2292,14 +2341,15 @@
         text-align: left;
         width: 450px;
         padding: 0;
+        max-width: 100%;
       }
        img{
         width: 450px;
       }
     }
 
-    .background-sel{
-      background-image: url(Portals/0/common-img/SS-Section-G-IMG.jpg);
+    .background-sel, .background-sel-home{
+      // background-image: url(Portals/0/common-img/SS-Section-G-IMG.jpg);
       background-size: cover;
       background-position: center right;
       background-position-x: 520px;
@@ -2317,7 +2367,7 @@
     }
   }
   @media screen and (max-width: 575px) {
-    .padding-standard, .padding-standard-bottom, .padding-standard-top, .row-copy-intro, .row-half-image [class^=col], .row-half-video [class^=col], .row-webinar-related {
+    .padding-standard, .padding-standard-bottom, .padding-standard-top, .padding-standard-narrow, .padding-standard-no-background, .padding-tall, .padding-tall-top, .padding-tall-bottom, .padding-tall-no-background, .padding-tall-no-background-top, .padding-tall-no-background-bottom, .row-copy-intro, .row-half-image [class^=col], .row-half-video [class^=col], .row-webinar-related {
       padding-left: 15px;
       padding-right: 15px;
     }
