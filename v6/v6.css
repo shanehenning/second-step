@@ -1448,7 +1448,7 @@
   opacity: .5;
 }
 .ssp-main-container .background-gray img[src*=icon_] {
-  opacity: 1;
+  opacity: .9;
 }
 .ssp-main-container .icon-feature {
   max-width: 250px;
