@@ -13,6 +13,7 @@
   /* Icon Opacity */
   /* Webinar page */
   /* new SEL page */
+  /* front page carousel */
   /* End Misc */
 }
 .ssp-main-container .color-body-copy {
@@ -1882,6 +1883,9 @@
 }
 .ssp-main-container .color-circles span .border-color-skyblue {
   border-color: #009cff;
+}
+.ssp-main-container .rvdsfProductShowcaseContainer {
+  position: relative;
 }
 @media screen and (min-width: 992px) {
   .ssp-main-container .row-table-equal-height-bottom,
