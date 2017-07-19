@@ -2344,6 +2344,15 @@
   .ssp-main-container .row-webinar-videos h3 {
     padding-bottom: 15px;
   }
+  .ssp-main-container .orange-circle {
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+    transform: translate(-30%, -10%);
+  }
+  .ssp-main-container .orange-circle p {
+    font-size: 18px;
+  }
 }
 /* front page carousel */
 .rvdsfProductShowcaseContainer {
