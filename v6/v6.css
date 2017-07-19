@@ -2095,11 +2095,11 @@
     display: table;
     table-layout: fixed;
     border-spacing: 20px;
-    width: calc(100% + 70px);
     position: relative;
-    right: 20px;
     overflow: hidden;
     border-collapse: separate;
+    right: 5px;
+    width: calc(100% + 40px);
   }
   .ssp-main-container .row-equal-sections:before,
   .ssp-main-container .row-equal-sections:after {
