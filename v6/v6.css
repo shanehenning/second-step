@@ -2115,6 +2115,10 @@
   .ssp-main-container .row-equal-sections [class^=col] article {
     width: auto;
   }
+  .ssp-main-container .row-equal-sections [class^=col] article a.bottom-align {
+    position: absolute;
+    bottom: 2%;
+  }
   .ssp-main-container .row-equal-sections img {
     margin: 20px 0;
   }
