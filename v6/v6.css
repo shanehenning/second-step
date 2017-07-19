@@ -30,6 +30,7 @@
 .ssp-main-container h5,
 .ssp-main-container h6 {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
   color: #444;
   margin: 10px 0 5px;
 }
@@ -40,6 +41,8 @@
 .ssp-main-container h5 em,
 .ssp-main-container h6 em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container h1.regular,
 .ssp-main-container h2.regular,
@@ -56,10 +59,12 @@
 .ssp-main-container h5.regular em,
 .ssp-main-container h6.regular em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-style: normal;
 }
 .ssp-main-container h1 {
   font-size: 1.25em;
   line-height: 28px;
+  letter-spacing: 0px;
 }
 .ssp-main-container h2.large {
   font-size: 2.5em;
@@ -95,6 +100,8 @@
 .ssp-main-container p strong em,
 .ssp-main-container strong em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container p strong.intro,
 .ssp-main-container strong.intro {
@@ -123,6 +130,7 @@
 .ssp-main-container p em,
 .ssp-main-container ul em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-style: normal;
 }
 .ssp-main-container ol li,
 .ssp-main-container p li,
@@ -156,14 +164,18 @@
 .ssp-main-container p.caption em,
 .ssp-main-container p.small em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-style: normal;
 }
 .ssp-main-container p.byline,
 .ssp-main-container p.caption {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
 }
 .ssp-main-container p.byline em,
 .ssp-main-container p.caption em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container p.intro {
   margin-top: 0;
@@ -232,7 +244,6 @@
   margin: 15px 0;
   padding: 13px 60px;
   width: auto;
-  font-weight: normal;
   text-align: center;
   font-size: 1em;
   vertical-align: middle;
@@ -244,6 +255,7 @@
   border-radius: 0;
   color: #fff !important;
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
   background: #41779c;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -252,6 +264,8 @@
 }
 .ssp-main-container .ssp-btn em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .ssp-btn:hover {
   background-color: #4ba0c8;
@@ -265,9 +279,12 @@
   border: 2px solid #ab4501;
   padding: 11px 60px;
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
 }
 .ssp-main-container .ssp-btn.alert-bt em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .ssp-btn.alert-bt:hover {
   background-color: #b34304;
@@ -276,10 +293,13 @@
 }
 .ssp-main-container .ssp-btn.alert-bt p {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
   font-size: 1em;
 }
 .ssp-main-container .ssp-btn.alert-bt p em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .ssp-btn.white-btn {
   background: #fff;
@@ -300,6 +320,7 @@
 }
 .ssp-main-container .ssp-btn.ghost-btn p {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
   font-size: 1em;
   color: #41779c;
   margin: 0;
@@ -307,6 +328,8 @@
 }
 .ssp-main-container .ssp-btn.ghost-btn p em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .ssp-btn.ghost-btn:hover p {
   color: #fff;
@@ -407,6 +430,7 @@
 }
 .ssp-main-container .field-title {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
   font-size: 0.875em;
   line-height: 22px;
   margin-top: 0;
@@ -415,6 +439,8 @@
 }
 .ssp-main-container .field-title em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .quote {
   padding: 20px;
@@ -426,25 +452,25 @@
   margin: 0 20px 20px 0;
 }
 .ssp-main-container .quote blockquote {
-  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-family: 'proxima_nova_regular_italic', sans-serif;
   font-size: 1.5em;
   line-height: 32px;
   color: #888;
-  font-style: italic;
+  font-style: normal;
   margin: 0 0 20px;
 }
 .ssp-main-container .quote blockquote em {
-  font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-family: 'proxima_nova_rgregular', sans-serif;
 }
 .ssp-main-container .quote cite {
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #222;
   float: right;
   font-size: 19px;
-  font-style: normal;
 }
 .ssp-main-container .quote cite em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-style: normal;
 }
 .ssp-main-container hr {
   margin-top: 40px;
@@ -461,6 +487,7 @@
 }
 .ssp-main-container .row-page-title h1 {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
   display: inline-block;
   color: #444;
   margin-top: 1px;
@@ -471,6 +498,8 @@
 }
 .ssp-main-container .row-page-title h1 em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .row-hero-image {
   height: 400px;
@@ -510,9 +539,6 @@
   line-height: 52px;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-.ssp-main-container .row-hero-image h2 em {
-  font-family: 'proxima_nova_bold_italic', sans-serif;
 }
 .ssp-main-container .row-hero-image p {
   font-size: 24px;
@@ -556,9 +582,9 @@
   padding-top: 0;
   line-height: 32px;
   border: 0;
-  font-style: normal;
   color: #999;
   font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-style: normal;
 }
 .ssp-main-container .row-testimonial blockquote em {
   font-family: 'proxima_nova_rgregular', sans-serif;
@@ -567,7 +593,6 @@
   font-family: 'proxima_nova_rgregular', sans-serif;
   color: #222;
   font-size: 19px;
-  font-style: normal;
   line-height: 19px;
   display: block;
   text-align: center;
@@ -575,6 +600,7 @@
 }
 .ssp-main-container .row-testimonial cite em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-style: normal;
 }
 .ssp-main-container .row-half-image p:last-of-type + a,
 .ssp-main-container .row-half-image ul:last-of-type + a {
@@ -722,11 +748,14 @@
 .ssp-main-container .row-related-links li a,
 .ssp-main-container .row-related-links p a {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
 }
 .ssp-main-container .row-related-links a em,
 .ssp-main-container .row-related-links li a em,
 .ssp-main-container .row-related-links p a em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .row-table-equal-height [class^=col],
 .ssp-main-container .row-table-equal-height-bottom [class^=col],
@@ -814,27 +843,15 @@
 }
 .ssp-main-container .row-table-equal-height-button [class^=col] {
   height: 100%;
-}
-.ssp-main-container .row-table-equal-height-button [class^=col] .button-bottom-container {
-  margin-bottom: 65px;
+  padding-bottom: 78px;
   position: relative;
-}
-.ssp-main-container .row-table-equal-height-button .object-fit {
-  height: 175px;
-  margin: 15px 0;
-  max-height: 100%;
-}
-.ssp-main-container .row-table-equal-height-button .object-fit img {
-  width: 100%;
 }
 .ssp-main-container .row-table-equal-height-button .img-responsive {
   margin-bottom: 10px;
 }
-.ssp-main-container .row-table-equal-height-button .button-bottom {
+.ssp-main-container .row-table-equal-height-button .ssp-btn {
   margin: 0 auto;
   bottom: 0;
-  left: 0;
-  right: 0;
   position: absolute;
 }
 .ssp-main-container .equal-height-bottom-item {
@@ -1082,7 +1099,7 @@
 }
 .ssp-main-container .carousel-indicators {
   margin-bottom: auto;
-  z-index: 1000;
+  z-index: 1;
 }
 .ssp-main-container .carousel-indicators .active {
   position: relative;
@@ -1108,6 +1125,7 @@
 .ssp-main-container .carousel-inner h5 em,
 .ssp-main-container .carousel-inner h6 em {
   font-family: 'proxima_nova_regular_italic', sans-serif;
+  font-style: normal;
 }
 .ssp-main-container .carousel-inner h2 {
   font-size: 120px;
@@ -1116,6 +1134,7 @@
 }
 .ssp-main-container .carousel-inner h2 span {
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
 }
 .ssp-main-container .carousel-inner h2.small {
   font-size: 80px;
@@ -1516,11 +1535,14 @@
   display: inline-block;
   background-color: transparent;
   font-family: 'proxima_nova_rgbold', sans-serif;
+  font-weight: 400;
   color: #444;
 }
 .ssp-main-container .upper-line-title em,
 .ssp-main-container .upper-line-title-extra em {
   font-family: 'proxima_nova_bold_italic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .ssp-main-container .upper-line-title-extra {
   padding-top: 20px;
@@ -1627,7 +1649,7 @@
   background-size: cover;
   transform: rotateY(0deg);
   border: 1px dotted #aeaeae;
-  background-repeat-y: no-repeat;
+  background-repeat: no-repeat;
 }
 .ssp-main-container .background-sel section,
 .ssp-main-container .background-sel-home section {

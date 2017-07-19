@@ -43,15 +43,19 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: @proxima-nova-rgbold;
+    font-weight: 400;
     color: @header-color;
     margin: 10px 0 5px;
     em {
       font-family: @proxima-nova-bold-italic;
+      font-weight: 400;
+      font-style: normal;
     }
     &.regular {
       font-family: @proxima-nova-rgregular;
       em {
         font-family: @proxima-nova-regular-italic;
+        font-style: normal;
       }
     }
   }
@@ -60,6 +64,7 @@
     // font-size: 24px;
     font-size: 1.25em;
     line-height: 28px;
+    letter-spacing: 0px;
   }
 
   // h2.hero {
@@ -114,6 +119,8 @@
     font-weight: 400;
     em {
       font-family: @proxima-nova-bold-italic;
+      font-weight: 400;
+      font-style: normal;
     }
     &.intro {
       font-size: 19px;
@@ -138,6 +145,7 @@
     color: @body-color;
     em {
       font-family: @proxima-nova-regular-italic;
+      font-style: normal;
     }
     li {
       margin-bottom: 5px;
@@ -163,12 +171,16 @@
       color: @body-color;
       em {
         font-family: @proxima-nova-regular-italic;
+        font-style: normal;
       }
     }
     &.byline, &.caption {
       font-family: @proxima-nova-rgbold;
+      font-weight: 400;
       em {
         font-family: @proxima-nova-bold-italic;
+        font-weight: 400;
+        font-style: normal;
       }
     }
     &.intro {
@@ -243,7 +255,6 @@
     margin: 15px 0;
     padding: 13px 60px;
     width: auto;
-    font-weight: normal;
     text-align: center;
     font-size: 1em;
     vertical-align: middle;
@@ -255,6 +266,7 @@
     border-radius: 0;
     color: #fff !important;
     font-family: @proxima-nova-rgbold;
+    font-weight: 400;
     background: @bt-blue;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -262,6 +274,8 @@
     transition: all 0.2s ease-in;
     em {
       font-family: @proxima-nova-bold-italic;
+      font-weight: 400;
+      font-style: normal;
     }
     &:hover {
       background-color: @bt-blue-hover;
@@ -277,8 +291,11 @@
       border: 2px solid @bt-alert-border-color;
       padding: 11px 60px;
       font-family: @proxima-nova-rgbold;
+      font-weight: 400;
       em {
         font-family: @proxima-nova-bold-italic;
+        font-weight: 400;
+        font-style: normal;
       }
       &:hover {
         background-color: @bt-alert-hover-color;
@@ -287,9 +304,12 @@
       }
       p {
         font-family: @proxima-nova-rgbold;
+        font-weight: 400;
         font-size: 1em;
         em {
           font-family: @proxima-nova-bold-italic;
+          font-weight: 400;
+          font-style: normal;
         }
       }
     }
@@ -315,12 +335,15 @@
       }
       p {
         font-family: @proxima-nova-rgbold;
+        font-weight: 400;
         font-size: 1em;
         color: @bt-blue;
         margin: 0;
         text-align: center;
         em {
           font-family: @proxima-nova-bold-italic;
+          font-weight: 400;
+          font-style: normal;
         }
       }
       &:hover p {
@@ -400,6 +423,7 @@
 
   .field-title {
     font-family: @proxima-nova-rgbold;
+    font-weight: 400;
     font-size: 0.875em;
     line-height: 22px;
     margin-top: 0;
@@ -407,6 +431,8 @@
     color: @body-color;
     em {
       font-family: @proxima-nova-bold-italic;
+      font-weight: 400;
+      font-style: normal;
     }
   }
 
@@ -419,14 +445,14 @@
       margin: 0 20px 20px 0;
     }
     blockquote {
-      font-family: @proxima-nova-rgregular;
+      font-family: @proxima-nova-regular-italic;
       font-size: 1.5em;
       line-height: 32px;
       color: #888;
-      font-style: italic;
+      font-style: normal;
       margin: 0 0 20px;
       em {
-        font-family: @proxima-nova-regular-italic;
+        font-family: @proxima-nova-rgregular;
       }
     }
     cite {
@@ -434,9 +460,9 @@
       color: #222;
       float: right;
       font-size: 19px;
-      font-style: normal;
       em {
         font-family: @proxima-nova-regular-italic;
+        font-style: normal;
       }
     }
   }
@@ -458,6 +484,7 @@
     margin: 0;
     h1 {
       font-family: @proxima-nova-rgbold;
+      font-weight: 400;
       display: inline-block;
       color: @header-color;
       margin-top: 1px;
@@ -467,6 +494,8 @@
       line-height: 28px;
       em {
         font-family: @proxima-nova-bold-italic;
+        font-weight: 400;
+        font-style: normal;
       }
     }
   }
@@ -509,9 +538,11 @@
       line-height: 52px;
       margin-top: 10px;
       margin-bottom: 20px;
-      em {
-        font-family: @proxima-nova-bold-italic;
-      }
+      // em {
+      //   font-family: @proxima-nova-bold-italic;
+      //   font-style: normal;
+      //   font-weight: 400;
+      // }
     }
     p {
       font-size: 24px;
@@ -575,9 +606,9 @@
       padding-top: 0;
       line-height: 32px;
       border: 0;
-      font-style: normal;
       color: #999;
       font-family: @proxima-nova-regular-italic;
+      font-style: normal;
       em{
         font-family: @proxima-nova-rgregular;
       }
@@ -586,13 +617,13 @@
       font-family: @proxima-nova-rgregular;
       color: @body-color;
       font-size: 19px;
-      font-style: normal;
       line-height: 19px;
       display: block;
       text-align: center;
       margin-bottom: 10px;
       em{
         font-family: @proxima-nova-regular-italic;
+        font-style: normal;
       }
     }
   }
@@ -781,8 +812,11 @@
     }
     a, li a, p a {
       font-family: @proxima-nova-rgbold;
+      font-weight: 400;
       em {
         font-family: @proxima-nova-bold-italic;
+        font-weight: 400;
+        font-style: normal;
       }
     }
   }
@@ -827,27 +861,15 @@
   .row-table-equal-height-button {
     [class^=col] {
       height: 100%;
-      .button-bottom-container {
-        margin-bottom: 65px;
+        padding-bottom: 78px;
         position: relative;
-      }
-    }
-    .object-fit {
-      height: 175px;
-      margin: 15px 0;
-      max-height: 100%;
-      img {
-        width: 100%;
-      }
     }
     .img-responsive {
       margin-bottom: 10px;
     }
-    .button-bottom {
+    .ssp-btn {
       margin: 0 auto;
       bottom: 0;
-      left: 0;
-      right: 0;
       position: absolute;
     }
   }
@@ -1151,7 +1173,7 @@
   }
   .carousel-indicators {
     margin-bottom: auto;
-    z-index: 1000;
+    z-index: 1;
     .active {
       position: relative;
       top: 1px;
@@ -1170,6 +1192,7 @@
       font-family: @proxima-nova-rgregular;
       em {
         font-family: @proxima-nova-regular-italic;
+        font-style: normal;
       }
     }
     h2 {
@@ -1178,6 +1201,7 @@
       margin: 0;
       span{
         font-family: @proxima-nova-rgbold;
+        font-weight: 400;
       }
     }
     h2.small {
@@ -1632,9 +1656,12 @@
     display: inline-block;
     background-color: transparent;
     font-family: @proxima-nova-rgbold;
+    font-weight: 400;
     color: @header-color;
     em {
       font-family: @proxima-nova-bold-italic;
+      font-weight: 400;
+      font-style: normal;
     }
   }
   .upper-line-title-extra {
@@ -1753,7 +1780,7 @@
       background-size: cover;
       transform: rotateY(0deg);
       border: 1px dotted #aeaeae;
-      background-repeat-y: no-repeat;
+      background-repeat: no-repeat;
       section{
         background-color: rgba(241, 241, 241, 0);
         transform: rotateY(0deg);
