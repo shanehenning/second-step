@@ -2349,3 +2349,14 @@
 .rvdsfProductShowcaseContainer {
   position: relative;
 }
+a.rvdsfProductShowcasePagination.rvdPreviousAction,
+a.rvdsfProductShowcasePagination.rvdNextAction {
+  width: 36px;
+  height: 36px;
+}
+a.rvdsfProductShowcasePagination.rvdPreviousAction {
+  background-image: url(/Portals/0/Home/img/product-back-bt.png);
+}
+a.rvdsfProductShowcasePagination.rvdNextAction {
+  background-image: url(/Portals/0/Home/img/product-next-bt.png);
+}
