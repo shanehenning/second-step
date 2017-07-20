@@ -681,7 +681,7 @@
 .ssp-main-container .row-feature-dotted li .media-body a {
   display: inline;
 }
-.ssp-main-container .row-feature-dotted li .media-body p.divider {
+.ssp-main-container .row-feature-dotted li .media-body p.divide-bottom {
   display: block;
   padding-bottom: 40px;
   border-bottom: 1px dotted #444;
