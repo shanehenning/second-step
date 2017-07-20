@@ -2186,7 +2186,7 @@
   .ssp-main-container .row-webinar-videos aside {
     width: 450px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto 30px;
   }
   .ssp-main-container .row-webinar-videos aside .object-fit {
     height: 175px;
@@ -2266,15 +2266,10 @@
   .ssp-main-container .padding-standard-top,
   .ssp-main-container .padding-standard-narrow,
   .ssp-main-container .padding-standard-no-background,
-  .ssp-main-container .padding-tall,
-  .ssp-main-container .padding-tall-top,
-  .ssp-main-container .padding-tall-bottom,
   .ssp-main-container .padding-tall-no-background,
   .ssp-main-container .padding-tall-no-background-top,
   .ssp-main-container .padding-tall-no-background-bottom,
-  .ssp-main-container .row-copy-intro,
   .ssp-main-container .row-half-image [class^=col],
-  .ssp-main-container .row-half-video [class^=col],
   .ssp-main-container .row-webinar-related {
     padding-left: 15px;
     padding-right: 15px;
