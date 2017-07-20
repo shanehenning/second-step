@@ -2125,6 +2125,9 @@
   .ssp-main-container .row-equal-sections img {
     margin: 20px 0;
   }
+  .ssp-main-container .blog-full-width {
+    width: calc(100% + 30px);
+  }
 }
 @media screen and (max-width: 767px) {
   .ssp-main-container .row-success-banner h3 {
