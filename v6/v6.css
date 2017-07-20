@@ -2136,9 +2136,11 @@
   }
   .ssp-main-container .row-hero-image {
     height: auto;
+    min-height: 400px;
   }
   .ssp-main-container .row-hero-image section {
     height: auto;
+    min-height: 400px;
   }
   .ssp-main-container .row-classroom-kits [class^=col],
   .ssp-main-container .row-table-equal-height [class^=col],
