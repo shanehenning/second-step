@@ -2134,6 +2134,12 @@
     font-size: 50px;
     line-height: 50px;
   }
+  .ssp-main-container .row-hero-image {
+    height: auto;
+  }
+  .ssp-main-container .row-hero-image section {
+    height: auto;
+  }
   .ssp-main-container .row-classroom-kits [class^=col],
   .ssp-main-container .row-table-equal-height [class^=col],
   .ssp-main-container .row-table-equal-height-bottom [class^=col],
