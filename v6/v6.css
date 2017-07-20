@@ -679,14 +679,12 @@
   padding-left: 15px;
 }
 .ssp-main-container .row-feature-dotted li .media-body a {
+  display: inline;
+}
+.ssp-main-container .row-feature-dotted li .media-body p.divider {
   display: block;
   padding-bottom: 40px;
   border-bottom: 1px dotted #444;
-}
-.ssp-main-container .row-feature-dotted li .media-body a.regular {
-  display: block;
-  padding-bottom: 10px;
-  border-bottom: none;
 }
 .ssp-main-container .row-feature-dotted li img {
   max-height: 120px;
