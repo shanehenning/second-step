@@ -239,6 +239,11 @@
   display: inline-block;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .ssp-main-container .text-center-mobile {
+    text-align: center;
+  }
+}
 .ssp-main-container .ssp-btn {
   display: inline-block;
   margin: 15px 0;
