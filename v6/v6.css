@@ -860,9 +860,19 @@
   margin-bottom: 10px;
 }
 .ssp-main-container .row-table-equal-height-button .ssp-btn {
-  margin: 0 auto;
-  bottom: 0;
-  position: absolute;
+  margin: 15px auto;
+}
+@media screen and (min-width: 768px) {
+  .ssp-main-container .row-table-equal-height-button .ssp-btn {
+    position: absolute;
+    bottom: 0;
+  }
+  .ssp-main-container .row-table-equal-height-button .ssp-btn.btn-center {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
 }
 .ssp-main-container .equal-height-bottom-item {
   min-height: 45px;
