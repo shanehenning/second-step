@@ -1368,6 +1368,9 @@
 .ssp-main-container .text-uppercase {
   text-transform: uppercase;
 }
+.ssp-main-container .text-center img {
+  display: inline-block;
+}
 .ssp-main-container .zero-margin {
   margin: 0;
 }
