@@ -2224,6 +2224,9 @@
   .ssp-main-container .md-right-sm-center {
     text-align: center;
   }
+  .ssp-main-container .row-equal-sections {
+    margin-top: 40px;
+  }
   .ssp-main-container .row-equal-sections [class^=col] {
     width: 450px;
     right: auto;
@@ -2325,6 +2328,10 @@
   .ssp-main-container .row-success-banner h3 {
     font-size: 40px;
     line-height: 40px;
+  }
+  .ssp-main-container .row.row-equal-sections {
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .ssp-main-container .carousel {
     height: 400px;
