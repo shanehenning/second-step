@@ -185,6 +185,9 @@
   margin-top: 0;
   margin-bottom: 15px;
 }
+.ssp-main-container p.regular {
+  margin-bottom: 10px;
+}
 .ssp-main-container span {
   font-family: 'proxima_nova_rgregular', sans-serif;
   font-size: 1em;
@@ -419,6 +422,10 @@
 }
 .ssp-main-container .font-blue {
   color: #41779c;
+  margin-bottom: 15px;
+}
+.ssp-main-container .font-teal {
+  color: #26bbc3;
   margin-bottom: 15px;
 }
 .ssp-main-container .font-orange {
@@ -1058,9 +1065,6 @@
 .ssp-main-container .row-table-two-columns-equal-height section {
   padding: 40px;
 }
-.ssp-main-container .row-table-two-columns-equal-height p.regular {
-  margin-bottom: 10px;
-}
 .ssp-main-container .row-table-two-columns-equal-height ul {
   padding-left: 20px;
 }
@@ -1509,6 +1513,48 @@
 .ssp-main-container .table-striped-dark table tr:nth-child(1) {
   background: none;
 }
+.ssp-main-container .table-collapsible table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.ssp-main-container .table-collapsible tr {
+  border-bottom: 3px solid #47a7f1;
+}
+.ssp-main-container .table-collapsible th {
+  background-color: #47a7f1;
+  color: #fff;
+  min-width: 5em;
+  padding: 1em;
+  font-family: 'proxima_nova_rgbold', sans-serif;
+  font-size: 19px;
+  text-align: center;
+}
+.ssp-main-container .table-collapsible th:nth-of-type(1) {
+  text-align: left;
+}
+.ssp-main-container .table-collapsible td {
+  padding: 10px;
+  padding-bottom: 12px;
+  text-align: center;
+  display: table-cell;
+}
+.ssp-main-container .table-collapsible td:first-child {
+  padding-left: 10px;
+}
+.ssp-main-container .table-collapsible td:last-child {
+  padding-right: 0;
+}
+.ssp-main-container .table-collapsible td:before {
+  display: none;
+}
+.ssp-main-container .table-collapsible td:first-of-type {
+  text-align: left;
+  padding-left: 10px;
+}
+.ssp-main-container .table-collapsible td:nth-of-type(2) {
+  width: 37.5%;
+  text-align: left;
+}
 .ssp-main-container .p-extra-bottom p {
   margin-bottom: 30px;
 }
@@ -1535,6 +1581,9 @@
 }
 .ssp-main-container .border-bottom {
   border-bottom: 1px solid #aeaeae;
+}
+.ssp-main-container .border-teal {
+  border: 8px solid #26bbc3;
 }
 .ssp-main-container .upper-line-title,
 .ssp-main-container .upper-line-title-extra {
@@ -1676,6 +1725,9 @@
 }
 .ssp-main-container .background-mid-gray {
   background-color: #d8d7da;
+}
+.ssp-main-container .background-white {
+  background-color: #fff;
 }
 .ssp-main-container .background-blue {
   background-color: #41779c;
@@ -2210,7 +2262,7 @@
   .ssp-main-container .row-webinar-videos aside {
     width: 450px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto 30px;
   }
   .ssp-main-container .row-webinar-videos aside .object-fit {
     height: 175px;
@@ -2274,6 +2326,50 @@
   .ssp-main-container .table-striped-dark table {
     width: 100%;
   }
+  .ssp-main-container .table-collapsible table {
+    width: auto;
+    min-width: 300px;
+    margin: 0 auto 30px;
+  }
+  .ssp-main-container .table-collapsible tr {
+    border: 4px solid #47a7f1;
+  }
+  .ssp-main-container .table-collapsible th {
+    display: none;
+  }
+  .ssp-main-container .table-collapsible td {
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  .ssp-main-container .table-collapsible td:nth-of-type(2) {
+    width: auto;
+  }
+  .ssp-main-container .table-collapsible td:first-child {
+    padding-top: 20px;
+    padding-bottom: 6px;
+  }
+  .ssp-main-container .table-collapsible td:before {
+    content: attr(data-th) ": ";
+    font-family: 'proxima_nova_rgbold', sans-serif;
+    font-size: 16px;
+    width: 65px;
+    display: inline-block;
+    color: #47a7f1;
+    padding: 4px;
+    margin-right: 10px;
+  }
+  .ssp-main-container .table-collapsible td:last-child:before {
+    padding-bottom: 20px;
+  }
+  .ssp-main-container .table-collapsible td:first-of-type:before {
+    content: '';
+    background-color: transparent;
+  }
   .ssp-main-container .orange-circle {
     height: 75px;
     width: 75px;
@@ -2290,15 +2386,11 @@
   .ssp-main-container .padding-standard-top,
   .ssp-main-container .padding-standard-narrow,
   .ssp-main-container .padding-standard-no-background,
-  .ssp-main-container .padding-tall,
-  .ssp-main-container .padding-tall-top,
-  .ssp-main-container .padding-tall-bottom,
   .ssp-main-container .padding-tall-no-background,
   .ssp-main-container .padding-tall-no-background-top,
   .ssp-main-container .padding-tall-no-background-bottom,
-  .ssp-main-container .row-copy-intro,
+  .ssp-main-container .padding-mobile,
   .ssp-main-container .row-half-image [class^=col],
-  .ssp-main-container .row-half-video [class^=col],
   .ssp-main-container .row-webinar-related {
     padding-left: 15px;
     padding-right: 15px;
