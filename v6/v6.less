@@ -19,6 +19,8 @@
 @grade-5-purple: #653279;
 @bpu-green: #33a86a;
 @cpu-red: #F84139;
+@ms-blue: #47a7f1;
+@ms-teal: #26bbc3;
 @bt-alert-bg-color: #d44e05;
 @bt-alert-border-color: #ab4501;
 @bt-alert-hover-color: #b34304;
@@ -190,6 +192,9 @@
     &.intro {
       margin-top: 0;
       margin-bottom: 15px;
+    }
+    &.regular {
+      margin-bottom: 10px;
     }
   }
 
@@ -409,6 +414,10 @@
   }
   .font-blue {
     color: @bt-blue;
+    margin-bottom: 15px;
+  }
+  .font-teal{
+    color: @ms-teal;
     margin-bottom: 15px;
   }
   .font-orange{
@@ -1138,9 +1147,6 @@
     section {
       padding: 40px;
     }
-    p.regular {
-      margin-bottom: 10px;
-    }
     ul {
       padding-left: 20px;
     }
@@ -1635,6 +1641,51 @@
     }
   }
 
+  .table-collapsible{
+    table{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    tr{
+      border-bottom: 3px solid @ms-blue;
+    }
+    th{
+      background-color: @ms-blue;
+      color: #fff;
+      min-width: 5em;
+      padding: 1em;
+      font-family: @proxima-nova-rgbold;
+      font-size: 19px;
+      text-align: center;
+    }
+    th:nth-of-type(1){
+      text-align: left;
+    }
+    td{
+      padding: 10px;
+      padding-bottom: 12px;
+      text-align: center;
+      display: table-cell;
+      &:first-child{
+        padding-left: 10px;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+      &:before{
+        display: none;
+      }
+      &:first-of-type{
+        text-align: left;
+        padding-left: 10px;
+      }
+      &:nth-of-type(2){
+        width: 37.5%;
+        text-align: left;
+      }
+    }
+  }
+
   .p-extra-bottom {
     p {
       margin-bottom: 30px;
@@ -1668,6 +1719,9 @@
   }
   .border-bottom {
     border-bottom: 1px solid #aeaeae;
+  }
+  .border-teal{
+    border: 8px solid @ms-teal;
   }
 
   .upper-line-title, .upper-line-title-extra {
@@ -1818,6 +1872,9 @@
     }
     &-mid-gray {
       background-color: #d8d7da;
+    }
+    &-white{
+      background-color: #fff;
     }
     &-blue {
       background-color: @bt-blue;
@@ -2351,7 +2408,7 @@
       aside {
         width: 450px;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 10px auto 30px;
         .object-fit {
           height: 175px;
         }
@@ -2433,6 +2490,56 @@
         width: 100%;
       }
     }
+
+    .table-collapsible{
+      table{
+        width: auto;
+        min-width: 300px;
+        margin: 0 auto 30px;
+      }
+      tr{
+        border: 4px solid @ms-blue;
+      }
+      th{
+        display: none;
+      }
+      td{
+        padding:0;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+        text-align: left;
+        vertical-align: middle;
+        font-size: 14px;
+        &:nth-of-type(2){
+          width: auto;
+        }
+        &:first-child{
+          padding-top: 20px;
+          padding-bottom: 6px;
+        }
+        &:before{
+          content: attr(data-th)": ";
+          font-family: @proxima-nova-rgbold;
+          font-size: 16px;
+          width: 65px;
+          display: inline-block;
+          color: @ms-blue;
+          padding: 4px;
+          margin-right: 10px;
+        }
+        &:last-child:before{
+          padding-bottom: 20px;
+        }
+        &:first-of-type{
+          &:before{
+            content: '';
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
      .orange-circle{
       height: 75px;
       width: 75px;
@@ -2445,7 +2552,7 @@
 
   }
   @media screen and (max-width: 575px) {
-    .padding-standard, .padding-standard-bottom, .padding-standard-top, .padding-standard-narrow, .padding-standard-no-background, .padding-tall, .padding-tall-top, .padding-tall-bottom, .padding-tall-no-background, .padding-tall-no-background-top, .padding-tall-no-background-bottom, .row-copy-intro, .row-half-image [class^=col], .row-half-video [class^=col], .row-webinar-related {
+    .padding-standard, .padding-standard-bottom, .padding-standard-top, .padding-standard-narrow, .padding-standard-no-background, .padding-tall-no-background, .padding-tall-no-background-top, .padding-tall-no-background-bottom, .padding-mobile, .row-half-image [class^=col], .row-webinar-related {
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -2548,9 +2655,9 @@
     }
 
     .orange-circle{
-      
+
       transform: translate(0%, 0%);
-    
+
     }
   }
 }
@@ -2643,4 +2750,3 @@ ul.rvdsfProductShowcaseRotator > li {
   margin-left: 0;
   margin-right: 0;
 }
-
