@@ -2228,6 +2228,9 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  .ssp-main-container .row-table-equal-height .ssp-btn {
+    position: relative;
+  }
   .ssp-main-container .row-table-equal-height-bottom-sm [class^=col] {
     vertical-align: bottom;
   }
