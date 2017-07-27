@@ -2562,7 +2562,38 @@ ul.rvdsfProductShowcaseRotator > li {
   width: 250px;
 }
 /* Footer */
+#footer {
+  background: #444;
+}
 #footer .row {
   margin-left: 0;
   margin-right: 0;
+}
+#footer .row h6,
+#footer .row ul,
+#footer .row p,
+#footer .row a {
+  color: #fff;
+}
+#footer .row i {
+  height: 35px;
+  width: 35px;
+  background: white;
+  color: #444;
+  border-radius: 50%;
+  vertical-align: middle;
+  line-height: 35px;
+  margin-right: 5px;
+  text-align: center;
+}
+#footer .row-subfooter ul {
+  list-style: none;
+}
+#footer .row-subfooter ul li {
+  display: inline;
+}
+#footer .row-subfooter ul li:after {
+  content: '';
+  margin: 0 20px 0 25px;
+  border: 1px solid white;
 }
