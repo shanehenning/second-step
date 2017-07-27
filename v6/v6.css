@@ -2566,8 +2566,8 @@ ul.rvdsfProductShowcaseRotator > li {
   background: #444;
 }
 #footer .row {
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
 }
 #footer .row h6,
 #footer .row ul,
@@ -2575,16 +2575,35 @@ ul.rvdsfProductShowcaseRotator > li {
 #footer .row a {
   color: #fff;
 }
-#footer .row i {
+#footer .row h6 {
+  font-size: 1em;
+}
+#footer .row a {
+  transition: all 0.1s ease-in;
+}
+#footer .row a i {
   height: 35px;
   width: 35px;
-  background: white;
+  background: #fff;
   color: #444;
   border-radius: 50%;
   vertical-align: middle;
   line-height: 35px;
   margin-right: 5px;
   text-align: center;
+  transition: all 0.1s ease-in;
+}
+#footer .row a:hover {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+#footer .row a:hover i {
+  background: #999999;
+  color: #fff;
+}
+#footer .row a:visited {
+  color: #fff;
+  text-decoration-color: #fff;
 }
 #footer .row-subfooter ul {
   list-style: none;
@@ -2596,4 +2615,12 @@ ul.rvdsfProductShowcaseRotator > li {
   content: '';
   margin: 0 20px 0 25px;
   border: 1px solid white;
+}
+#footer .row-subfooter ul li:last-of-type:after {
+  border: 0px solid;
+}
+@media screen and (max-width: 575px) {
+  #footer .row-subfooter li {
+    display: block;
+  }
 }

@@ -2758,21 +2758,41 @@ ul.rvdsfProductShowcaseRotator > li {
 #footer {
   background: @header-color;
   .row {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
     h6, ul, p, a{
-       color: #fff;
+      color: #fff;
     }
-    i{
-      height: 35px;
-      width: 35px;
-      background: white;
-      color: #444;
-      border-radius: 50%;
-      vertical-align: middle;
-      line-height: 35px;
-      margin-right: 5px;
-      text-align: center;
+    h6{
+      font-size: 1em;
+    }
+    a{
+      transition: all .1s ease-in;
+      i{
+        height: 35px;
+        width: 35px;
+        background: #fff;
+        color: #444;
+        border-radius: 50%;
+        vertical-align: middle;
+        line-height: 35px;
+        margin-right: 5px;
+        text-align: center;
+        transition: all .1s ease-in;
+      }
+    }
+    a:hover{
+      color: #fff;
+      text-decoration-color:#fff; 
+
+      i{
+          background: darken(white, 40%);
+          color: #fff;
+      }
+    }
+    a:visited{
+      color: #fff;
+      text-decoration-color:#fff; 
     }
   }
   .row-subfooter{
@@ -2786,6 +2806,16 @@ ul.rvdsfProductShowcaseRotator > li {
           border: 1px solid white;
         }
       }
+      li:last-of-type{
+        &:after{
+           border: 0px solid;
+        }
+      }
     }
   }
+}
+@media screen and (max-width: 575px){
+    #footer .row-subfooter li{
+      display: block;
+    }
 }
