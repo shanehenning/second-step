@@ -1704,7 +1704,8 @@
   color: #888;
 }
 .ssp-main-container .background-sel,
-.ssp-main-container .background-sel-home {
+.ssp-main-container .background-sel-home,
+.ssp-main-container .background-ms {
   background-image: url('/Portals/0/common-img/SS-Section-G-IMG.jpg');
   background-position: center;
   background-size: cover;
@@ -1713,9 +1714,13 @@
   background-repeat: no-repeat;
 }
 .ssp-main-container .background-sel section,
-.ssp-main-container .background-sel-home section {
+.ssp-main-container .background-sel-home section,
+.ssp-main-container .background-ms section {
   background-color: rgba(241, 241, 241, 0);
   transform: rotateY(0deg);
+}
+.ssp-main-container .background-ms {
+  background-image: url('/Portals/0/common-img/MS-Home-Page-Hero.jpg');
 }
 .ssp-main-container .background-sel-home {
   background-image: url('/Portals/0/common-img/SS-Home-Section-G-Girl-Ponytail-Smiling-Desk.jpg');
@@ -2251,6 +2256,9 @@
   .ssp-main-container .row-table-equal-height-button .object-fit img {
     width: 410px;
   }
+  .ssp-main-container .row-table-equal-height-button .ssp-btn {
+    position: relative;
+  }
   .ssp-main-container .row-feature-image article[class^=col] {
     margin: 25px auto;
   }
@@ -2321,14 +2329,15 @@
     width: 450px;
   }
   .ssp-main-container .background-sel,
-  .ssp-main-container .background-sel-home {
+  .ssp-main-container .background-sel-home,
+  .ssp-main-container .background-ms {
     background-size: cover;
     background-position: center right;
-    background-position-x: 520px;
     transform: rotateY(180deg);
   }
   .ssp-main-container .background-sel section,
-  .ssp-main-container .background-sel-home section {
+  .ssp-main-container .background-sel-home section,
+  .ssp-main-container .background-ms section {
     background-color: rgba(241, 241, 241, 0.85);
     transform: rotateY(-180deg);
   }
