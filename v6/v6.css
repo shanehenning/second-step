@@ -523,7 +523,7 @@
   position: relative;
   overflow: hidden;
 }
-.ssp-main-container .row-hero-image img:not(.ss-logo) {
+.ssp-main-container .row-hero-image img:not(.suite-logo) {
   width: 1200px;
   position: absolute;
   margin: auto;
@@ -534,7 +534,7 @@
   left: -9999px;
   right: -9999px;
 }
-.ssp-main-container .row-hero-image .ss-logo {
+.ssp-main-container .row-hero-image .suite-logo {
   max-height: 50px;
 }
 .ssp-main-container .row-hero-image section {

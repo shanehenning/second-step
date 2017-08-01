@@ -14,6 +14,16 @@ gulp.task('less', function() {
   });
 });
 
+gulp.task('footer', function(){
+  console.log('watching footer less');
+  return watch (['less/**/*.less'], function(){
+    console.log('gulp footer');
+    gulp.src('./less/footer.less')
+    .pipe(less())
+    .pipe(gulp.dest('./css'));
+  });
+});
+
 gulp.task('default', function() {
   console.log('default gulp');
 });
