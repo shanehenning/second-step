@@ -13,6 +13,7 @@
   /* Icon Opacity */
   /* Webinar page */
   /* new SEL page */
+  /* FAQ PAGE */
   /* End Misc */
 }
 .ssp-main-container .color-body-copy {
@@ -1951,6 +1952,15 @@
 }
 .ssp-main-container .color-circles span .border-color-skyblue {
   border-color: #009cff;
+}
+.ssp-main-container #close-all {
+  display: none;
+}
+.ssp-main-container .panel-group .panel-heading a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  transition: all .4s;
 }
 @media screen and (min-width: 992px) {
   .ssp-main-container .row-table-equal-height-bottom,
