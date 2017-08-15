@@ -1,38 +1,58 @@
+#footer{
+  margin-top: 70px;
+}
 .ssp-main-container {
   font-family: 'proxima_nova_rgregular';
   .ssp-footer {
-    background-color: #444;
-    width: ~ 'calc(100% + 30px)';
-    margin-left: -15px;
-    margin-right: -15px;
     .row-breadcrumb,
     .row-copyright,
-    .row-footer {
-      width: 100%;
+    .row-footer-inner {
+      box-sizing: border-box;
+      width: ~ 'calc(100% + 15px)';
       display: table;
       padding: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1170px;
     }
     .row-breadcrumb {
-      padding: 40px 55px;
-      border-bottom: 1px solid #fff;
+      padding: 40px 55px 30px;
+      h6{
+        color: #fff;
+        font-family: "proxima_nova_rgregular";
+        margin-left: 0;
+      }
     }
-    .row-footer {
-      border-bottom: 1px solid #fff;
+    .breadcrumb{
+      background-color: transparent;
+    }
+    .row-footer > hr{
+      margin: 0;
+      border: 0;
+      height: 1px;
+      background-color: #666;
+      background-image: none;
+    }
+    .row-footer-inner {
+      padding-bottom: 30px;
     }
     .row-copyright {
+      span{
+        font-family: "proxima_nova_rgregular";
+      }
       p {
         margin-bottom: 0;
       }
       ul{
-        text-align: center;
+        text-align: right;
       }
       li {
         display: inline-block;
         width: auto;
         &:after {
           content: '';
-          margin: 0 20px 0 25px;
-          border: 1px solid white;
+          margin: 0 19px 0 21px;
+          border-right: 1px solid white;
         }
         &:last-of-type {
           &:after {
@@ -42,37 +62,51 @@
         }
       }
     }
+    .copyright{
+      width: 390px;
+      right: ~ 'calc(100% - 390px)';
+      p{
+        line-height: 19px;
+        margin-bottom: 0;
+      }
+    }
+    .copyright-links{
+      width: ~ 'calc( 100% - 390px)';
+      left: 390px;
+      li{
+        margin-bottom: 0;
+      }
+    }
     .c-sm-4,
-    .c-md-4,
     .c-sm-8,
-    .c-md-8 {
+    .copyright,
+    .copyright-links {
       float: left;
       position: relative;
       padding-left: 15px;
       padding-right: 15px;
       box-sizing: border-box;
     }
-    .c-sm-4,
-    .c-md-4 {
+    .c-sm-4{
       width: 33%;
     }
-    .c-sm-8,
-    .c-md-8 {
+    .c-sm-8 {
       width: 67%;
     }
     a,
-    h6,
-    p {
+    p,
+    span {
       font-size: 16px;
       color: #fff;
     }
-    h6 {
+    h5 {
       margin: 0;
+      color: #fff !important;
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-transform: none;
     }
-    p {
-      margin-bottom: 30px;
-    }
-    h6,
+    h5,
     strong {
       font-family: 'proxima_nova_rgbold';
       font-weight: 400;
@@ -80,6 +114,7 @@
     ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
       li {
         font-size: 16px;
         line-height: 16px;
@@ -94,7 +129,7 @@
     }
     a:hover {
       i {
-        background: darken(white, 40%);
+        background: #999;
         color: #fff;
       }
     }
@@ -110,22 +145,22 @@
       text-align: center;
       transition: all 0.1s ease-in;
     }
-    @media screen and (max-width: 991px) {
-      .c-md-4, .c-md-8{
+    @media screen and (max-width: 1020px) {
+      .copyright, .copyright-links{
+        left: 0;
+        right: 0;
         width: 100%;
         display: block;
+        margin-bottom: 0;
       }
       .row-copyright {
-        p{
-          margin-bottom: 20px;
-        }
-        [class^=c-] {
-          margin-bottom: 0;
+        .copyright-links {
           ul{
             text-align: left;
           }
           li {
             display: block;
+            margin-bottom: 20px;
             &:after {
               margin: 0;
               border: 0;
@@ -135,6 +170,19 @@
       }
     }
     @media screen and (max-width: 767px) {
+      .row-breadcrumb, .row-footer-inner, .row-copyright{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .row-breadcrumb{
+        h6{
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
       ul li{
         margin-bottom: 20px;
       }
@@ -145,17 +193,8 @@
       }
       .c-sm-4 {
         margin-bottom: 20px;
-        p{
-          margin-bottom: 15px;
-        }
         &:last-of-type {
           margin-bottom: 0;
-          li {
-            // width: 120px;
-            // margin-left: auto;
-            // margin-right: auto;
-            // text-align: left;
-          }
         }
       }
     }

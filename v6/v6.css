@@ -247,11 +247,6 @@
   display: inline-block;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  .ssp-main-container .text-center-mobile {
-    text-align: center;
-  }
-}
 .ssp-main-container .ssp-btn {
   display: inline-block;
   margin: 15px 0;
@@ -713,6 +708,9 @@
 .ssp-main-container .row-feature-dotted li:last-of-type .media-body a {
   border-bottom: none;
 }
+.ssp-main-container .row-webinar-videos .suite-logo {
+  max-height: 50px;
+}
 .ssp-main-container .row-webinar-videos aside {
   padding: 20px 40px;
   margin: 10px 0 30px;
@@ -864,13 +862,15 @@
   padding-bottom: 78px;
   position: relative;
 }
-.ssp-main-container .row-table-equal-height-button .img-responsive {
-  margin-bottom: 10px;
-}
 .ssp-main-container .row-table-equal-height-button .ssp-btn {
   margin: 0 auto;
   bottom: 0;
   position: absolute;
+}
+.ssp-main-container .row-table-equal-height-button .btn-center {
+  width: 195px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .ssp-main-container .equal-height-bottom-item {
   min-height: 45px;
@@ -930,18 +930,6 @@
 .ssp-main-container .row-help-and-support section ul li:last-of-type {
   border-bottom: 1px solid #aeaeae;
 }
-.ssp-main-container .row-help-and-support.mask-red figure {
-  background-image: url('http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png');
-}
-.ssp-main-container .row-help-and-support.mask-blue figure {
-  background-image: url('https://readingresultspdx.org/wp-content/uploads/2016/07/smiling-girl-cutout.png');
-}
-.ssp-main-container .row-help-and-support.mask-green figure {
-  background-image: url('http://www.graceplacenaples.org/wp-content/uploads/2015/08/bus-girl1.png');
-}
-.ssp-main-container .row-help-and-support.mask-purple figure {
-  background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
-}
 .ssp-main-container video.video-success {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -967,18 +955,6 @@
   line-height: 65px;
   margin-bottom: 20px;
 }
-.ssp-main-container .row-success-banner.mask-red figure {
-  background-image: url('http://smiles4keeps.com/wp-content/uploads/2016/02/Slider-girl.png');
-}
-.ssp-main-container .row-success-banner.mask-blue figure {
-  background-image: url('https://placeit.net/uploads/stage/stage_image/2477/default_a3895.png');
-}
-.ssp-main-container .row-success-banner.mask-green figure {
-  background-image: url('https://placeit.net/uploads/stage/stage_image/2390/default_3476.png');
-}
-.ssp-main-container .row-success-banner.mask-purple figure {
-  background-image: url('https://www.westlakepediatricdentist.com/wp-content/themes/custom5/images/little-kid.png');
-}
 .ssp-main-container .row-success-feature h3 {
   font-size: 46px;
   line-height: 46px;
@@ -990,18 +966,6 @@
 .ssp-main-container .row-success-feature a i {
   margin-top: 10px;
   color: #41779c;
-}
-.ssp-main-container .row-success-feature.mask-red figure {
-  background-image: url('http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png');
-}
-.ssp-main-container .row-success-feature.mask-blue figure {
-  background-image: url('https://readingresultspdx.org/wp-content/uploads/2016/07/smiling-girl-cutout.png');
-}
-.ssp-main-container .row-success-feature.mask-green figure {
-  background-image: url('http://www.graceplacenaples.org/wp-content/uploads/2015/08/bus-girl1.png');
-}
-.ssp-main-container .row-success-feature.mask-purple figure {
-  background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
 }
 .ssp-main-container video.video-success {
   margin-top: 30px;
@@ -1352,6 +1316,16 @@
   margin-top: 15px;
   margin-bottom: 20px;
 }
+.ssp-main-container .ssp-page-not-found .font-white {
+  background-color: #444;
+}
+.ssp-main-container .background-page-not-found {
+  background-color: #e7e8e9;
+}
+.ssp-main-container .webinar-topics a {
+  pointer-events: none;
+  cursor: default;
+}
 .ssp-main-container .relative {
   position: relative;
 }
@@ -1363,17 +1337,27 @@
 .ssp-main-container .lg-center-md-left {
   text-align: center;
 }
+.ssp-main-container .md-center-sm-left img,
+.ssp-main-container .lg-center-md-left img {
+  display: inline-block;
+}
 .ssp-main-container .md-right-sm-center {
   text-align: right;
 }
 .ssp-main-container .text-uppercase {
   text-transform: uppercase;
 }
+.ssp-main-container .text-center {
+  text-align: center;
+}
 .ssp-main-container .text-center img {
   display: inline-block;
 }
 .ssp-main-container .zero-margin {
   margin: 0;
+}
+.ssp-main-container h1.section-title {
+  margin-bottom: 25px;
 }
 .ssp-main-container h2.section-title {
   margin-bottom: 25px;
@@ -1722,6 +1706,7 @@
 }
 .ssp-main-container .background-ms {
   background-image: url('/Portals/0/common-img/MS-Home-Page-Hero.jpg');
+  display: table;
 }
 .ssp-main-container .background-sel-home {
   background-image: url('/Portals/0/common-img/SS-Home-Section-G-Girl-Ponytail-Smiling-Desk.jpg');
@@ -1956,11 +1941,24 @@
 .ssp-main-container #close-all {
   display: none;
 }
-.ssp-main-container .panel-group .panel-heading a {
+.ssp-main-container .ssp-faq .panel-group .panel-heading a {
   color: #fff;
   text-decoration: none;
   padding: 0;
   transition: all .4s;
+}
+.ssp-main-container .ssp-faq .panel {
+  border-radius: 0;
+  margin-top: 20px;
+}
+.ssp-main-container .ssp-faq .panel-group .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: rgba(0, 0, 0, 0.025);
+}
+.ssp-main-container .ssp-faq .row-related-links img {
+  width: auto;
+  max-width: 100%;
+  margin: 15px auto 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 992px) {
   .ssp-main-container .row-table-equal-height-bottom,
@@ -2041,6 +2039,12 @@
   .ssp-main-container .row-table-equal-height-bottom [class^=col]:nth-of-type(1) {
     vertical-align: middle;
   }
+  .ssp-main-container .row-webinar-videos .object-fit {
+    height: 250px;
+  }
+  .ssp-main-container .background-page-not-found {
+    background-position-x: 85% !important;
+  }
   .ssp-main-container .row-table-ie-md {
     margin: 0;
     width: 100%;
@@ -2113,6 +2117,9 @@
   }
   .ssp-main-container .lg-left-md-center {
     text-align: center;
+  }
+  .ssp-main-container .lg-left-md-center img {
+    display: inline-block;
   }
   .ssp-main-container .lg-center-md-left {
     text-align: left;
@@ -2204,6 +2211,11 @@
   .ssp-main-container .blog-full-width {
     width: calc(100% + 30px);
   }
+  .ssp-main-container .background-page-not-found {
+    background-image: url('/Portals/0/common-img/404-icon-bg.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
 }
 @media screen and (max-width: 767px) {
   .ssp-main-container .row-success-banner h3 {
@@ -2269,6 +2281,11 @@
   .ssp-main-container .row-table-equal-height-button .ssp-btn {
     position: relative;
   }
+  .ssp-main-container .row-table-equal-height-button .btn-center {
+    width: auto;
+    left: auto;
+    transform: translateX(0);
+  }
   .ssp-main-container .row-feature-image article[class^=col] {
     margin: 25px auto;
   }
@@ -2294,11 +2311,17 @@
   .ssp-main-container .md-left-sm-center {
     text-align: center;
   }
+  .ssp-main-container .md-left-sm-center img {
+    display: inline-block;
+  }
   .ssp-main-container .md-center-sm-left {
     text-align: left;
   }
   .ssp-main-container .md-right-sm-center {
     text-align: center;
+  }
+  .ssp-main-container .md-right-sm-center img {
+    display: inline-block;
   }
   .ssp-main-container .row-equal-sections {
     margin-top: 40px;

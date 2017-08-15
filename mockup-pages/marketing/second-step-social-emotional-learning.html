@@ -425,50 +425,33 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- <script type="text/javascript">
-    $(document).ready(function() {
-      function equalHeightColumns() {
-        var $videoAsidesAll = $('.row-webinar-videos aside');
-        var videoAsidesArray = [];
-        $videoAsidesAll.css({
-          'height': 'auto'
-        });
-        $videoAsidesAll.each(function() {
-          videoAsidesArray.push($(this).height());
-        });
-        var videoAsidesLong = Math.max.apply(null, videoAsidesArray) + 50;
-
-        var $replaceable = $('.replaceable');
-        var replaceableAll = [];
-        $replaceable.css({
-          'height': 'auto'
-        });
-        $replaceable.each(function() {
-          replaceableAll.push($(this).height());
-        });
-        var replaceableMax = Math.max.apply(null, replaceableAll);
-
-
-        if ($(window).width() > 992) {
-          $videoAsidesAll.css({
-            'height': videoAsidesLong
-          });
-          $replaceable.css({
-            'height': replaceableMax
-          });
-        } else {
+    <script type="text/javascript">
+      $(document).ready(function() {
+        function equalHeightColumns() {
+          var $videoAsidesAll = $('.row-webinar-videos aside');
+          var videoAsidesHeights = [];
           $videoAsidesAll.css({
             'height': 'auto'
           });
-          $replaceable.css({
-            'height': 'auto'
+          $videoAsidesAll.each(function() {
+            videoAsidesHeights.push($(this).height());
           });
+          var videoAsidesLong = Math.max.apply(null, videoAsidesHeights) + 50;
+
+          if ($(window).width() > 768) {
+            $videoAsidesAll.css({
+              'height': videoAsidesLong
+            });
+          } else {
+            $videoAsidesAll.css({
+              'height': 'auto'
+            });
+          }
         }
-      }
-      equalHeightColumns();
-      $(window).resize(equalHeightColumns);
-    });
-  </script> -->
+        equalHeightColumns();
+        $(window).resize(equalHeightColumns);
+      });
+    </script>
 </body>
 
 </html>

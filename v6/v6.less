@@ -259,12 +259,6 @@
     }
   }
 
-  @media screen and (max-width: 767px){
-    .text-center-mobile {
-      text-align: center;
-    }
-  }
-
   .ssp-btn {
     display: inline-block;
     margin: 15px 0;
@@ -700,31 +694,13 @@
     .object-fit {
       height: 150px;
     }
-    // @media screen and (max-width: 767px) {
-    //   section.col-sm-4 {
-    //     width: ~ "calc(100% - 80px)";
-    //     img {
-    //       width: 90%;
-    //     }
-    //   }
-    // }
   }
 
   .row-video-player {
-    // margin-top: 30px;
     position: relative;
     padding-bottom: 80px;
     .video-container {
       margin-bottom: 20px;
-      // img:hover {
-      //   opacity: 0.5;
-      //   transition: 0.5s;
-      // }
-    }
-    .ssp-btn {
-      // position: absolute;
-      // right: 15px;
-      // bottom: 0;
     }
   }
   .ssp-video-thumb:hover {
@@ -784,6 +760,9 @@
   }
 
   .row-webinar-videos {
+    .suite-logo{
+      max-height: 50px;
+    }
     aside {
       padding: 20px 40px;
       margin: 10px 0 30px;
@@ -895,13 +874,15 @@
         padding-bottom: 78px;
         position: relative;
     }
-    .img-responsive {
-      margin-bottom: 10px;
-    }
     .ssp-btn {
       margin: 0 auto;
       bottom: 0;
       position: absolute;
+    }
+    .btn-center{
+      width: 195px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
   .equal-height-bottom-item {
@@ -972,26 +953,6 @@
         }
       }
     }
-    &.mask-red {
-      figure {
-        background-image: url('http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png');
-      }
-    }
-    &.mask-blue {
-      figure {
-        background-image: url('https://readingresultspdx.org/wp-content/uploads/2016/07/smiling-girl-cutout.png');
-      }
-    }
-    &.mask-green {
-      figure {
-        background-image: url('http://www.graceplacenaples.org/wp-content/uploads/2015/08/bus-girl1.png');
-      }
-    }
-    &.mask-purple {
-      figure {
-        background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
-      }
-    }
   }
   video.video-success {
     margin-top: 30px;
@@ -1022,26 +983,6 @@
       line-height: 65px;
       margin-bottom: 20px;
     }
-    &.mask-red {
-      figure {
-        background-image: url('http://smiles4keeps.com/wp-content/uploads/2016/02/Slider-girl.png');
-      }
-    }
-    &.mask-blue {
-      figure {
-        background-image: url('https://placeit.net/uploads/stage/stage_image/2477/default_a3895.png');
-      }
-    }
-    &.mask-green {
-      figure {
-        background-image: url('https://placeit.net/uploads/stage/stage_image/2390/default_3476.png');
-      }
-    }
-    &.mask-purple {
-      figure {
-        background-image: url('https://www.westlakepediatricdentist.com/wp-content/themes/custom5/images/little-kid.png');
-      }
-    }
   }
 
   .row-success-feature {
@@ -1055,26 +996,6 @@
       i {
         margin-top: 10px;
         color: @bt-blue;
-      }
-    }
-    &.mask-red {
-      figure {
-        background-image: url('http://smiles4keeps.com/wp-content/uploads/2015/08/Smiles4Keeps_Kid-Cutout.png');
-      }
-    }
-    &.mask-blue {
-      figure {
-        background-image: url('https://readingresultspdx.org/wp-content/uploads/2016/07/smiling-girl-cutout.png');
-      }
-    }
-    &.mask-green {
-      figure {
-        background-image: url('http://www.graceplacenaples.org/wp-content/uploads/2015/08/bus-girl1.png');
-      }
-    }
-    &.mask-purple {
-      figure {
-        background-image: url('http://www.waterburyymca.org/files/cache/52861cd0d381c06345eb722bb0c47e37_f67.png');
       }
     }
   }
@@ -1457,6 +1378,19 @@
   /* End Bootstrap */
 
   /* Misc */
+  .ssp-page-not-found .font-white{
+    background-color: #444;
+  }
+
+  .background-page-not-found{
+    background-color:#e7e8e9;
+  }
+
+  .webinar-topics a{
+      pointer-events: none;
+      cursor: default;
+  }
+
   .relative {
     position: relative;
   }
@@ -1467,6 +1401,9 @@
 
   .md-center-sm-left, .lg-center-md-left{
     text-align: center;
+    img{
+      display: inline-block;
+    }
   }
 
   .md-right-sm-center{
@@ -1478,6 +1415,7 @@
   }
 
   .text-center{
+    text-align: center;
     img{
       display: inline-block;
     }
@@ -1485,6 +1423,10 @@
 
   .zero-margin {
     margin: 0;
+  }
+
+  h1.section-title{
+    margin-bottom: 25px;
   }
 
   h2.section-title{
@@ -1869,6 +1811,7 @@
     }
     &-ms{
       background-image: url('/Portals/0/common-img/MS-Home-Page-Hero.jpg');
+      display: table;
     }
     &-sel-home{
       background-image: url('/Portals/0/common-img/SS-Home-Section-G-Girl-Ponytail-Smiling-Desk.jpg');
@@ -2119,12 +2062,29 @@
   #close-all{
     display: none;
   }
-  .panel-group .panel-heading a{
-    color: #fff;
-    text-decoration: none;
-    padding: 0;
-    transition: all .4s;
+  .ssp-faq{
+    .panel-group .panel-heading a{
+      color: #fff;
+      text-decoration: none;
+      padding: 0;
+      transition: all .4s;
+    }
+    .panel{
+      border-radius: 0;
+      margin-top: 20px;
+    }
+    .panel-group .panel-heading+.panel-collapse>.panel-body{
+      border-top-color: rgba(0,0,0,0.025);
+    }
+    .row-related-links{
+      img{
+        width: auto;
+        max-width: 100%;
+        margin: 15px auto 25px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
   }
+}
 
   /* End Misc */
   @media screen and (min-width: 992px) {
@@ -2183,6 +2143,16 @@
       [class^=col]:nth-of-type(1) {
         vertical-align: middle;
       }
+    }
+
+    .row-webinar-videos{
+      .object-fit{
+        height: 250px;
+      }
+    }
+
+    .background-page-not-found{
+      background-position-x: 85% !important;
     }
 
     .row-table-ie-md {
@@ -2249,6 +2219,9 @@
 
     .lg-left-md-center{
       text-align: center;
+      img{
+        display: inline-block;
+      }
     }
 
     .lg-center-md-left{
@@ -2346,6 +2319,12 @@
     .blog-full-width {
       width: ~ 'calc(100% + 30px)';
     }
+
+    .background-page-not-found{
+      background-image:url('/Portals/0/common-img/404-icon-bg.png');
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
   }
   @media screen and (max-width: 767px) {
     .row-success-banner {
@@ -2411,6 +2390,11 @@
       .ssp-btn{
         position: relative;
       }
+      .btn-center{
+        width: auto;
+        left: auto;
+        transform: translateX(0);
+      }
     }
     .row-feature-image{
       article[class^=col]{
@@ -2443,6 +2427,9 @@
 
     .md-left-sm-center{
       text-align: center;
+      img{
+        display: inline-block;
+      }
     }
 
     .md-center-sm-left{
@@ -2451,6 +2438,9 @@
 
     .md-right-sm-center{
       text-align: center;
+      img{
+        display: inline-block;
+      }
     }
 
     .row-equal-sections{
